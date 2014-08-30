@@ -1,0 +1,539 @@
+  ABINIT 
+  
+  Give name for formatted input file: 
+65Ha_50h_c16h8_alt.in
+  Give name for formatted output file:
+65Ha_50h_c16h8_alt.out
+  Give root name for generic input files:
+65Ha_50h_c16h8_alti
+  Give root name for generic output files:
+65Ha_50h_c16h8_alto
+  Give root name for generic temporary files:
+65Ha_50h_c16h8_alt
+ leave_test : synchronization done...
+
+.Version 7.0.5 of ABINIT 
+.(MPI version, prepared for a x86_64_none_intel12.1 computer) 
+
+.Copyright (C) 1998-2012 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read ~abinit/doc/users/acknowledgments.html for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see http://www.abinit.org .
+
+.Starting date : Tue 22 Oct 2013.
+- ( at 10h35 )
+  
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ === Build Information === 
+  Version       : 7.0.5
+  Build target  : x86_64_none_intel12.1
+  Build date    : 20130212
+ 
+ === Compiler Suite === 
+  C compiler       : intel12.1
+  CFLAGS           :  -g -O2 -vec-report0 -axSSE4.2 -ip
+  C++ compiler     : gnu12.1
+  CXXFLAGS         : -m64 -g -O2 -mtune=native -march=native -mfpmath=sse
+  Fortran compiler : intel12.1
+  FCFLAGS          :  -g -extend-source -vec-report0 -noaltparam -nofpscomp
+  FC_LDFLAGS       :    -static-intel -static-libgcc
+ 
+ === Optimizations === 
+  Debug level        : basic
+  Optimization level : standard
+  Architecture       : _
+ 
+ === MPI === 
+  Parallel build : yes
+  Parallel I/O   : yes
+  Time tracing   : yes
+  GPU support    : no
+ 
+ === Connectors / Fallbacks === 
+  Connectors on : yes
+  Fallbacks on  : yes
+  DFT flavor    : libxc-fallback+atompaw-fallback+bigdft-fallback+wannier90-fallback
+  FFT flavor    : none
+  LINALG flavor : netlib-fallback
+  MATH flavor   : none
+  TIMER flavor  : abinit
+  TRIO flavor   : netcdf-fallback+etsf_io-fallback
+ 
+ === Experimental features === 
+  Bindings            : no
+  Exports             : no
+  GW double-precision : yes
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Default optimizations:
+   -O2 -xHost
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ CPP options activated during the build:
+
+                  CC_INTEL                   CXX_GNU                  FC_INTEL
+
+          HAVE_DFT_ATOMPAW           HAVE_DFT_BIGDFT            HAVE_DFT_LIBXC
+
+        HAVE_DFT_WANNIER90 HAVE_FC_ALLOCATABLE_DT...           HAVE_FC_CPUTIME
+
+              HAVE_FC_EXIT             HAVE_FC_GAMMA     HAVE_FC_ISO_C_BINDING
+
+              HAVE_FC_NULL         HAVE_FC_STREAM_IO                  HAVE_MPI
+
+                 HAVE_MPI2               HAVE_MPI_IO            HAVE_MPI_TRACE
+
+ HAVE_MPI_TYPE_CREATE_S...                HAVE_NUMPY                HAVE_TIMER
+
+         HAVE_TIMER_ABINIT            HAVE_TIMER_MPI         HAVE_TIMER_SERIAL
+
+         HAVE_TRIO_ETSF_IO          HAVE_TRIO_NETCDF
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- input  file    -> 65Ha_50h_c16h8_alt.in
+- output file    -> 65Ha_50h_c16h8_alt.out
+- root for input  files -> 65Ha_50h_c16h8_alti
+- root for output files -> 65Ha_50h_c16h8_alto
+
+-instrng :    49 lines of input have been read from file 65Ha_50h_c16h8_alt.in
+
+
+ iofn2 : Please give name of formatted atomic psp file
+ iofn2 : for atom type   1 , psp file is /homee/sma/utils/psps/1h.1.hgh
+
+ iofn2 : Please give name of formatted atomic psp file
+ iofn2 : for atom type   2 , psp file is /homee/sma/utils/psps/6c.4.hgh
+  read the values zionpsp=  1.0 , pspcod=   3 , lmax=   0
+  read the values zionpsp=  4.0 , pspcod=   3 , lmax=   1
+
+ inpspheads : deduce mpsang  =   2, n1xccc  =   0.
+ leave_test : synchronization done...
+
+ invars1m : enter jdtset=     1
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    3.075529E+01
+       Simple Lattice Grid
+ invars2: take the default value of fband=  1.25000000E-01
+ getkgrid : length of smallest supercell vector (bohr)=    3.075529E+01
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+  1.00  1.00  1.00  1.00  1.00  1.00  0.00  0.00
+  mpi_setup : enter 
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=  172 and mkmem  =   172, ground state wf handled in core.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=  172 and mkqmem =   172, ground state wf handled in core.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=  172 and mk1mem =   172, ground state wf handled in core.
+
+ Subroutine Unknown:0:WARNING
+   The second and third dimension of the FFT grid,    0    0  were imposed to be multiple of the number of processors for the FFT,    1
+ For input ecut=  6.500000E+01 best grid ngfft=      32      60     256
+       max ecut=  6.544579E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    32   60  256
+  Augmented FFT divisions ...................    33   61  256
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=   25441
+
+ DATASET    1 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   4, lnmaxso=   2.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :    12703.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  1.
+   intxc =         0  ionmov =         0    iscf =         7 xclevel =         1
+  lmnmax =         2   lnmax =         2   mband =        20  mffmem =         1
+P  mgfft =       256   mkmem =       172 mpssoang=         3     mpw =     25441
+  mqgrid =     12703   natom =         6    nfft =    491520    nkpt =       172
+  nloalg =         4  nspden =         1 nspinor =         2  nsppol =         1
+    nsym =         1  n1xccc =         0  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                    2855.580 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :   1335.406 Mbytes ; DEN or POT disk file :      3.752 Mbytes.
+================================================================================
+
+ Biggest array : cg(disk), with   1335.4061 MBytes.
+ leave_test : synchronization done...
+ memana : allocated an array of   1335.406 Mbytes, for testing purposes.
+ memana : allocated    2855.580 Mbytes, for testing purposes.
+ The job will continue.
+--------------------------------------------------------------------------------
+------------- Echo of variables that govern the present computation ------------
+--------------------------------------------------------------------------------
+-
+- outvars: echo of selected default values                                      
+-   accesswff0 =  0 , fftalg0 =112 , wfoptalg0 =  0
+-
+- outvars: echo of global parameters not present in the input file              
+-  max_nthreads =    0
+-
+ -outvars: echo values of preprocessed input variables --------
+ 
+ These variables are accessible in NetCDF format (65Ha_50h_c16h8_alto_OUT.nc)
+
+            acell      4.3936129230E+00  7.6099265560E+00  3.5000000000E+01 Bohr
+              amu      1.00794000E+00  1.20110000E+01
+           diemac      1.20000000E+01
+             ecut      6.50000000E+01 Hartree
+           istwfk        0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    1    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0
+           jdtset        1
+              kpt      0.00000000E+00  0.00000000E+00  7.14285714E-02
+                       1.42857143E-01  0.00000000E+00  7.14285714E-02
+                       2.85714286E-01  0.00000000E+00  7.14285714E-02
+                       4.28571429E-01  0.00000000E+00  7.14285714E-02
+                      -4.28571429E-01  0.00000000E+00  7.14285714E-02
+                      -2.85714286E-01  0.00000000E+00  7.14285714E-02
+                      -1.42857143E-01  0.00000000E+00  7.14285714E-02
+                       0.00000000E+00  1.42857143E-01  7.14285714E-02
+                       1.42857143E-01  1.42857143E-01  7.14285714E-02
+                       2.85714286E-01  1.42857143E-01  7.14285714E-02
+                       4.28571429E-01  1.42857143E-01  7.14285714E-02
+                      -4.28571429E-01  1.42857143E-01  7.14285714E-02
+                      -2.85714286E-01  1.42857143E-01  7.14285714E-02
+                      -1.42857143E-01  1.42857143E-01  7.14285714E-02
+                       0.00000000E+00  2.85714286E-01  7.14285714E-02
+                       1.42857143E-01  2.85714286E-01  7.14285714E-02
+                       2.85714286E-01  2.85714286E-01  7.14285714E-02
+                       4.28571429E-01  2.85714286E-01  7.14285714E-02
+                      -4.28571429E-01  2.85714286E-01  7.14285714E-02
+                      -2.85714286E-01  2.85714286E-01  7.14285714E-02
+                      -1.42857143E-01  2.85714286E-01  7.14285714E-02
+                       0.00000000E+00  4.28571429E-01  7.14285714E-02
+                       1.42857143E-01  4.28571429E-01  7.14285714E-02
+                       2.85714286E-01  4.28571429E-01  7.14285714E-02
+                       4.28571429E-01  4.28571429E-01  7.14285714E-02
+                      -4.28571429E-01  4.28571429E-01  7.14285714E-02
+                      -2.85714286E-01  4.28571429E-01  7.14285714E-02
+                      -1.42857143E-01  4.28571429E-01  7.14285714E-02
+                       0.00000000E+00 -4.28571429E-01  7.14285714E-02
+                       1.42857143E-01 -4.28571429E-01  7.14285714E-02
+                       2.85714286E-01 -4.28571429E-01  7.14285714E-02
+                       4.28571429E-01 -4.28571429E-01  7.14285714E-02
+                      -4.28571429E-01 -4.28571429E-01  7.14285714E-02
+                      -2.85714286E-01 -4.28571429E-01  7.14285714E-02
+                      -1.42857143E-01 -4.28571429E-01  7.14285714E-02
+                       0.00000000E+00 -2.85714286E-01  7.14285714E-02
+                       1.42857143E-01 -2.85714286E-01  7.14285714E-02
+                       2.85714286E-01 -2.85714286E-01  7.14285714E-02
+                       4.28571429E-01 -2.85714286E-01  7.14285714E-02
+                      -4.28571429E-01 -2.85714286E-01  7.14285714E-02
+                      -2.85714286E-01 -2.85714286E-01  7.14285714E-02
+                      -1.42857143E-01 -2.85714286E-01  7.14285714E-02
+                       0.00000000E+00 -1.42857143E-01  7.14285714E-02
+                       1.42857143E-01 -1.42857143E-01  7.14285714E-02
+                       2.85714286E-01 -1.42857143E-01  7.14285714E-02
+                       4.28571429E-01 -1.42857143E-01  7.14285714E-02
+                      -4.28571429E-01 -1.42857143E-01  7.14285714E-02
+                      -2.85714286E-01 -1.42857143E-01  7.14285714E-02
+                      -1.42857143E-01 -1.42857143E-01  7.14285714E-02
+                       0.00000000E+00  0.00000000E+00  2.14285714E-01
+                       1.42857143E-01  0.00000000E+00  2.14285714E-01
+                       2.85714286E-01  0.00000000E+00  2.14285714E-01
+                       4.28571429E-01  0.00000000E+00  2.14285714E-01
+                      -4.28571429E-01  0.00000000E+00  2.14285714E-01
+                      -2.85714286E-01  0.00000000E+00  2.14285714E-01
+                      -1.42857143E-01  0.00000000E+00  2.14285714E-01
+                       0.00000000E+00  1.42857143E-01  2.14285714E-01
+                       1.42857143E-01  1.42857143E-01  2.14285714E-01
+                       2.85714286E-01  1.42857143E-01  2.14285714E-01
+                       4.28571429E-01  1.42857143E-01  2.14285714E-01
+                      -4.28571429E-01  1.42857143E-01  2.14285714E-01
+                      -2.85714286E-01  1.42857143E-01  2.14285714E-01
+                      -1.42857143E-01  1.42857143E-01  2.14285714E-01
+                       0.00000000E+00  2.85714286E-01  2.14285714E-01
+                       1.42857143E-01  2.85714286E-01  2.14285714E-01
+                       2.85714286E-01  2.85714286E-01  2.14285714E-01
+                       4.28571429E-01  2.85714286E-01  2.14285714E-01
+                      -4.28571429E-01  2.85714286E-01  2.14285714E-01
+                      -2.85714286E-01  2.85714286E-01  2.14285714E-01
+                      -1.42857143E-01  2.85714286E-01  2.14285714E-01
+                       0.00000000E+00  4.28571429E-01  2.14285714E-01
+                       1.42857143E-01  4.28571429E-01  2.14285714E-01
+                       2.85714286E-01  4.28571429E-01  2.14285714E-01
+                       4.28571429E-01  4.28571429E-01  2.14285714E-01
+                      -4.28571429E-01  4.28571429E-01  2.14285714E-01
+                      -2.85714286E-01  4.28571429E-01  2.14285714E-01
+                      -1.42857143E-01  4.28571429E-01  2.14285714E-01
+                       0.00000000E+00 -4.28571429E-01  2.14285714E-01
+                       1.42857143E-01 -4.28571429E-01  2.14285714E-01
+                       2.85714286E-01 -4.28571429E-01  2.14285714E-01
+                       4.28571429E-01 -4.28571429E-01  2.14285714E-01
+                      -4.28571429E-01 -4.28571429E-01  2.14285714E-01
+                      -2.85714286E-01 -4.28571429E-01  2.14285714E-01
+                      -1.42857143E-01 -4.28571429E-01  2.14285714E-01
+                       0.00000000E+00 -2.85714286E-01  2.14285714E-01
+                       1.42857143E-01 -2.85714286E-01  2.14285714E-01
+                       2.85714286E-01 -2.85714286E-01  2.14285714E-01
+                       4.28571429E-01 -2.85714286E-01  2.14285714E-01
+                      -4.28571429E-01 -2.85714286E-01  2.14285714E-01
+                      -2.85714286E-01 -2.85714286E-01  2.14285714E-01
+                      -1.42857143E-01 -2.85714286E-01  2.14285714E-01
+                       0.00000000E+00 -1.42857143E-01  2.14285714E-01
+                       1.42857143E-01 -1.42857143E-01  2.14285714E-01
+                       2.85714286E-01 -1.42857143E-01  2.14285714E-01
+                       4.28571429E-01 -1.42857143E-01  2.14285714E-01
+                      -4.28571429E-01 -1.42857143E-01  2.14285714E-01
+                      -2.85714286E-01 -1.42857143E-01  2.14285714E-01
+                      -1.42857143E-01 -1.42857143E-01  2.14285714E-01
+                       0.00000000E+00  0.00000000E+00  3.57142857E-01
+                       1.42857143E-01  0.00000000E+00  3.57142857E-01
+                       2.85714286E-01  0.00000000E+00  3.57142857E-01
+                       4.28571429E-01  0.00000000E+00  3.57142857E-01
+                      -4.28571429E-01  0.00000000E+00  3.57142857E-01
+                      -2.85714286E-01  0.00000000E+00  3.57142857E-01
+                      -1.42857143E-01  0.00000000E+00  3.57142857E-01
+                       0.00000000E+00  1.42857143E-01  3.57142857E-01
+                       1.42857143E-01  1.42857143E-01  3.57142857E-01
+                       2.85714286E-01  1.42857143E-01  3.57142857E-01
+                       4.28571429E-01  1.42857143E-01  3.57142857E-01
+                      -4.28571429E-01  1.42857143E-01  3.57142857E-01
+                      -2.85714286E-01  1.42857143E-01  3.57142857E-01
+                      -1.42857143E-01  1.42857143E-01  3.57142857E-01
+                       0.00000000E+00  2.85714286E-01  3.57142857E-01
+                       1.42857143E-01  2.85714286E-01  3.57142857E-01
+                       2.85714286E-01  2.85714286E-01  3.57142857E-01
+                       4.28571429E-01  2.85714286E-01  3.57142857E-01
+                      -4.28571429E-01  2.85714286E-01  3.57142857E-01
+                      -2.85714286E-01  2.85714286E-01  3.57142857E-01
+                      -1.42857143E-01  2.85714286E-01  3.57142857E-01
+                       0.00000000E+00  4.28571429E-01  3.57142857E-01
+                       1.42857143E-01  4.28571429E-01  3.57142857E-01
+                       2.85714286E-01  4.28571429E-01  3.57142857E-01
+                       4.28571429E-01  4.28571429E-01  3.57142857E-01
+                      -4.28571429E-01  4.28571429E-01  3.57142857E-01
+                      -2.85714286E-01  4.28571429E-01  3.57142857E-01
+                      -1.42857143E-01  4.28571429E-01  3.57142857E-01
+                       0.00000000E+00 -4.28571429E-01  3.57142857E-01
+                       1.42857143E-01 -4.28571429E-01  3.57142857E-01
+                       2.85714286E-01 -4.28571429E-01  3.57142857E-01
+                       4.28571429E-01 -4.28571429E-01  3.57142857E-01
+                      -4.28571429E-01 -4.28571429E-01  3.57142857E-01
+                      -2.85714286E-01 -4.28571429E-01  3.57142857E-01
+                      -1.42857143E-01 -4.28571429E-01  3.57142857E-01
+                       0.00000000E+00 -2.85714286E-01  3.57142857E-01
+                       1.42857143E-01 -2.85714286E-01  3.57142857E-01
+                       2.85714286E-01 -2.85714286E-01  3.57142857E-01
+                       4.28571429E-01 -2.85714286E-01  3.57142857E-01
+                      -4.28571429E-01 -2.85714286E-01  3.57142857E-01
+                      -2.85714286E-01 -2.85714286E-01  3.57142857E-01
+                      -1.42857143E-01 -2.85714286E-01  3.57142857E-01
+                       0.00000000E+00 -1.42857143E-01  3.57142857E-01
+                       1.42857143E-01 -1.42857143E-01  3.57142857E-01
+                       2.85714286E-01 -1.42857143E-01  3.57142857E-01
+                       4.28571429E-01 -1.42857143E-01  3.57142857E-01
+                      -4.28571429E-01 -1.42857143E-01  3.57142857E-01
+                      -2.85714286E-01 -1.42857143E-01  3.57142857E-01
+                      -1.42857143E-01 -1.42857143E-01  3.57142857E-01
+                       0.00000000E+00  0.00000000E+00  5.00000000E-01
+                       1.42857143E-01  0.00000000E+00  5.00000000E-01
+                       2.85714286E-01  0.00000000E+00  5.00000000E-01
+                       4.28571429E-01  0.00000000E+00  5.00000000E-01
+                       0.00000000E+00  1.42857143E-01  5.00000000E-01
+                       1.42857143E-01  1.42857143E-01  5.00000000E-01
+                       2.85714286E-01  1.42857143E-01  5.00000000E-01
+                       4.28571429E-01  1.42857143E-01  5.00000000E-01
+                      -4.28571429E-01  1.42857143E-01  5.00000000E-01
+                      -2.85714286E-01  1.42857143E-01  5.00000000E-01
+                      -1.42857143E-01  1.42857143E-01  5.00000000E-01
+                       0.00000000E+00  2.85714286E-01  5.00000000E-01
+                       1.42857143E-01  2.85714286E-01  5.00000000E-01
+                       2.85714286E-01  2.85714286E-01  5.00000000E-01
+                       4.28571429E-01  2.85714286E-01  5.00000000E-01
+                      -4.28571429E-01  2.85714286E-01  5.00000000E-01
+                      -2.85714286E-01  2.85714286E-01  5.00000000E-01
+                      -1.42857143E-01  2.85714286E-01  5.00000000E-01
+                       0.00000000E+00  4.28571429E-01  5.00000000E-01
+                       1.42857143E-01  4.28571429E-01  5.00000000E-01
+                       2.85714286E-01  4.28571429E-01  5.00000000E-01
+                       4.28571429E-01  4.28571429E-01  5.00000000E-01
+                      -4.28571429E-01  4.28571429E-01  5.00000000E-01
+                      -2.85714286E-01  4.28571429E-01  5.00000000E-01
+                      -1.42857143E-01  4.28571429E-01  5.00000000E-01
+         kptrlatt        7    0    0      0    7    0      0    0    7
+          kptrlen      3.07552905E+01
+P           mkmem         172
+            natom           6
+            nband          20
+           ndtset           1
+            ngfft          32      60     256
+             nkpt         172
+          nspinor           2
+            nstep         200
+             nsym           1
+           ntypat           2
+              occ      1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       0.000000  0.000000
+           prtden           0
+           prtvol          -1
+            rprim      8.6602540378E-01 -5.0000000000E-01  0.0000000000E+00
+                       0.0000000000E+00  1.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+           shiftk      0.00000000E+00  0.00000000E+00  5.00000000E-01
+           so_psp           2       2
+          spgroup           1
+           toldfe      1.00000000E-06 Hartree
+            typat      1  2  2  2  2  1
+              wtk        0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00292    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583    0.00583    0.00583
+                         0.00583    0.00583    0.00583    0.00583
+           xangst      2.4606736649E+00  1.0781767705E+00  1.0796354981E+01
+                       2.4606736649E+00  1.3898759377E+00  1.1872401233E+01
+                       3.6910105822E+00  2.1858546131E+00  1.2110582882E+01
+                       3.6910105812E+00  3.4968453740E+00  1.2426805369E+01
+                       2.4606736659E+00  3.0828759780E-02  1.2665047485E+01
+                       2.4606736649E+00  3.4243625980E-01  1.3741104522E+01
+            xcart      4.6499993290E+00  2.0374588190E+00  2.0402154147E+01
+                       4.6499993290E+00  2.6264848810E+00  2.2435586871E+01
+                       6.9749991540E+00  4.1306665850E+00  2.2885684957E+01
+                       6.9749991520E+00  6.6080800860E+00  2.3483258854E+01
+                       4.6499993310E+00  5.8257913000E-02  2.3933471206E+01
+                       4.6499993290E+00  6.4711074900E-01  2.5966924309E+01
+             xred      1.2220823324E+00  6.2052335835E-01  5.8291868991E-01
+                       1.2220823324E+00  6.9792569038E-01  6.4101676774E-01
+                       1.8331235408E+00  1.0719793633E+00  6.5387671306E-01
+                       1.8331235403E+00  1.3975296142E+00  6.7095025297E-01
+                       1.2220823329E+00  3.6044188578E-01  6.8381346303E-01
+                       1.2220823324E+00  4.3782145449E-01  7.4191212311E-01
+            znucl        1.00000    6.00000
+
+================================================================================
+ leave_test : synchronization done...
+
+ chkinp: machine precision is   2.2204460492503131E-16
+
+ chkinp: Checking input parameters for consistency, jdtset=   1.
+ DATA TYPE INFORMATION: 
+ REAL:      Data type name: REAL(DP) 
+            Kind value:      8
+            Precision:      15
+            Smallest nonnegligible quantity relative to 1:  0.22204460E-15
+            Smallest positive number:                       0.22250739-307
+            Largest representable number:                   0.17976931+309
+ INTEGER:   Data type name: INTEGER(default) 
+            Kind value: 4
+            Bit size:   32
+            Largest representable number: 2147483647
+ LOGICAL:   Data type name: LOGICAL 
+            Kind value: 4
+ CHARACTER: Data type name: CHARACTER             Kind value: 1
+ ==== OpenMP parallelism is OFF ====
+ 
+  ==== Using MPI-2 specifications ==== 
+  MPI-IO support is ON
+  xmpi_tag_ub ................   2147483647
+  xmpi_bsize_ch ..............            1
+  xmpi_bsize_int .............            4
+  xmpi_bsize_sp ..............            4
+  xmpi_bsize_dp ..............            8
+  xmpi_bsize_spc .............            8
+  xmpi_bsize_dpc .............           16
+  xmpio_bsize_frm ............            4
+  xmpi_address_kind ..........            8
+  xmpi_offset_kind ...........            8
+  MPI_WTICK ..................   1.000000000000000E-006
+ ==== OpenMP parallelism is OFF ====
+ 
+
+ abinit : before driver, prtvol=-1, debugging mode => will skip driver
+
+== END DATASET(S) ==============================================================
+================================================================================
+
+ abinit : before driver, prtvol=-1, debugging mode => will skip outvars
+
+ abinit : before driver, prtvol=-1, debugging mode => will skip acknowledgments
+ Proc.   0 individual time (sec): cpu=          0.3  wall=          0.4
+
+ Calculation completed.
+.Delivered    1 WARNINGs and   2 COMMENTs to log file.
