@@ -1,4 +1,4 @@
-# Crystalline silicon
+# C16-H8--alt graphane structure
 # Calculation of the GW correction to the direct band gap in Gamma
 # Dataset 1: ground state calculation 
 # Dataset 2: calculation of the kss file 
@@ -29,19 +29,24 @@ shiftk2  0.0 0.0 0.0  # This grid contains the Gamma point
          0.0 0.5 0.5
          0.5 0.0 0.5
          0.5 0.5 0.0
-istwfk2  19*1                    # Option needed for Gamma
+istwfk2  19*1           # Option needed for Gamma
+                        # Mnemonics: Integer for choice of STorage of 
+                        # WaveFunction at each k point .
+                        # 1=> do NOT take advantage of the time-reversal
+                        # symmetry (in this case for each one of the 19
+                        # kpts).
 iscf2    -2             # Non self-consistent calculation
 getden2  -1             # Read previous density file
-nband2   9
+nband2   36
 nbandkss2 100        # Number of bands to store in KSS file
 
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)
 optdriver3  3        # Screening calculation
 getkss3     -1       # Obtain KSS file from previous dataset
-nband3      25       # Bands to be used in the screening calculation
+nband3      36       # Bands to be used in the screening calculation
 ecutwfn3    3.6      # Planewaves to be used to represent the wavefunctions
 ecuteps3    6.0      # Dimension of the screening matrix
-ppmfrq3    16.7 eV  # Imaginary frequency where to calculate the screeningn
+ppmfrq3    16.7 eV   # Imaginary frequency where to calculate the screeningn
 nshiftk3  4
 shiftk3  0.0 0.0 0.0  # This grid contains the Gamma point
          0.0 0.5 0.5  # IMPORTANT NOTE: we have to use the same k-mesh
@@ -92,6 +97,13 @@ znucl     1 6
 natom     6
 typat     1*1 4*2 1*1 
 xcart
+ 4.649999329   2.037458819  20.402154147
+ 4.649999329   2.626484881  22.435586871
+ 6.974999154   4.130666585  22.885684957
+ 6.974999152   6.608080086  23.483258854
+ 4.649999331   0.058257913  23.933471206
+ 4.649999329   0.647110749  25.966924309
+
 # natom 2           # There are two atoms
 # typat  1 1        # They both are of type 1, that is, Silicon.
 # xred              # Reduced coordinate of atoms
