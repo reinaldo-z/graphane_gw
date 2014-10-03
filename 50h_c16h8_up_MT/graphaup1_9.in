@@ -12,7 +12,7 @@ ngkpt    4 4 4        # Density of k points, reciprocal (x,y,z)
 
 # Dataset1: usual self-consistent ground-state calculation
 # Definition of the k-point grid
-nkpt1    10
+nkpt1    128
 nshiftk1  4
 shiftk1  0.5 0.5 0.5  # This grid is the most economical
          0.5 0.0 0.0
@@ -23,16 +23,16 @@ prtden1  1         # Print out density
 
 # Dataset2: calculation of Kohn Sham Structure (KSS) file
 # Definition of k-points
-nkpt2    19             # A set of 19 k-points containing Gamma
+nkpt2    132             # A set of 19 k-points containing Gamma
 nshiftk2  4
 shiftk2  0.0 0.0 0.0  # This grid contains the Gamma point
          0.0 0.5 0.5
          0.5 0.0 0.5
          0.5 0.5 0.0
-istwfk2  19*1                    # Option needed for Gamma
+istwfk2  132*1          # Option needed for Gamma
 iscf2    -2             # Non self-consistent calculation
 getden2  -1             # Read previous density file
-nband2   9
+nband2   18
 nbandkss2 100        # Number of bands to store in KSS file
 
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)
@@ -47,7 +47,7 @@ shiftk3  0.0 0.0 0.0  # This grid contains the Gamma point
          0.0 0.5 0.5  # IMPORTANT NOTE: we have to use the same k-mesh
          0.5 0.0 0.5  # as that reported in the KSS file otherwise the code stops!
          0.5 0.5 0.0
-istwfk3  19*1                    
+istwfk3  132*1                    
 
 # Dataset4: Calculation of the Self-Energy matrix elements (GW corrections)
 optdriver4  4        # Self-Energy calculation
@@ -67,28 +67,40 @@ shiftk4  0.0 0.0 0.0  # This grid contains the Gamma point
          0.0 0.5 0.5  # IMPORTANT NOTE: we have to use the same k-mesh
          0.5 0.0 0.5  # as that reported in the KSS file otherwise the code stops!
          0.5 0.5 0.0
-istwfk4  19*1                    
+istwfk4  132*1                    
 
 # Definition of the unit cell: fcc
-acell  3*10.217        # This is equivalent to   10.217 10.217 10.217
-rprim  0.0  0.5  0.5   # FCC primitive vectors (to be scaled by acell)
-       0.5  0.0  0.5   
-       0.5  0.5  0.0
+acell  4.649999696 8.054035318 35
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+# acell  3*10.217        # This is equivalent to   10.217 10.217 10.217
+# rprim  0.0  0.5  0.5   # FCC primitive vectors (to be scaled by acell)
+#        0.5  0.0  0.5   
+#        0.5  0.5  0.0
 
 # Definition of the atom types
-ntypat  1         # There is only one type of atom
-znucl 14          # The keyword "znucl" refers to the atomic number of the 
+ntypat    2 
+znucl     6 1 
+# ntypat  1         # There is only one type of atom
+# znucl 14          # The keyword "znucl" refers to the atomic number of the 
                   # possible type(s) of atom. The pseudopotential(s) 
                   # mentioned in the "files" file must correspond
                   # to the type(s) of atom. Here, the only type is Silicon.
                          
 # Definition of the atoms
-natom 2           # There are two atoms
-typat  1 1        # They both are of type 1, that is, Silicon.
-xred              # Reduced coordinate of atoms
-      0.0  0.0  0.0
-      0.25 0.25 0.25
-
+natom     3
+typat     1 1 2
+xcart
+ 4.649999247 0.000000433 23.613173084
+ 4.649999247 2.684678209 22.755885378
+ 4.649999247 -0.000010223 25.723304270
+# natom 2           # There are two atoms
+# typat  1 1        # They both are of type 1, that is, Silicon.
+# xred              # Reduced coordinate of atoms
+      # 0.0  0.0  0.0
+      # 0.25 0.25 0.25
+# 
 # Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
 ecut 8.0          # Maximal kinetic energy cut-off, in Hartree
 
@@ -96,7 +108,7 @@ ecut 8.0          # Maximal kinetic energy cut-off, in Hartree
 symmorphi 0
 
 # Definition of the SCF procedure
-nstep   10        # Maximal number of SCF cycles
+nstep   200        # Maximal number of SCF cycles
 diemac  12.0      # Although this is not mandatory, it is worth to
                   # precondition the SCF cycle. The model dielectric
                   # function used as the standard preconditioner
