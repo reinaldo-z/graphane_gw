@@ -1,0 +1,46 @@
+ndtset 1
+xcart
+  4.649999247 0.000000433 23.613173084
+ 4.649999247 2.684678209 22.755885378
+ 4.649999247 -0.000010223 25.723304270
+
+
+
+
+chkprim     1 
+acell  4.649999696 8.054035318 35
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+ntypat    2 
+znucl     6 1 
+
+natom     3
+typat     1 1 2
+
+so_psp       2 2
+nspinor      2 2
+toldfe1        1.0d-6
+kptopt1        1
+
+nshiftk1 1 
+shiftk1 0.0 0.0 0.5 
+nsppol         1
+ 
+ngkpt1   7 7 7
+
+
+ecut   35
+
+
+diemac       12.0
+
+
+
+nstep1              200
+prtwf1              1 
+prtden1             0
+
+
+prtvol -1
