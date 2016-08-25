@@ -1,0 +1,49 @@
+# Crystalline silicon
+# Calculation of the GW corrections
+
+# Convergence with respect to the number of planewaves to represent the wavefunctions
+ndtset     10
+ecutwfn:  3.0
+ecutwfn+  1.0
+
+# Calculation of the Self-Energy matrix elements (GW corrections)
+optdriver  4
+getkss     1
+getscr     1
+nband      100
+ecutsigx    6.0
+ppmfrq    16.7 eV
+nkptgw      1
+kptgw      0.000    0.000    0.000
+bdgw       4  5 
+
+# Definition of the unit cell
+acell  4.393612923 7.609926556 35
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+# Definition of the atom types
+ntypat    2 
+znucl     1 6 
+
+# Definition of the atoms
+natom     6
+typat     1*1 4*2 1*1 
+xcart
+ 4.649999329   2.037458819  20.402154147
+ 4.649999329   2.626484881  22.435586871
+ 6.974999154   4.130666585  22.885684957
+ 6.974999152   6.608080086  23.483258854
+ 4.649999331   0.058257913  23.933471206
+ 4.649999329   0.647110749  25.966924309
+
+ecut 13.0          # Maximal kinetic energy cut-off, in Hartree
+
+# Use only symmorphic operations
+symmorphi 0
+istwfk    1
+
+timopt -1
+# This line added when defaults were changed (v5.3) to keep the previous, old behaviour
+  iscf 5

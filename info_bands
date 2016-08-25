@@ -1,0 +1,61 @@
+info_bands
+
+##### To run ALT:
+
+mpdboot -v -r ssh -f NODE -n 1 
+mpiexec -np 6 -env I_MPI_DEVICE rdssm  /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < altbands3_x.files  | tee log
+mpdallexit
+
+##### To run UP:
+
+
+mpdboot -v -r ssh -f NODE -n 1 
+mpiexec -np 6 -env I_MPI_DEVICE rdssm  /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < upbands3_x.files  | tee log
+mpdallexit
+
+
+
+##### Results of datasets #####
+
+##### DATASET1:
+alt:
+etotal     -2.3400080883E+01 (8Ha)  -> ecut 8
+etotal     -2.3400080883E+01 (10Ha)
+
+up:
+etotal     -2.3517305976E+01 (8Ha)  -> ecut 8
+etotal     -2.3517305976E+01 (10Ha)
+
+##### DATASET2:
+
+alt:
+etotal1    -2.3400080883E+01
+etotal2    -2.3396010653E+01
+etotal3    -2.3395586800E+01  -> ngkpt  6 6 6
+etotal4    -2.3395514186E+01
+
+up:
+etotal1    -2.3517305976E+01
+etotal2    -2.3516745566E+01
+etotal3    -2.3516679654E+01 -> ngkpt  6 6 6
+etotal4    -2.3516596611E+01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

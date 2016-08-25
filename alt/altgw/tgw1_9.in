@@ -1,0 +1,116 @@
+# alt
+# Calculation of the GW correction to the direct band gap in Gamma
+# Dataset 1: ground state calculation 
+# Dataset 2: calculation of the kss file 
+# Dataset 3: calculation of the screening (epsilon^-1 matrix for W)
+# Dataset 4: calculation of the Self-Energy matrix elements (GW corrections)
+
+ndtset      4
+
+ngkpt    8 8 8        # Density of k points needed for a converged calculation
+
+nshiftk  4
+shiftk   0.0 0.0 0.0  # This grid contains the Gamma point, which is the point at which
+         0.0 0.5 0.5  # we will compute the (direct) band gap. There are 19 k points
+         0.5 0.0 0.5  # in the irreducible Brillouin zone, if ngkpt 4 4 4 is used.
+         0.5 0.5 0.0
+istwfk  *1            # For the GW computations, do not take advantage of the 
+                      # specificities of k points to reduce the number of components of the
+                      # wavefunction.
+
+# Dataset1: usual self-consistent ground-state calculation
+# Definition of the k-point grid
+shiftk1  0.5 0.5 0.5  # This grid is the most economical, but does not contain the Gamma point.
+         0.5 0.0 0.0
+         0.0 0.5 0.0
+         0.0 0.0 0.5
+istwfk1 *0            # For the ground state, let the code use the time-reversal symmetry
+prtden1  1            # Print out density
+
+
+# Dataset2: calculation of kss file
+# Definition of k-points
+iscf2    -2             # Non self-consistent calculation
+getden2  -1             # Read previous density file
+kssform2 3
+nband2   105
+nbandkss2 100        # Number of bands to store in KSS file
+nbdbuf2     5
+
+# Dataset3: Calculation of the screening (epsilon^-1 matrix)
+optdriver3  3        # Screening calculation
+getkss3     -1       # Obtain KSS file from previous dataset
+nband3      25       # Bands to be used in the screening calculation
+ecutwfn3    3.6      # Planewaves to be used to represent the wavefunctions
+ecuteps3    6.0      # Dimension of the screening matrix
+ppmfrq3    16.7 eV  # Imaginary frequency where to calculate the screening
+
+
+# Dataset4: Calculation of the Self-Energy matrix elements (GW corrections)
+optdriver4  4        # Self-Energy calculation
+getkss4     -2       # Obtain KSS file from dataset 1
+getscr4     -1       # Obtain SCR file from previous dataset
+nband4      100      # Bands to be used in the Self-Energy calculation
+ecutwfn4    5.0      # Planewaves to be used to represent the wavefunctions
+ecutsigx4    6.0      # Dimension of the G sum in Sigma_x
+                     # (the dimension in Sigma_c is controlled by npweps)
+nkptgw4      1               # number of k-point where to calculate the GW correction
+kptgw4                       # k-points
+  0.000    0.000    0.000    # (Gamma)
+bdgw4       9  10            # calculate GW corrections for bands from 4 to 5
+
+##### alt:
+
+#Definition of the unit cell
+acell  4.393612923 7.609926556 35
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+
+#Definition of the atoms
+natom     6
+typat     1*1 4*2 1*1
+xcart
+ 4.649999329   0.647110749  25.966924309
+ 4.649999331   0.058257913  23.933471206
+ 6.974999152   6.608080086  23.483258854
+ 6.974999154   4.130666585  22.885684957
+ 4.649999329   2.626484881  22.435586871
+ 4.649999329   2.037458819  20.402154147
+
+
+# Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
+ecut 10.0         # Maximal kinetic energy cut-off, in Hartree
+
+# Definition of the SCF procedure
+nstep   100       # Maximal number of SCF cycles
+diemac  12.0      # Although this is not mandatory, it is worth to
+                  # precondition the SCF cycle. The model dielectric
+                  # function used as the standard preconditioner
+                  # is described in the "dielng" input variable section.
+                  # Here, we follow the prescription for bulk silicon.
+tolwfr  1.0d-10   
+
+# This line added when defaults were changed (v5.3) to keep the previous, old behaviour
+  iscf 5
+
+
+#%%<BEGIN TEST_INFO>
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% files_to_test = 
+#%%   tgw1_9.out, tolnlines= 70, tolabs=  7.000e-02, tolrel=  3.000e-02, fld_options= -ridiculous
+#%% psp_files = 14si.pspnc
+#%% [paral_info]
+#%% max_nprocs = 1
+#%% [extra_info]
+#%% author = 
+#%% keywords = GW
+#%% description = 
+#%%<END TEST_INFO>

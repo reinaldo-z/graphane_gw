@@ -1,0 +1,35 @@
+		ANOTACIONES
+
+Sugerencias Bernardo
+correr con 3 ha
+pocos puntos k similar al setup abinit (331 o 441)
+revisar el que corre contra el mío y revisar en la pag de abinit
+coarrer coordenadas en tiniba y abinit y revisar el grupo cristalográfico
+
+
+en vez de angdeg se puede usar rprim
+
+para correr:
+	abinit <*.files 
+	abinit <*.files >& *.log &
+
+Pasos del tutorial GW (http://www.abinit.org/documentation/helpfiles/for-v7.0/tutorial/lesson_gw1.html)
+    1. General example of well converged GW calculation.
+    2. Calculation of the Kohn-Sham structure (KSS file) and of the screening (SCR file).
+    3. Convergence on the number of planewaves in the wavefunctions to calculate the Self-Energy.
+    4. Convergence on the number of planewaves to calculate Σx.
+    5. Convergence on the number of bands to calculate Σc.
+    6. Convergence on the number of planewaves in the wavefunctions to calculate ε-1.
+    7. Convergence on the number of bands to calculate ε-1.
+    8. Convergence on the dimension of the ε-1 matrix.
+    9. Calculation of the GW corrections for the band gap in Γ.
+    10. Advanced features: calculations without plasmon-pole models, and self-consistency. 
+
+Section 2:
+
+abinit < tgw1_x.files >  tgw1_2.log 
+
+Move    tgw1o_DS2_KSS   >   tgw1o_DS1_KSS 
+        tgw1o_DS3_SCR   >   tgw1o_DS1_SCR.
+
+We begin by the convergence study on the three parameters needed in the self-energy calculation (optdriver=4): ecutwfn, ecutsigx, nband. This is because for these, we will not need a double dataset loop to check this convergence, and we will rely on the previously determined SCR file. 
