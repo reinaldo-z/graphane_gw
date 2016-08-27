@@ -1,0 +1,152 @@
+            A N A L Y S Y S
+
+In this file I make an analysys of each section for the GW convergence.
+
+################################################################################
+
+SECTION  2: Preparing convergence studies: Kohn-Sham structure (WFK file) and
+screening (SCR file).
+
+Changed the variables 
+ecutwfn3    7.2
+ecuteps3    12.0
+ecut 20.0          # Maximal kinetic energy cut-off, in Hartree
+
+because in step 3 there is no convergence with 8 Ha and the maximum number of
+ecut was 8 in both
+
+################################################################################
+
+SECTION 3: Convergence on the number of planewaves in the wavefunctions to
+calculate the Self-Energy (optional).
+
+The convergence was not reached for 8 Ha, so there was needed to start the whole
+process from SECYION 2 changing the ecut parameter to 20 Ha.
+
+ndtset    6
+ecutwfn:  5.0
+ecutwfn+  2.0
+
+
+Near to: SIGMA fundamental parameters
+
+ number of plane-waves for wavefunctions           539
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -14.666 -32.467   5.095   0.629  -0.591 -22.654  -7.988 -11.013
+   10  -0.916 -11.733  -7.151  -4.601   0.651  -0.536 -11.745  -0.012  -0.927
+
+ number of plane-waves for wavefunctions           855
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.218 -33.619   5.230   0.621  -0.610 -23.400  -8.182 -11.207
+   10  -0.916 -12.111  -7.452  -4.712   0.645  -0.551 -12.146  -0.034  -0.950
+
+ number of plane-waves for wavefunctions          1237
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.460 -34.103   5.282   0.618  -0.617 -23.723  -8.263 -11.287
+   10  -0.916 -12.302  -7.586  -4.769   0.642  -0.558 -12.336  -0.034  -0.950
+
+ number of plane-waves for wavefunctions          1703
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.562 -34.341   5.310   0.617  -0.620 -23.875  -8.313 -11.337
+   10  -0.916 -12.388  -7.641  -4.798   0.641  -0.561 -12.421  -0.033  -0.948
+
+ number of plane-waves for wavefunctions          2179
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.610 -34.447   5.324   0.617  -0.622 -23.943  -8.333 -11.357
+   10  -0.916 -12.421  -7.659  -4.811   0.640  -0.562 -12.453  -0.032  -0.948
+
+ number of plane-waves for wavefunctions          2679
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.490   5.330   0.616  -0.622 -23.970  -8.341 -11.365
+   10  -0.916 -12.433  -7.665  -4.818   0.640  -0.562 -12.465  -0.032  -0.947
+
+So that ecutwfn=15.0 (npwwfn=2179) can be considered to lead to eigenenergies
+converged within 0.01 eV.
+
+################################################################################
+
+SECTION 4: Convergence on the number of planewaves to calculate Σx (optional).
+
+ndtset  10
+ecutsigx: 7.0
+ecutsigx+ 1.0
+
+Near to: SIGMA fundamental parameters
+
+ number of plane-waves for SigmaX                  855
+ number of plane-waves for SigmaC and W            855
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.369   5.334   0.618  -0.619 -23.911  -8.281 -11.306
+   10  -0.916 -12.433  -7.571  -4.821   0.641  -0.560 -12.407   0.026  -0.889
+
+ number of plane-waves for SigmaX                 1031
+ number of plane-waves for SigmaC and W           1031
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.398   5.330   0.618  -0.619 -23.929  -8.299 -11.324
+   10  -0.916 -12.433  -7.601  -4.820   0.641  -0.561 -12.425   0.008  -0.908
+
+ number of plane-waves for SigmaX                 1237
+ number of plane-waves for SigmaC and W           1237
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.433   5.330   0.617  -0.621 -23.944  -8.315 -11.339
+   10  -0.916 -12.433  -7.625  -4.819   0.640  -0.561 -12.440  -0.007  -0.923
+
+ number of plane-waves for SigmaX                 1465
+ number of plane-waves for SigmaC and W           1465
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.462   5.330   0.617  -0.621 -23.957  -8.327 -11.352
+   10  -0.916 -12.433  -7.644  -4.818   0.640  -0.562 -12.452  -0.019  -0.934
+
+ number of plane-waves for SigmaX                 1703
+ number of plane-waves for SigmaC and W           1703
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.478   5.330   0.617  -0.622 -23.965  -8.335 -11.360
+   10  -0.916 -12.433  -7.656  -4.818   0.640  -0.562 -12.459  -0.026  -0.942
+
+ number of plane-waves for SigmaX                 1961
+ number of plane-waves for SigmaC and W           1961
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.490   5.330   0.616  -0.622 -23.970  -8.341 -11.365
+   10  -0.916 -12.433  -7.665  -4.818   0.640  -0.562 -12.465  -0.032  -0.947
+
+ number of plane-waves for SigmaX                 2179
+ number of plane-waves for SigmaC and W           1961
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.496   5.330   0.616  -0.622 -23.974  -8.345 -11.369
+   10  -0.916 -12.433  -7.670  -4.818   0.640  -0.562 -12.469  -0.035  -0.951
+
+ number of plane-waves for SigmaX                 2415
+ number of plane-waves for SigmaC and W           1961
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.501   5.330   0.616  -0.622 -23.977  -8.348 -11.372
+   10  -0.916 -12.433  -7.675  -4.818   0.640  -0.562 -12.471  -0.038  -0.954
+
+ number of plane-waves for SigmaX                 2679
+ number of plane-waves for SigmaC and W           1961
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.506   5.330   0.616  -0.622 -23.980  -8.350 -11.375
+   10  -0.916 -12.433  -7.678  -4.818   0.640  -0.562 -12.474  -0.041  -0.956
+
+ number of plane-waves for SigmaX                 2961
+ number of plane-waves for SigmaC and W           1961
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.330   0.616  -0.622 -23.982  -8.353 -11.378
+   10  -0.916 -12.433  -7.681  -4.818   0.640  -0.562 -12.475  -0.042  -0.958
+
+So that ecutsigx=16.0 (npwsigx=1961) can be considered converged within 0.01 eV.
+
+################################################################################
+
+SECTION 5: Convergence on the number of bands to calculate Σc (important).
+
+
+
+
+
+
+
+
+
+
+
+

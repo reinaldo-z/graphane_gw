@@ -1,38 +1,39 @@
-##### up:
-# Calculation of the GW corrections
+# Up structure
+# Calculation of the GW corrections:
+# Tutorial section 2: Preparing convergence studies: Kohn-Sham structure (WFK
+# file) and screening (SCR file).
 
 
-# Convergence with respect to the number of bands
-ndtset  5
-nband:  50
-nband+  50
+# Convergence with respect to the number of planewaves to represent the wavefunctions
+ndtset     6
+ecutwfn:  5.0
+ecutwfn+  2.0
 
 # Calculation of the Self-Energy matrix elements (GW corrections)
 optdriver  4
 getkss     1
 getscr     1
-ecutwfn     5.0
-ecutsigx     6.0
+nband      100
+ecutsigx    12.0
 ppmfrq    16.7 eV
 nkptgw      1
 kptgw      0.000    0.000    0.000
+# The up structure has 9 valence bands
 bdgw       9  10 
 
 
-##### up:
-
+# UP structure
 #Definition of the unit cell
 acell  4.649999696 8.054035318 30
 rprim      0.8660254037844385 -0.5 0.0 
                  0.0           1.0 0.0 
                  0.0           0.0 1.0
 
-#Definition of the atom types
+# Definition of the atom types
 ntypat      2
 znucl       1   6
-                         
 
-#Definition of the atoms
+# Definition of the atoms
 natom       6
 typat       1*1 1*1  4*2
 xcart
@@ -43,16 +44,14 @@ xcart
   2.3249742340   4.029801762  23.408608492
   2.3250023170   6.706652267  22.953013267
 
-
-
 # Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
-ecut 8.0          # Maximal kinetic energy cut-off, in Hartree
+ecut 17.0         # Maximal kinetic energy cut-off, in Hartree
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
   iscf 5
 
 # Sampling of the BZ
-ngkpt   1 1 1
+ngkpt   1 1 1 
 nshiftk 1
 shiftk  0.0 0.0 0.0
 istwfk  *1         # This is mandatory in all the GW steps.
@@ -64,7 +63,7 @@ istwfk  *1         # This is mandatory in all the GW steps.
 #%% test_chain = tgw1_2.in, tgw1_3.in, tgw1_4.in, tgw1_5.in, tgw1_6.in, tgw1_7.in, tgw1_8.in
 #%% [files]
 #%% files_to_test = 
-#%%   tgw1_5.out, tolnlines= 70, tolabs=  9.000e-03, tolrel=  3.000e-02
+#%%   tgw1_3.out, tolnlines= 70, tolabs=  9.000e-03, tolrel=  3.000e-02
 #%% psp_files = 14si.pspnc
 #%% [paral_info]
 #%% max_nprocs = 1

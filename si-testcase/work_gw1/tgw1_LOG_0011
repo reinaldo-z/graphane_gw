@@ -1,0 +1,350 @@
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+  dtset%nelect=   8.00000000000000     
+  dtset%nelect=   8.00000000000000     
+  dtset%nelect=   8.00000000000000     
+  dtset%nelect=   8.00000000000000     
+  mpi_setup : enter 
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+-P-0011  ==== OpenMP parallelism is OFF ====
+-P-0011
+-P-0011
+-P-0011 ================================================================================
+-P-0011 == DATASET  2 ==================================================================
+-P-0011 -   nproc =   12
+-P-0011
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+-P-0011  leave_test : synchronization done...
+-P-0011
+-P-0011 ================================================================================
+-P-0011 == DATASET  3 ==================================================================
+-P-0011 -   nproc =   12
+-P-0011
+-P-0011
+-P-0011  screening : taking advantage of time-reversal symmetry
+-P-0011  Maximum band index for partially occupied states nbvw =     4
+-P-0011  Remaining bands to be divided among processors   nbcw =    21
+-P-0011  Number of bands treated by each node ~    1
+-P-0011  Memory needed for Fourier components ug =          0.2 [Mb]
+-P-0011  Memory needed for real space ur =         18.3 [Mb]
+-P-0011  ==== Info on the Wfd% object ====
+-P-0011   Number of irreducible k-points ........ 6
+-P-0011   Number of spinorial components ........ 1
+-P-0011   Number of spin-density components ..... 1
+-P-0011   Number of spin polarizations .......... 1
+-P-0011   Plane wave cutoff energy ..............   3.6
+-P-0011   Max number of G-vectors ............... 92
+-P-0011   Total number of FFT points ............ 8000
+-P-0011   Number of FFT points treated by me .... 8000
+-P-0011   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0011
+-P-0011
+-P-0011  ==== FFT mesh for wavefunctions ====
+-P-0011   FFT mesh divisions ........................    20   20   20
+-P-0011   Augmented FFT divisions ...................    21   21   20
+-P-0011   FFT algorithm .............................   112
+-P-0011   FFT cache size ............................    16
+-P-0011 wfd_read_wfk: will read 150 (b,k,s) states
+ in buffered bmask
+ nb_tot          25 nblocks           1 nbxblock          25
+ in buffered bmask
+ nb_tot          25 nblocks           1 nbxblock          25
+ in buffered bmask
+ nb_tot          25 nblocks           1 nbxblock          25
+ in buffered bmask
+ nb_tot          25 nblocks           1 nbxblock          25
+ in buffered bmask
+ nb_tot          25 nblocks           1 nbxblock          25
+ in buffered bmask
+ nb_tot          25 nblocks           1 nbxblock          25
+  CHECK           -1          15
+ WARNING Dtset%mgfftf /= mgfftf
+-P-0011  Will sum 224 (b,b',k,s) states in chi0q0.
+-P-0011  ik =    1 /   32 is =  1 done by processor  11
+-P-0011  ik =    2 /   32 is =  1 done by processor  11
+-P-0011  ik =    3 /   32 is =  1 done by processor  11
+-P-0011  ik =    4 /   32 is =  1 done by processor  11
+-P-0011  ik =    5 /   32 is =  1 done by processor  11
+-P-0011  ik =    6 /   32 is =  1 done by processor  11
+-P-0011  ik =    7 /   32 is =  1 done by processor  11
+-P-0011  ik =    8 /   32 is =  1 done by processor  11
+-P-0011  ik =    9 /   32 is =  1 done by processor  11
+-P-0011  ik =   10 /   32 is =  1 done by processor  11
+-P-0011  ik =   11 /   32 is =  1 done by processor  11
+-P-0011  ik =   12 /   32 is =  1 done by processor  11
+-P-0011  ik =   13 /   32 is =  1 done by processor  11
+-P-0011  ik =   14 /   32 is =  1 done by processor  11
+-P-0011  ik =   15 /   32 is =  1 done by processor  11
+-P-0011  ik =   16 /   32 is =  1 done by processor  11
+-P-0011  ik =   17 /   32 is =  1 done by processor  11
+-P-0011  ik =   18 /   32 is =  1 done by processor  11
+-P-0011  ik =   19 /   32 is =  1 done by processor  11
+-P-0011  ik =   20 /   32 is =  1 done by processor  11
+-P-0011  ik =   21 /   32 is =  1 done by processor  11
+-P-0011  ik =   22 /   32 is =  1 done by processor  11
+-P-0011  ik =   23 /   32 is =  1 done by processor  11
+-P-0011  ik =   24 /   32 is =  1 done by processor  11
+-P-0011  ik =   25 /   32 is =  1 done by processor  11
+-P-0011  ik =   26 /   32 is =  1 done by processor  11
+-P-0011  ik =   27 /   32 is =  1 done by processor  11
+-P-0011  ik =   28 /   32 is =  1 done by processor  11
+-P-0011  ik =   29 /   32 is =  1 done by processor  11
+-P-0011  ik =   30 /   32 is =  1 done by processor  11
+-P-0011  ik =   31 /   32 is =  1 done by processor  11
+-P-0011  ik =   32 /   32 is =  1 done by processor  11
+-P-0011  Will sum 224 (b,b',k,s) states in chi0.
+-P-0011  ik =    1 /   32 is =  1 done by processor  11
+-P-0011  ik =    2 /   32 is =  1 done by processor  11
+-P-0011  ik =    3 /   32 is =  1 done by processor  11
+-P-0011  ik =    4 /   32 is =  1 done by processor  11
+-P-0011  ik =    5 /   32 is =  1 done by processor  11
+-P-0011  ik =    6 /   32 is =  1 done by processor  11
+-P-0011  ik =    7 /   32 is =  1 done by processor  11
+-P-0011  ik =    8 /   32 is =  1 done by processor  11
+-P-0011  ik =    9 /   32 is =  1 done by processor  11
+-P-0011  ik =   10 /   32 is =  1 done by processor  11
+-P-0011  ik =   11 /   32 is =  1 done by processor  11
+-P-0011  ik =   12 /   32 is =  1 done by processor  11
+-P-0011  ik =   13 /   32 is =  1 done by processor  11
+-P-0011  ik =   14 /   32 is =  1 done by processor  11
+-P-0011  ik =   15 /   32 is =  1 done by processor  11
+-P-0011  ik =   16 /   32 is =  1 done by processor  11
+-P-0011  ik =   17 /   32 is =  1 done by processor  11
+-P-0011  ik =   18 /   32 is =  1 done by processor  11
+-P-0011  ik =   19 /   32 is =  1 done by processor  11
+-P-0011  ik =   20 /   32 is =  1 done by processor  11
+-P-0011  ik =   21 /   32 is =  1 done by processor  11
+-P-0011  ik =   22 /   32 is =  1 done by processor  11
+-P-0011  ik =   23 /   32 is =  1 done by processor  11
+-P-0011  ik =   24 /   32 is =  1 done by processor  11
+-P-0011  ik =   25 /   32 is =  1 done by processor  11
+-P-0011  ik =   26 /   32 is =  1 done by processor  11
+-P-0011  ik =   27 /   32 is =  1 done by processor  11
+-P-0011  ik =   28 /   32 is =  1 done by processor  11
+-P-0011  ik =   29 /   32 is =  1 done by processor  11
+-P-0011  ik =   30 /   32 is =  1 done by processor  11
+-P-0011  ik =   31 /   32 is =  1 done by processor  11
+-P-0011  ik =   32 /   32 is =  1 done by processor  11
+-P-0011  Will sum 224 (b,b',k,s) states in chi0.
+-P-0011  ik =    1 /   32 is =  1 done by processor  11
+-P-0011  ik =    2 /   32 is =  1 done by processor  11
+-P-0011  ik =    3 /   32 is =  1 done by processor  11
+-P-0011  ik =    4 /   32 is =  1 done by processor  11
+-P-0011  ik =    5 /   32 is =  1 done by processor  11
+-P-0011  ik =    6 /   32 is =  1 done by processor  11
+-P-0011  ik =    7 /   32 is =  1 done by processor  11
+-P-0011  ik =    8 /   32 is =  1 done by processor  11
+-P-0011  ik =    9 /   32 is =  1 done by processor  11
+-P-0011  ik =   10 /   32 is =  1 done by processor  11
+-P-0011  ik =   11 /   32 is =  1 done by processor  11
+-P-0011  ik =   12 /   32 is =  1 done by processor  11
+-P-0011  ik =   13 /   32 is =  1 done by processor  11
+-P-0011  ik =   14 /   32 is =  1 done by processor  11
+-P-0011  ik =   15 /   32 is =  1 done by processor  11
+-P-0011  ik =   16 /   32 is =  1 done by processor  11
+-P-0011  ik =   17 /   32 is =  1 done by processor  11
+-P-0011  ik =   18 /   32 is =  1 done by processor  11
+-P-0011  ik =   19 /   32 is =  1 done by processor  11
+-P-0011  ik =   20 /   32 is =  1 done by processor  11
+-P-0011  ik =   21 /   32 is =  1 done by processor  11
+-P-0011  ik =   22 /   32 is =  1 done by processor  11
+-P-0011  ik =   23 /   32 is =  1 done by processor  11
+-P-0011  ik =   24 /   32 is =  1 done by processor  11
+-P-0011  ik =   25 /   32 is =  1 done by processor  11
+-P-0011  ik =   26 /   32 is =  1 done by processor  11
+-P-0011  ik =   27 /   32 is =  1 done by processor  11
+-P-0011  ik =   28 /   32 is =  1 done by processor  11
+-P-0011  ik =   29 /   32 is =  1 done by processor  11
+-P-0011  ik =   30 /   32 is =  1 done by processor  11
+-P-0011  ik =   31 /   32 is =  1 done by processor  11
+-P-0011  ik =   32 /   32 is =  1 done by processor  11
+-P-0011  Will sum 224 (b,b',k,s) states in chi0.
+-P-0011  ik =    1 /   32 is =  1 done by processor  11
+-P-0011  ik =    2 /   32 is =  1 done by processor  11
+-P-0011  ik =    3 /   32 is =  1 done by processor  11
+-P-0011  ik =    4 /   32 is =  1 done by processor  11
+-P-0011  ik =    5 /   32 is =  1 done by processor  11
+-P-0011  ik =    6 /   32 is =  1 done by processor  11
+-P-0011  ik =    7 /   32 is =  1 done by processor  11
+-P-0011  ik =    8 /   32 is =  1 done by processor  11
+-P-0011  ik =    9 /   32 is =  1 done by processor  11
+-P-0011  ik =   10 /   32 is =  1 done by processor  11
+-P-0011  ik =   11 /   32 is =  1 done by processor  11
+-P-0011  ik =   12 /   32 is =  1 done by processor  11
+-P-0011  ik =   13 /   32 is =  1 done by processor  11
+-P-0011  ik =   14 /   32 is =  1 done by processor  11
+-P-0011  ik =   15 /   32 is =  1 done by processor  11
+-P-0011  ik =   16 /   32 is =  1 done by processor  11
+-P-0011  ik =   17 /   32 is =  1 done by processor  11
+-P-0011  ik =   18 /   32 is =  1 done by processor  11
+-P-0011  ik =   19 /   32 is =  1 done by processor  11
+-P-0011  ik =   20 /   32 is =  1 done by processor  11
+-P-0011  ik =   21 /   32 is =  1 done by processor  11
+-P-0011  ik =   22 /   32 is =  1 done by processor  11
+-P-0011  ik =   23 /   32 is =  1 done by processor  11
+-P-0011  ik =   24 /   32 is =  1 done by processor  11
+-P-0011  ik =   25 /   32 is =  1 done by processor  11
+-P-0011  ik =   26 /   32 is =  1 done by processor  11
+-P-0011  ik =   27 /   32 is =  1 done by processor  11
+-P-0011  ik =   28 /   32 is =  1 done by processor  11
+-P-0011  ik =   29 /   32 is =  1 done by processor  11
+-P-0011  ik =   30 /   32 is =  1 done by processor  11
+-P-0011  ik =   31 /   32 is =  1 done by processor  11
+-P-0011  ik =   32 /   32 is =  1 done by processor  11
+-P-0011  Will sum 224 (b,b',k,s) states in chi0.
+-P-0011  ik =    1 /   32 is =  1 done by processor  11
+-P-0011  ik =    2 /   32 is =  1 done by processor  11
+-P-0011  ik =    3 /   32 is =  1 done by processor  11
+-P-0011  ik =    4 /   32 is =  1 done by processor  11
+-P-0011  ik =    5 /   32 is =  1 done by processor  11
+-P-0011  ik =    6 /   32 is =  1 done by processor  11
+-P-0011  ik =    7 /   32 is =  1 done by processor  11
+-P-0011  ik =    8 /   32 is =  1 done by processor  11
+-P-0011  ik =    9 /   32 is =  1 done by processor  11
+-P-0011  ik =   10 /   32 is =  1 done by processor  11
+-P-0011  ik =   11 /   32 is =  1 done by processor  11
+-P-0011  ik =   12 /   32 is =  1 done by processor  11
+-P-0011  ik =   13 /   32 is =  1 done by processor  11
+-P-0011  ik =   14 /   32 is =  1 done by processor  11
+-P-0011  ik =   15 /   32 is =  1 done by processor  11
+-P-0011  ik =   16 /   32 is =  1 done by processor  11
+-P-0011  ik =   17 /   32 is =  1 done by processor  11
+-P-0011  ik =   18 /   32 is =  1 done by processor  11
+-P-0011  ik =   19 /   32 is =  1 done by processor  11
+-P-0011  ik =   20 /   32 is =  1 done by processor  11
+-P-0011  ik =   21 /   32 is =  1 done by processor  11
+-P-0011  ik =   22 /   32 is =  1 done by processor  11
+-P-0011  ik =   23 /   32 is =  1 done by processor  11
+-P-0011  ik =   24 /   32 is =  1 done by processor  11
+-P-0011  ik =   25 /   32 is =  1 done by processor  11
+-P-0011  ik =   26 /   32 is =  1 done by processor  11
+-P-0011  ik =   27 /   32 is =  1 done by processor  11
+-P-0011  ik =   28 /   32 is =  1 done by processor  11
+-P-0011  ik =   29 /   32 is =  1 done by processor  11
+-P-0011  ik =   30 /   32 is =  1 done by processor  11
+-P-0011  ik =   31 /   32 is =  1 done by processor  11
+-P-0011  ik =   32 /   32 is =  1 done by processor  11
+-P-0011  Will sum 224 (b,b',k,s) states in chi0.
+-P-0011  ik =    1 /   32 is =  1 done by processor  11
+-P-0011  ik =    2 /   32 is =  1 done by processor  11
+-P-0011  ik =    3 /   32 is =  1 done by processor  11
+-P-0011  ik =    4 /   32 is =  1 done by processor  11
+-P-0011  ik =    5 /   32 is =  1 done by processor  11
+-P-0011  ik =    6 /   32 is =  1 done by processor  11
+-P-0011  ik =    7 /   32 is =  1 done by processor  11
+-P-0011  ik =    8 /   32 is =  1 done by processor  11
+-P-0011  ik =    9 /   32 is =  1 done by processor  11
+-P-0011  ik =   10 /   32 is =  1 done by processor  11
+-P-0011  ik =   11 /   32 is =  1 done by processor  11
+-P-0011  ik =   12 /   32 is =  1 done by processor  11
+-P-0011  ik =   13 /   32 is =  1 done by processor  11
+-P-0011  ik =   14 /   32 is =  1 done by processor  11
+-P-0011  ik =   15 /   32 is =  1 done by processor  11
+-P-0011  ik =   16 /   32 is =  1 done by processor  11
+-P-0011  ik =   17 /   32 is =  1 done by processor  11
+-P-0011  ik =   18 /   32 is =  1 done by processor  11
+-P-0011  ik =   19 /   32 is =  1 done by processor  11
+-P-0011  ik =   20 /   32 is =  1 done by processor  11
+-P-0011  ik =   21 /   32 is =  1 done by processor  11
+-P-0011  ik =   22 /   32 is =  1 done by processor  11
+-P-0011  ik =   23 /   32 is =  1 done by processor  11
+-P-0011  ik =   24 /   32 is =  1 done by processor  11
+-P-0011  ik =   25 /   32 is =  1 done by processor  11
+-P-0011  ik =   26 /   32 is =  1 done by processor  11
+-P-0011  ik =   27 /   32 is =  1 done by processor  11
+-P-0011  ik =   28 /   32 is =  1 done by processor  11
+-P-0011  ik =   29 /   32 is =  1 done by processor  11
+-P-0011  ik =   30 /   32 is =  1 done by processor  11
+-P-0011  ik =   31 /   32 is =  1 done by processor  11
+-P-0011  ik =   32 /   32 is =  1 done by processor  11
+-P-0011
+-P-0011 ================================================================================
+-P-0011 == DATASET  4 ==================================================================
+-P-0011 -   nproc =   12
+-P-0011
+-P-0011  Memory needed for Fourier components ug =          1.1 [Mb]
+-P-0011  Memory needed for real space ur =         73.2 [Mb]
+-P-0011 wfd_read_wfk: will read 600 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+-P-0011  Will calculate 0 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0011  Memory needed for Er%epsm1 =          5.2 [Mb]
+-P-0011  ==== Info on the Wfd% object ====
+-P-0011   Number of irreducible k-points ........ 6
+-P-0011   Number of spinorial components ........ 1
+-P-0011   Number of spin-density components ..... 1
+-P-0011   Number of spin polarizations .......... 1
+-P-0011   Plane wave cutoff energy ..............   4.5
+-P-0011   Max number of G-vectors ............... 125
+-P-0011   Total number of FFT points ............ 3375
+-P-0011   Number of FFT points treated by me .... 3375
+-P-0011   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0011
+-P-0011
+-P-0011  ==== FFT mesh for wavefunctions ====
+-P-0011   FFT mesh divisions ........................    15   15   15
+-P-0011   Augmented FFT divisions ...................    15   15   15
+-P-0011   FFT algorithm .............................   112
+-P-0011   FFT cache size ............................    16
+-P-0011  Will sum   10 (b,k,s) occupied states in Sigma_x.
+-P-0011  calc_sigx_me : ik_bz    3/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz    6/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz    9/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   12/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   15/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   18/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   21/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   24/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   27/  32 done by processor  11
+-P-0011  calc_sigx_me : ik_bz   30/  32 done by processor  11
+-P-0011  Will sum 266 (b,k,s) states in Sigma_c.
+-P-0011  csigme : ik_bz    1/  32 done by processor  11
+-P-0011  csigme : ik_bz    2/  32 done by processor  11
+-P-0011  csigme : ik_bz    3/  32 done by processor  11
+-P-0011  csigme : ik_bz    4/  32 done by processor  11
+-P-0011  csigme : ik_bz    5/  32 done by processor  11
+-P-0011  csigme : ik_bz    6/  32 done by processor  11
+-P-0011  csigme : ik_bz    7/  32 done by processor  11
+-P-0011  csigme : ik_bz    8/  32 done by processor  11
+-P-0011  csigme : ik_bz    9/  32 done by processor  11
+-P-0011  csigme : ik_bz   10/  32 done by processor  11
+-P-0011  csigme : ik_bz   11/  32 done by processor  11
+-P-0011  csigme : ik_bz   12/  32 done by processor  11
+-P-0011  csigme : ik_bz   13/  32 done by processor  11
+-P-0011  csigme : ik_bz   14/  32 done by processor  11
+-P-0011  csigme : ik_bz   15/  32 done by processor  11
+-P-0011  csigme : ik_bz   16/  32 done by processor  11
+-P-0011  csigme : ik_bz   17/  32 done by processor  11
+-P-0011  csigme : ik_bz   18/  32 done by processor  11
+-P-0011  csigme : ik_bz   19/  32 done by processor  11
+-P-0011  csigme : ik_bz   20/  32 done by processor  11
+-P-0011  csigme : ik_bz   21/  32 done by processor  11
+-P-0011  csigme : ik_bz   22/  32 done by processor  11
+-P-0011  csigme : ik_bz   23/  32 done by processor  11
+-P-0011  csigme : ik_bz   24/  32 done by processor  11
+-P-0011  csigme : ik_bz   25/  32 done by processor  11
+-P-0011  csigme : ik_bz   26/  32 done by processor  11
+-P-0011  csigme : ik_bz   27/  32 done by processor  11
+-P-0011  csigme : ik_bz   28/  32 done by processor  11
+-P-0011  csigme : ik_bz   29/  32 done by processor  11
+-P-0011  csigme : ik_bz   30/  32 done by processor  11
+-P-0011  csigme : ik_bz   31/  32 done by processor  11
+-P-0011  csigme : ik_bz   32/  32 done by processor  11
+ Proc.  -1 individual time (sec): cpu=         10.3  wall=         12.1
