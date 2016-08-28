@@ -1,0 +1,4044 @@
+  ABINIT 
+  
+  Give name for formatted input file: 
+up-gw1_4.in
+  Give name for formatted output file:
+up-gw1_4.out
+  Give root name for generic input files:
+up-gw1i
+  Give root name for generic output files:
+up-gw1o
+  Give root name for generic temporary files:
+up-gw1
+-P-0000  leave_test : synchronization done...
+
+ herald :  WARNING -
+  The starting date is more than 3 years after the initial release
+  of this version of ABINIT, namely Jan 2013.
+  This version of ABINIT is not supported anymore.
+  Action : please, switch to a more recent version of ABINIT.
+
+.Version 7.0.5 of ABINIT 
+.(MPI version, prepared for a x86_64_none_intel12.1 computer) 
+
+.Copyright (C) 1998-2012 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read ~abinit/doc/users/acknowledgments.html for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see http://www.abinit.org .
+
+.Starting date : Fri 26 Aug 2016.
+- ( at  8h24 )
+  
+
+ herald :  WARNING -
+  The starting date is more than 3 years after the initial release
+  of this version of ABINIT, namely Jan 2013.
+  This version of ABINIT is not supported anymore.
+  Action : please, switch to a more recent version of ABINIT.
+
+ herald :  WARNING -
+  The starting date is more than 3 years after the initial release
+  of this version of ABINIT, namely Jan 2013.
+  This version of ABINIT is not supported anymore.
+  Action : please, switch to a more recent version of ABINIT.
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ === Build Information === 
+  Version       : 7.0.5
+  Build target  : x86_64_none_intel12.1
+  Build date    : 20130212
+ 
+ === Compiler Suite === 
+  C compiler       : intel12.1
+  CFLAGS           :  -g -O2 -vec-report0 -axSSE4.2 -ip
+  C++ compiler     : gnu12.1
+  CXXFLAGS         : -m64 -g -O2 -mtune=native -march=native -mfpmath=sse
+  Fortran compiler : intel12.1
+  FCFLAGS          :  -g -extend-source -vec-report0 -noaltparam -nofpscomp
+  FC_LDFLAGS       :    -static-intel -static-libgcc
+ 
+ === Optimizations === 
+  Debug level        : basic
+  Optimization level : standard
+  Architecture       : _
+ 
+ === MPI === 
+  Parallel build : yes
+  Parallel I/O   : yes
+  Time tracing   : yes
+  GPU support    : no
+ 
+ === Connectors / Fallbacks === 
+  Connectors on : yes
+  Fallbacks on  : yes
+  DFT flavor    : libxc-fallback+atompaw-fallback+bigdft-fallback+wannier90-fallback
+  FFT flavor    : none
+  LINALG flavor : netlib-fallback
+  MATH flavor   : none
+  TIMER flavor  : abinit
+  TRIO flavor   : netcdf-fallback+etsf_io-fallback
+ 
+ === Experimental features === 
+  Bindings            : no
+  Exports             : no
+  GW double-precision : yes
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Default optimizations:
+   -O2 -xHost
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ CPP options activated during the build:
+
+                  CC_INTEL                   CXX_GNU                  FC_INTEL
+
+          HAVE_DFT_ATOMPAW           HAVE_DFT_BIGDFT            HAVE_DFT_LIBXC
+
+        HAVE_DFT_WANNIER90 HAVE_FC_ALLOCATABLE_DT...           HAVE_FC_CPUTIME
+
+              HAVE_FC_EXIT             HAVE_FC_GAMMA     HAVE_FC_ISO_C_BINDING
+
+              HAVE_FC_NULL         HAVE_FC_STREAM_IO                  HAVE_MPI
+
+                 HAVE_MPI2               HAVE_MPI_IO            HAVE_MPI_TRACE
+
+ HAVE_MPI_TYPE_CREATE_S...                HAVE_NUMPY                HAVE_TIMER
+
+         HAVE_TIMER_ABINIT            HAVE_TIMER_MPI         HAVE_TIMER_SERIAL
+
+         HAVE_TRIO_ETSF_IO          HAVE_TRIO_NETCDF
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- input  file    -> up-gw1_4.in
+- output file    -> up-gw1_4.out
+- root for input  files -> up-gw1i
+- root for output files -> up-gw1o
+
+-instrng :    72 lines of input have been read from file up-gw1_4.in
+
+
+ iofn2 : Please give name of formatted atomic psp file
+ iofn2 : for atom type   1 , psp file is /home/reinaldo/tiniba/pseudopotentials/pspnc/1h.pspnc
+
+ iofn2 : Please give name of formatted atomic psp file
+ iofn2 : for atom type   2 , psp file is /home/reinaldo/tiniba/pseudopotentials/pspnc/6c.pspnc
+-P-0000   read the values zionpsp=  1.0 , pspcod=   1 , lmax=   0
+-P-0000   read the values zionpsp=  4.0 , pspcod=   1 , lmax=   1
+-P-0000
+-P-0000  inpspheads : deduce mpsang  =   2, n1xccc  =2501.
+-P-0000  leave_test : synchronization done...
+
+ invars1m : enter jdtset=     1
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+
+ invars1m : enter jdtset=     2
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+
+ invars1m : enter jdtset=     3
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+
+ invars1m : enter jdtset=     4
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+
+ invars1m : enter jdtset=     5
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+
+ invars1m : enter jdtset=     6
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+
+ invars1m : enter jdtset=     7
+ invars1 : treat image number     1
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+  xcart  is defined in input file
+ ingeo : takes atomic coordinates from input array xcart
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt : the Bravais lattice is mP (primitive monoclinic)
+
+ symbrav : COMMENT -
+  The Bravais lattice determined only from the primitive
+  vectors, bravais(1)=  2, is more symmetric
+  than the real one, iholohedry=  1, obtained by taking into
+  account the atomic positions. Start deforming the primitive vector set.
+
+ symlatt : the Bravais lattice is aP (primitive triclinic)
+ symspgr : the symmetry operation no.   1 is the identity
+ symspgr : spgroup=   1  P1   (=C1^1)
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     3.00
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     4.00
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     5.00
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     6.00
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     7.00
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     8.00
+ getkgrid : length of smallest supercell vector (bohr)=    4.650000E+00
+       Simple Lattice Grid
+  dtset%nelect=   18.0000000000000     
+ chkneu : initialized the occupation numbers for occopt=    1
+    spin-unpolarized case :
+  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00
+ setshells : ecut_trial =    15.00
+
+ Subroutine Unknown:0:COMMENT
+  One of the three variables ecuteps, npweps, or nsheps
+ must be non-null. Returning.
+ setshells : ecut_trial =     9.00
+  mpi_setup : enter 
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+npfft, npband, npspinor and npkpt:     1    1    1   12
+
+ distrb2: WARNING -
+  nproc_kpt=  12 >= nkpt=   1* nsppol=   1
+  The number of processors is larger than nkpt. This is a waste.
+ mpi_setup1: mkmem  undefined in the input file. Use default mkmem  = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkmem  =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mkqmem undefined in the input file. Use default mkqmem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mkqmem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ mpi_setup1: mk1mem undefined in the input file. Use default mk1mem = nkpt
+ mpi_setup1: With nkpt_me=    1 and mk1mem =     1, ground state wf handled in core.
+
+ mpi_setup1 : WARNING -
+   Your number of k-points (     1) will not distribute correctly
+   with the current number of processors (    12).
+   You will leave some empty.
+ ACTION: you can reduce number of processors to      1 without losing speed.
+ For input ecut=  1.499898E+01 best grid ngfft=      18      30     108
+       max ecut=  1.598876E+01
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw=    2675
+
+ DATASET    1 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  1.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+
+ DATASET    2 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  2.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+
+ DATASET    3 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  3.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+
+ DATASET    4 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  4.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+
+ DATASET    5 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  5.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+
+ DATASET    6 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  6.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+
+ DATASET    7 : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+ memory : analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need for DATASET  7.
+   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
+  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
+P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
+  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
+  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
+    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
+================================================================================
+P This job should need less than                      18.341 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with      4.4515 MBytes.
+-P-0000  leave_test : synchronization done...
+ memana : allocated an array of      4.451 Mbytes, for testing purposes.
+ memana : allocated      18.341 Mbytes, for testing purposes.
+ The job will continue.
+--------------------------------------------------------------------------------
+------------- Echo of variables that govern the present computation ------------
+--------------------------------------------------------------------------------
+-
+- outvars: echo of selected default values                                      
+-   accesswff0 =  0 , fftalg0 =112 , wfoptalg0 =  0
+-
+- outvars: echo of global parameters not present in the input file              
+-  max_nthreads =    0
+-
+ -outvars: echo values of preprocessed input variables --------
+ 
+ These variables are accessible in NetCDF format (up-gw1o_OUT.nc)
+
+            acell      4.6499996960E+00  8.0540353180E+00  3.0000000000E+01 Bohr
+              amu      1.00794000E+00  1.20110000E+01
+             bdgw           9      10
+             ecut      1.49989777E+01 Hartree
+         ecutsigx1     2.99373071E+00 Hartree
+         ecutsigx2     3.95676773E+00 Hartree
+         ecutsigx3     4.98566840E+00 Hartree
+         ecutsigx4     5.97262884E+00 Hartree
+         ecutsigx5     6.99899618E+00 Hartree
+         ecutsigx6     7.98463913E+00 Hartree
+         ecutsigx7     8.92148308E+00 Hartree
+          ecutwfn      1.49989777E+01 Hartree
+           getkss           1
+           getscr           1
+             iscf           5
+           istwfk        1
+           jdtset        1    2    3    4    5    6    7
+         kptrlatt        1    0    0      0    1    0      0    0    1
+          kptrlen      4.64999970E+00
+P           mkmem           1
+            natom           6
+            nband         100
+           ndtset           7
+            ngfft          18      30     108
+             nkpt           1
+           nkptgw           1
+          npwsigx1        241
+          npwsigx2        355
+          npwsigx3        539
+          npwsigx4        695
+          npwsigx5        855
+          npwsigx6       1031
+          npwsigx7       1237
+           npwwfn        2679
+          nshsigx1        241
+          nshsigx2        355
+          nshsigx3        539
+          nshsigx4        695
+          nshsigx5        855
+          nshsigx6       1031
+          nshsigx7       1237
+             nsym           1
+           ntypat           2
+              occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000
+        optdriver           4
+           ppmfrq      6.13713734E-01 Hartree
+            rprim      8.6602540378E-01 -5.0000000000E-01  0.0000000000E+00
+                       0.0000000000E+00  1.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+          spgroup           1
+            typat      1  1  2  2  2  2
+           xangst     -2.3812974387E-07  6.8561204582E-04  1.3610132864E+01
+                       1.2303421832E+00  2.1299904870E+00  1.3609929832E+01
+                      -2.3812974387E-07  2.2013480830E-03  1.2386786576E+01
+                      -2.3812974387E-07  1.4188380540E+00  1.2155007896E+01
+                       1.2303233752E+00  2.1324792476E+00  1.2387302099E+01
+                       1.2303382361E+00  3.5490075256E+00  1.2146211489E+01
+            xcart     -4.5000000000E-07  1.2956190000E-03  2.5719423746E+01
+                       2.3250097760E+00  4.0250986860E+00  2.5719040070E+01
+                      -4.5000000000E-07  4.1599450000E-03  2.3407634295E+01
+                      -4.5000000000E-07  2.6812153490E+00  2.2969636067E+01
+                       2.3249742340E+00  4.0298017620E+00  2.3408608492E+01
+                       2.3250023170E+00  6.7066522670E+00  2.2953013267E+01
+             xred     -1.1174522070E-07  1.6083356246E-04  8.5731412487E-01
+                       5.7735273454E-01  6.6642912455E-01  8.5730133567E-01
+                      -1.1174522070E-07  5.1647218173E-04  7.8025447650E-01
+                      -1.1174522070E-07  3.3290331906E-01  7.6565453557E-01
+                       5.7734390865E-01  6.6701051706E-01  7.8028694973E-01
+                       5.7735088230E-01  9.9937393652E-01  7.6510044223E-01
+            znucl        1.00000    6.00000
+
+================================================================================
+-P-0000  leave_test : synchronization done...
+
+ chkinp: machine precision is   2.2204460492503131E-16
+
+ chkinp: Checking input parameters for consistency, jdtset=   1.
+
+ chkinp: Checking input parameters for consistency, jdtset=   2.
+
+ chkinp: Checking input parameters for consistency, jdtset=   3.
+
+ chkinp: Checking input parameters for consistency, jdtset=   4.
+
+ chkinp: Checking input parameters for consistency, jdtset=   5.
+
+ chkinp: Checking input parameters for consistency, jdtset=   6.
+
+ chkinp: Checking input parameters for consistency, jdtset=   7.
+ DATA TYPE INFORMATION: 
+ REAL:      Data type name: REAL(DP) 
+            Kind value:      8
+            Precision:      15
+            Smallest nonnegligible quantity relative to 1:  0.22204460E-15
+            Smallest positive number:                       0.22250739-307
+            Largest representable number:                   0.17976931+309
+ INTEGER:   Data type name: INTEGER(default) 
+            Kind value: 4
+            Bit size:   32
+            Largest representable number: 2147483647
+ LOGICAL:   Data type name: LOGICAL 
+            Kind value: 4
+ CHARACTER: Data type name: CHARACTER             Kind value: 1
+-P-0000  ==== OpenMP parallelism is OFF ====
+-P-0000
+  ==== Using MPI-2 specifications ==== 
+  MPI-IO support is ON
+  xmpi_tag_ub ................   2147483647
+  xmpi_bsize_ch ..............            1
+  xmpi_bsize_int .............            4
+  xmpi_bsize_sp ..............            4
+  xmpi_bsize_dp ..............            8
+  xmpi_bsize_spc .............            8
+  xmpi_bsize_dpc .............           16
+  xmpio_bsize_frm ............            4
+  xmpi_address_kind ..........            8
+  xmpi_offset_kind ...........            8
+  MPI_WTICK ..................   1.000000000000000E-006
+-P-0000  ==== OpenMP parallelism is OFF ====
+-P-0000
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  1 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+- pspini: atom type   1  psp file is /home/reinaldo/tiniba/pseudopotentials/pspnc/1h.pspnc
+- pspatm: opening atomic psp file    /home/reinaldo/tiniba/pseudopotentials/pspnc/1h.pspnc
+-  Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+-  1.00000   1.00000    940714                znucl, zion, pspdat
+    1    1    0    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+    0   7.740  11.990    0   1.5855604        l,e99.0,e99.9,nproj,rcpsp
+   0.00000000   0.00000000   0.00000000   0.00000000     rms, ekb1, ekb2, epsatm
+    0.00000000000000    0.00000000000000    0.00000000000000   rchrg,fchrg,qchrg
+ Note: local psp for atom with Z=  1.0
+ pspatm: epsatm=    0.04198703
+         --- l  ekb(1:nproj) -->
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   2  psp file is /home/reinaldo/tiniba/pseudopotentials/pspnc/6c.pspnc
+- pspatm: opening atomic psp file    /home/reinaldo/tiniba/pseudopotentials/pspnc/6c.pspnc
+-  Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+-  6.00000   4.00000    940714                znucl, zion, pspdat
+    1    1    1    1      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+    0  10.372  24.987    1   1.4850707        l,e99.0,e99.9,nproj,rcpsp
+   0.00000000   0.00000000   0.00000000   0.00000000     rms, ekb1, ekb2, epsatm
+    1  15.431  21.987    0   1.4850707        l,e99.0,e99.9,nproj,rcpsp
+   0.00000000   0.00000000   0.00000000   0.00000000     rms, ekb1, ekb2, epsatm
+    0.83985002509544    0.99012430797080    0.51184907750884   rchrg,fchrg,qchrg
+ pspatm: epsatm=    0.92590353
+         --- l  ekb(1:nproj) -->
+             0    4.921466
+ pspatm: atomic psp has been read  and splines computed
+
+   6.81765872E+01                                ecore*ucvol(ha*bohr**3)
+
+ ==== Info on pseudopotentials ====
+  Norm-conserving pseudopotentials
+  Max number of Kleinman-Bylander energies    1
+  Number of pseudopotentials ..    2
+  Number of types of atoms   ..    2
+  Calculation without spin-orbit
+  Nonlocal part applied using Legendre polynomials
+  Highest angular momentum +1 .......   2
+  Max number of (l,n)   components ..   1
+  Max number of (l,m,n) components ..   1
+
+ *** Pseudo-Core Charge Info *** 
+  Number of radial points for pseudo-core charge .. 2501
+  XC core-correction treatment (optnlxccc) ........    1
+  Radius for pseudo-core charge for each type ..... 
+
+  - Atom type    1 has pseudo-core radius ..  0.0000
+  - Atom type    2 has pseudo-core radius ..  2.5196
+
+ *** Info on the Q-grid used for form factors in spline form *** 
+  Number of q-points for radial functions ffspl ..   5231
+  Number of q-points for vlspl ...................   5231
+  vlspl is computed in Reciprocal Space
+ XC functional for type   1 is   1
+ XC functional for type   2 is   1
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      241; Max (mm1,mm2,mm3)=      1     3    11
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   2.994 [Ha]
+ using method =  2 with ecuteff =  31.395 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 18x 75
+          total number of points  =    16200
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      241; Max (mm1,mm2,mm3)=      1     3    11
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   2.994 [Ha]
+ using method =  2 with ecuteff =  31.395 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 18x 75
+          total number of points  =    16200
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    12   18   75
+  Augmented FFT divisions ...................    13   19   75
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    12   18   75
+  Augmented FFT divisions ...................    13   19   75
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         24.7 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =          1.8 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =      241
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.106727851729
+            omega twiddle min location =   143   25
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  241
+ number of plane-waves for SigmaC and W            241
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               241
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -33.377   5.379   0.626  -0.598 -23.371  -7.741 -10.766
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -6.951  -4.866   0.646  -0.549 -12.035   0.398  -0.518
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.248
+ DeltaE^GW_gap    8.139
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.52
+ Fermi energy         [eV]  -1.94
+
+
+ New Fermi energy :       -7.146131E-02 Ha ,   -1.944561E+00 eV
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  2 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      355; Max (mm1,mm2,mm3)=      2     3    13
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   3.957 [Ha]
+ using method =  2 with ecuteff =  34.363 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 20x 80
+          total number of points  =    19200
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      355; Max (mm1,mm2,mm3)=      2     3    13
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   3.957 [Ha]
+ using method =  2 with ecuteff =  34.363 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 20x 80
+          total number of points  =    19200
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    12   20   80
+  Augmented FFT divisions ...................    13   21   80
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    12   20   80
+  Augmented FFT divisions ...................    13   21   80
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         29.3 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =          3.8 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =      355
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.078653772629
+            omega twiddle min location =   279  168
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  355
+ number of plane-waves for SigmaC and W            355
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               355
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -33.829   5.376   0.623  -0.606 -23.613  -7.984 -11.008
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -7.237  -4.849   0.644  -0.553 -12.210   0.223  -0.692
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.316
+ DeltaE^GW_gap    8.207
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.69
+ Fermi energy         [eV]  -2.03
+
+
+ New Fermi energy :       -7.466610E-02 Ha ,   -2.031768E+00 eV
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  3 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      539; Max (mm1,mm2,mm3)=      2     4    15
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   4.986 [Ha]
+ using method =  2 with ecuteff =  37.280 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 20x 90
+          total number of points  =    21600
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      539; Max (mm1,mm2,mm3)=      2     4    15
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   4.986 [Ha]
+ using method =  2 with ecuteff =  37.280 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 20x 90
+          total number of points  =    21600
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    12   20   90
+  Augmented FFT divisions ...................    13   21   90
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    12   20   90
+  Augmented FFT divisions ...................    13   21   90
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         33.0 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =          8.9 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =      539
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.078653772629
+            omega twiddle min location =   279  168
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  539
+ number of plane-waves for SigmaC and W            539
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               539
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.190   5.353   0.619  -0.614 -23.810  -8.181 -11.205
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -7.440  -4.830   0.642  -0.557 -12.329   0.105  -0.811
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.394
+ DeltaE^GW_gap    8.285
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.81
+ Fermi energy         [eV]  -2.09
+
+
+ New Fermi energy :       -7.684944E-02 Ha ,   -2.091180E+00 eV
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  4 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      695; Max (mm1,mm2,mm3)=      2     4    16
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   5.973 [Ha]
+ using method =  2 with ecuteff =  39.901 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 20x 90
+          total number of points  =    21600
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      695; Max (mm1,mm2,mm3)=      2     4    16
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   5.973 [Ha]
+ using method =  2 with ecuteff =  39.901 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 20x 90
+          total number of points  =    21600
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    12   20   90
+  Augmented FFT divisions ...................    13   21   90
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    12   20   90
+  Augmented FFT divisions ...................    13   21   90
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         33.0 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =         14.7 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =      695
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.027505494476
+            omega twiddle min location =   344  651
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  695
+ number of plane-waves for SigmaC and W            695
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               695
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.313   5.341   0.618  -0.617 -23.880  -8.250 -11.275
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -7.524  -4.823   0.642  -0.559 -12.378   0.055  -0.861
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.414
+ DeltaE^GW_gap    8.305
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.86
+ Fermi energy         [eV]  -2.12
+
+
+ New Fermi energy :       -7.776094E-02 Ha ,   -2.115983E+00 eV
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  5 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      855; Max (mm1,mm2,mm3)=      2     4    17
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   6.999 [Ha]
+ using method =  2 with ecuteff =  42.490 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 24x 90
+          total number of points  =    25920
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=      855; Max (mm1,mm2,mm3)=      2     4    17
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   6.999 [Ha]
+ using method =  2 with ecuteff =  42.490 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  12x 24x 90
+          total number of points  =    25920
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    12   24   90
+  Augmented FFT divisions ...................    13   25   90
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    12   24   90
+  Augmented FFT divisions ...................    13   25   90
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         39.6 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =         22.3 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =      855
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.027505494476
+            omega twiddle min location =   344  651
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  855
+ number of plane-waves for SigmaC and W            855
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               855
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.369   5.334   0.618  -0.619 -23.911  -8.281 -11.306
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -7.571  -4.821   0.641  -0.560 -12.407   0.026  -0.889
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.417
+ DeltaE^GW_gap    8.308
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.89
+ Fermi energy         [eV]  -2.13
+
+
+ New Fermi energy :       -7.828380E-02 Ha ,   -2.130211E+00 eV
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  6 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=     1031; Max (mm1,mm2,mm3)=      2     5    19
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   7.985 [Ha]
+ using method =  2 with ecuteff =  44.871 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  15x 24x 96
+          total number of points  =    34560
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=     1031; Max (mm1,mm2,mm3)=      2     5    19
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   7.985 [Ha]
+ using method =  2 with ecuteff =  44.871 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  15x 24x 96
+          total number of points  =    34560
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    15   24   96
+  Augmented FFT divisions ...................    15   25   96
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    15   24   96
+  Augmented FFT divisions ...................    15   25   96
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         52.7 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =         32.4 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =     1031
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.024895796028
+            omega twiddle min location =   223  908
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                 1031
+ number of plane-waves for SigmaC and W           1031
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used              1031
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.398   5.330   0.618  -0.619 -23.929  -8.299 -11.324
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -7.601  -4.820   0.641  -0.561 -12.425   0.008  -0.908
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.416
+ DeltaE^GW_gap    8.307
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.91
+ Fermi energy         [eV]  -2.14
+
+
+ New Fermi energy :       -7.862475E-02 Ha ,   -2.139488E+00 eV
+-P-0000
+-P-0000 ================================================================================
+-P-0000 == DATASET  7 ==================================================================
+-P-0000 -   nproc =   12
+-P-0000
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ setmqgrid : COMMENT -
+  The number of points "mqgrid" in reciprocal space used for the
+  description of the pseudopotentials has been set automatically
+  by abinit to :     5231.
+
+ getdim_nloc : deduce lmnmax  =   1, lnmax  =   1,
+                      lmnmaxso=   1, lnmaxso=   1.
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  18  30 108
+         ecut(hartree)=     14.999   => boxcut(ratio)=   2.06494
+
+ ==== Dense FFT mesh used for densities and potentials ====
+  FFT mesh divisions ........................    18   30  108
+  Augmented FFT divisions ...................    19   31  108
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ Subroutine Unknown:0:WARNING
+ Using WFK fileup-gw1o_DS1_WFK
+
+ Sorting g-vecs for an output of states on an unique "big" PW basis.
+ Since the number of g's to be written on file
+ was 0 or too large, it has been set to the max. value.,
+ computed from the union of the sets of G vectors for the different k-points.
+ Number of G-vectors is:  4159
+ symatm: atom number     1 is reached starting at atom
+   1
+ symatm: atom number     2 is reached starting at atom
+   2
+ symatm: atom number     3 is reached starting at atom
+   3
+ symatm: atom number     4 is reached starting at atom
+   4
+ symatm: atom number     5 is reached starting at atom
+   5
+ symatm: atom number     6 is reached starting at atom
+   6
+ ==== Info on the Cryst% object ====
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+ Time-reversal symmetry is present
+
+ Symmetry operations in real space (Rotation tnons AFM)
+  1  0  0   0.000  1
+  0  1  0   0.000  1
+  0  0  1   0.000  1
+
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ init_Er_from_file : testing file up-gw1o_DS1_SCR
+
+ ===============================================================================
+ ECHO of the ABINIT-SCR file header 
+ SCR file: epsilon^-1 , calculated using inclvkb = 1
+ TESTPARTICLE RPA
+ Identifier                       4
+ Kxc kernel                       0
+ Treatment of q-->0 limit         0
+ headform                        56
+ fform                         1002
+ gwcalctyp                       -1
+ Number of components             1       1
+ Number of q-points               1
+ Number of q-directions           0
+ Number of frequencies            2
+ Number of bands used            25
+ Dimension of matrix           1961
+ Number of planewaves used      897
+ Spectral method                  0
+ Test_type                        0
+ Time-ordering                    1
+ Scissor Energy                 0.000000E+00
+ Spectral smearing              0.000000E+00
+ Complex Imaginary Shift        3.674933E-03
+
+ q-points [r.l.u.]:
+    1    0.000000    0.000000    0.000000
+
+ Frequencies used [eV]:
+  1   0.00   0.00
+  2   0.00  16.70
+ End the ECHO of the ABINIT-SCR file header 
+ ===============================================================================
+ ===============================================================================
+ ECHO of the ABINIT file header 
+ 
+ First record :
+.codvsn,headform,fform = 7.0.5    57 1002
+ 
+ Second record :
+ bantot,intxc,ixc,natom  =    25     0     1     6
+ ngfft(1:3),nkpt         =    12    20    75     1
+ nspden,nspinor          =     1     1
+ nsppol,nsym,npsp,ntypat =     1     1     2     2
+ occopt,pertcase,usepaw  =     1     0     0
+ ecut,ecutdg,ecutsm      =  7.1744558152E+00  7.1744558152E+00  0.0000000000E+00
+ ecut_eff                =  7.1744558152E+00
+ qptn(1:3)               =  0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+ rprimd(1:3,1)           =  4.0270178643E+00 -2.3249998480E+00  0.0000000000E+00
+ rprimd(1:3,2)           =  0.0000000000E+00  8.0540353180E+00  0.0000000000E+00
+ rprimd(1:3,3)           =  0.0000000000E+00  0.0000000000E+00  3.0000000000E+01
+ stmbias,tphysel,tsmear  =  0.0000000000E+00  0.0000000000E+00  4.0000000000E-02
+
+ Third record :
+ istwfk=   1
+ nband =  25
+ npwarr=  897
+ so_psp=   1   1
+ symafm=
+          1
+ symrel=
+           1   0   0   0   1   0   0   0   1
+ type  =   1   1   2   2   2   2
+ kptns =                 (max 50 k-points will be written)
+            0.000000E+00    0.000000E+00    0.000000E+00
+ wtk =
+          1.00
+   occ =
+          2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  2.00  0.00
+          0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+          0.00  0.00  0.00  0.00  0.00
+ tnons =
+          0.000000  0.000000  0.000000
+  znucl=  1.00  6.00
+
+ Pseudopotential info :
+ title= Troullier-Martins psp for element  H         Thu Oct 27 17:28:54 EDT 1994
+  znuclpsp=  1.00, zionpsp=  1.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ title= Troullier-Martins psp for element  C         Thu Oct 27 17:29:33 EDT 1994
+  znuclpsp=  6.00, zionpsp=  4.00, pspso=  0, pspdat=940714, pspcod=  1, pspxc=  1
+  lmnmax  =  1
+ 
+ Last record :
+ residm,etot,fermie=    1.000000E+20    1.000000000000E+20    1.000000E+20
+ xred =
+           -1.117452E-07    1.608336E-04    8.573141E-01
+            5.773527E-01    6.664291E-01    8.573013E-01
+           -1.117452E-07    5.164722E-04    7.802545E-01
+           -1.117452E-07    3.329033E-01    7.656545E-01
+            5.773439E-01    6.670105E-01    7.802869E-01
+            5.773509E-01    9.993739E-01    7.651004E-01
+ End the ECHO of the ABINIT file header 
+ ===============================================================================
+
+ Subroutine Unknown:0:COMMENT
+ Found npw_correlation > npw_exchange, Imposing npwc=npwx
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ optimal value for ng0sh =  0 0 0
+
+ vcoul_init : cutoff-mode = CRYSTAL
+ q-points for optical limit:   1
+     1)      0.000010    0.000020    0.000030
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=     1237; Max (mm1,mm2,mm3)=      3     5    20
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   8.921 [Ha]
+ using method =  2 with ecuteff =  47.056 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  15x 24x 96
+          total number of points  =    34560
+
+
+ setmesh: npwwfn        =     2679; Max (m1,m2,m3)   =      4     7    26
+          npweps/npwsigx=     1237; Max (mm1,mm2,mm3)=      3     5    20
+          mG0 added     =   0  0  0
+ calculated ecutwfn          =  14.999 [Ha]
+ calculated ecutsigx/ecuteps =   8.921 [Ha]
+ using method =  2 with ecuteff =  47.056 [Ha]
+
+ finding a FFT mesh compatible with all the symmetries
+ setmesh: divisor mesh  1  1  1
+ setmesh: FFT mesh size selected  =  15x 24x 96
+          total number of points  =    34560
+
+  screening after setup_sigma : Er%Hscr%headform=          57
+
+ ==== FFT mesh for oscillator strengths used for Sigma_c ====
+  FFT mesh divisions ........................    15   24   96
+  Augmented FFT divisions ...................    15   25   96
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+
+ ==== FFT mesh for oscillator strengths used for Sigma_x ====
+  FFT mesh divisions ........................    15   24   96
+  Augmented FFT divisions ...................    15   25   96
+  FFT algorithm .............................   112
+  FFT cache size ............................    16
+ top of valence       [eV]  -3.02
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -1.97
+
+ sigma: parallelized over transitions
+
+ Subroutine Unknown:0:WARNING
+ Using k-centered G-spheres.
+-P-0000  Memory needed for Fourier components ug =          4.1 [Mb]
+-P-0000  Memory needed for real space ur =         52.7 [Mb]
+
+ Subroutine Unknown:0:WARNING
+ Wfd is init using WFK file
+ wfd_read_wfk : about to read up-gw1o_DS1_WFK
+-P-0000 wfd_read_wfk: will read 100 (b,k,s) states
+ in buffered bmask
+ nb_tot         100 nblocks           1 nbxblock         100
+
+ Subroutine Unknown:0:WARNING
+  For (k,s)  1 1 the number of missing G is 1484
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+ planewave contribution to nelect:   17.9911
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+ Total charge density [el/Bohr^3]
+,     Maximum=    6.1807E-01  at reduced coord.    0.7778    0.0000    0.7685
+,     Minimum=    2.7902E-08  at reduced coord.    0.3889    0.8333    0.3426
+,  Integrated=    1.7991E+01
+
+ ewald : nr and ng are    5 and   45
+ calc_vhxc_braket : calculating v_xc[n_val] (excluding non-linear core corrections)
+ For spin  1 Min density rhor =     0.279024E-07
+ E_xc[n_val]  =  -8.0257 [Ha]. <V_xc[n_val]> =  -0.1366 [Ha].
+-P-0000  Will calculate 1 <b,k,s|O|b',k,s> matrix elements in calc_vhxc_me.
+
+ === Matrix elements in the KS basis set [eV] ===
+ kpt= (  0.00000000E+00  0.00000000E+00  0.00000000E+00) spin= 1:
+  ib vxc       vxcval    vhartree
+   9 -16.15358 -15.62947 348.35219
+  10 -12.81687 -12.43306 300.95629
+ Er%ID:           4
+ Er%Hscr%ID:           4
+-P-0000  Memory needed for Er%epsm1 =         46.7 [Mb]
+mkdump_Erread_screening with MPI_IO
+
+ Subroutine Unknown:0:COMMENT
+  Total number of G-vectors reported on file =     1961
+ Reading a smaller matrix of dimension      =     1237
+ Imaginary frequency for fit located at:   16.7000 [eV]
+
+ cppm1par : omega twiddle minval [eV]  =  0.024895796028
+            omega twiddle min location =   223  908
+
+
+ Subroutine Unknown:0:WARNING
+  Checking if PPm em1 is output, nfreqre is: -1 freqremax is:     0.00 eV
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                 1237
+ number of plane-waves for SigmaC and W           1237
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used              1237
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+-P-0000  ==== Info on the Wfd% object ====
+-P-0000   Number of irreducible k-points ........ 1
+-P-0000   Number of spinorial components ........ 1
+-P-0000   Number of spin-density components ..... 1
+-P-0000   Number of spin polarizations .......... 1
+-P-0000   Plane wave cutoff energy ..............  15.0
+-P-0000   Max number of G-vectors ............... 2675
+-P-0000   Total number of FFT points ............ 58320
+-P-0000   Number of FFT points treated by me .... 58320
+-P-0000   Parallelism over k-b-g (paral_kgb) .... 0
+-P-0000
+-P-0000
+-P-0000  ==== FFT mesh for wavefunctions ====
+-P-0000   FFT mesh divisions ........................    18   30  108
+-P-0000   Augmented FFT divisions ...................    19   31  108
+-P-0000   FFT algorithm .............................   112
+-P-0000   FFT cache size ............................    16
+ standard GW with PPM
+ Perturbative Calculation
+
+ Calculating <nk|Sigma_x|nk> at k=    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+
+ Subroutine Unknown:0:COMMENT
+ Changing FFT mesh
+-P-0000  Will sum    1 (b,k,s) occupied states in Sigma_x.
+
+ calc_sigx_me: calculation status (      1 to be completed):
+-P-0000  calc_sigx_me : ik_bz    1/   1 done by processor   0
+
+ Calculating <nk|Sigma_c(omega)|nk> at k =    0.000   0.000   0.000
+ bands n = from   9 to  10
+
+ standard GW with PPM
+-P-0000  Will sum 9 (b,k,s) states in Sigma_c.
+
+ calculation status (      1 to be completed):
+-P-0000  csigme : ik_bz    1/   1 done by processor   0
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.433   5.330   0.617  -0.621 -23.944  -8.315 -11.339
+    9   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+   10  -0.916 -12.433  -7.625  -4.819   0.640  -0.561 -12.440  -0.007  -0.923
+   10   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+
+ E^0_gap          2.109
+ E^GW_gap        10.417
+ DeltaE^GW_gap    8.308
+
+ top of valence       [eV]  -3.37
+ bottom of conduction [eV]  -0.92
+ Fermi energy         [eV]  -2.15
+
+
+ New Fermi energy :       -7.889948E-02 Ha ,   -2.146964E+00 eV
+
+== END DATASET(S) ==============================================================
+================================================================================
+  
+ -outvars: echo values of variables after computation  --------
+ 
+ These variables are accessible in NetCDF format (up-gw1o_OUT.nc)
+
+            acell      4.6499996960E+00  8.0540353180E+00  3.0000000000E+01 Bohr
+              amu      1.00794000E+00  1.20110000E+01
+             bdgw           9      10
+             ecut      1.49989777E+01 Hartree
+         ecutsigx1     2.99373071E+00 Hartree
+         ecutsigx2     3.95676773E+00 Hartree
+         ecutsigx3     4.98566840E+00 Hartree
+         ecutsigx4     5.97262884E+00 Hartree
+         ecutsigx5     6.99899618E+00 Hartree
+         ecutsigx6     7.98463913E+00 Hartree
+         ecutsigx7     8.92148308E+00 Hartree
+          ecutwfn      1.49989777E+01 Hartree
+           etotal1     0.0000000000E+00
+           etotal2     0.0000000000E+00
+           etotal3     0.0000000000E+00
+           etotal4     0.0000000000E+00
+           etotal5     0.0000000000E+00
+           etotal6     0.0000000000E+00
+           etotal7     0.0000000000E+00
+            fcart1     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            fcart2     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            fcart3     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            fcart4     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            fcart5     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            fcart6     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            fcart7     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           getkss           1
+           getscr           1
+             iscf           5
+           istwfk        1
+           jdtset        1    2    3    4    5    6    7
+         kptrlatt        1    0    0      0    1    0      0    0    1
+          kptrlen      4.64999970E+00
+P           mkmem           1
+            natom           6
+            nband         100
+           ndtset           7
+            ngfft          18      30     108
+             nkpt           1
+           nkptgw           1
+          npwsigx1        241
+          npwsigx2        355
+          npwsigx3        539
+          npwsigx4        695
+          npwsigx5        855
+          npwsigx6       1031
+          npwsigx7       1237
+           npwwfn        2679
+          nshsigx1        241
+          nshsigx2        355
+          nshsigx3        539
+          nshsigx4        695
+          nshsigx5        855
+          nshsigx6       1031
+          nshsigx7       1237
+             nsym           1
+           ntypat           2
+              occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000
+        optdriver           4
+           ppmfrq      6.13713734E-01 Hartree
+            rprim      8.6602540378E-01 -5.0000000000E-01  0.0000000000E+00
+                       0.0000000000E+00  1.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+          spgroup           1
+           strten1     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           strten2     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           strten3     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           strten4     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           strten5     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           strten6     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+           strten7     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+            typat      1  1  2  2  2  2
+           xangst     -2.3812974387E-07  6.8561204582E-04  1.3610132864E+01
+                       1.2303421832E+00  2.1299904870E+00  1.3609929832E+01
+                      -2.3812974387E-07  2.2013480830E-03  1.2386786576E+01
+                      -2.3812974387E-07  1.4188380540E+00  1.2155007896E+01
+                       1.2303233752E+00  2.1324792476E+00  1.2387302099E+01
+                       1.2303382361E+00  3.5490075256E+00  1.2146211489E+01
+            xcart     -4.5000000000E-07  1.2956190000E-03  2.5719423746E+01
+                       2.3250097760E+00  4.0250986860E+00  2.5719040070E+01
+                      -4.5000000000E-07  4.1599450000E-03  2.3407634295E+01
+                      -4.5000000000E-07  2.6812153490E+00  2.2969636067E+01
+                       2.3249742340E+00  4.0298017620E+00  2.3408608492E+01
+                       2.3250023170E+00  6.7066522670E+00  2.2953013267E+01
+             xred     -1.1174522070E-07  1.6083356246E-04  8.5731412487E-01
+                       5.7735273454E-01  6.6642912455E-01  8.5730133567E-01
+                      -1.1174522070E-07  5.1647218173E-04  7.8025447650E-01
+                      -1.1174522070E-07  3.3290331906E-01  7.6565453557E-01
+                       5.7734390865E-01  6.6701051706E-01  7.8028694973E-01
+                       5.7735088230E-01  9.9937393652E-01  7.6510044223E-01
+            znucl        1.00000    6.00000
+
+================================================================================
+  
+
+================================================================================
+
+ Suggested references for the acknowledgment of ABINIT usage.
+
+ The users of ABINIT have little formal obligations with respect to the ABINIT group
+ (those specified in the GNU General Public License, http://www.gnu.org/copyleft/gpl.txt).
+ However, it is common practice in the scientific literature,
+ to acknowledge the efforts of people that have made the research possible.
+ In this spirit, please find below suggested citations of work written by ABINIT developers,
+ corresponding to implementations inside of ABINIT that you have used in the present run.
+ Note also that it will be of great value to readers of publications presenting these results,
+ to read papers enabling them to understand the theoretical formalism and details
+ of the ABINIT implementation.
+ For information on why they are suggested, see also http://www.abinit.org/about/?text=acknowledgments.
+
+ [1] ABINIT : First-principles approach of materials and nanosystem properties.
+ X. Gonze, B. Amadon, P.-M. Anglade, J.-M. Beuken, F. Bottin, P. Boulanger, F. Bruneval,
+ D. Caliste, R. Caracas, M. Cote, T. Deutsch, L. Genovese, Ph. Ghosez, M. Giantomassi
+ S. Goedecker, D.R. Hamann, P. Hermet, F. Jollet, G. Jomard, S. Leroux, M. Mancini, S. Mazevet,
+ M.J.T. Oliveira, G. Onida, Y. Pouillon, T. Rangel, G.-M. Rignanese, D. Sangalli, R. Shaltaf,
+ M. Torrent, M.J. Verstraete, G. Zerah, J.W. Zwanziger
+ Computer Phys. Comm. 180, 2582-2615 (2009).
+ Comment : the third generic paper describing the ABINIT project.
+ Note that a version of this paper, that is not formatted for Computer Phys. Comm. 
+ is available at http://www.abinit.org/about/ABINIT_CPC_v10.pdf .
+ The licence allows the authors to put it on the Web.
+
+ [2] A brief introduction to the ABINIT software package.
+ X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R. Caracas, F. Jollet,
+ M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen, J.-Y. Raty, V. Olevano, F. Bruneval,
+ L. Reining, R. Godby, G. Onida, D.R. Hamann, and D.C. Allan.
+ Z. Kristallogr. 220, 558-562 (2005).
+ Comment : the second generic paper describing the ABINIT project. Note that this paper
+ should be cited especially if you are using the GW part of ABINIT, as several authors
+ of this part are not in the list of authors of the first or third paper.
+ The .pdf of the latter paper is available at http://www.abinit.org/about/zfk_0505-06_558-562.pdf.
+ Note that it should not redistributed (Copyright by Oldenburg Wissenshaftverlag,
+ the licence allows the authors to put it on the Web).
+
+
+ And optionally :
+
+ [3] First-principles computation of material properties : the ABINIT software project. 
+ X. Gonze, J.-M. Beuken, R. Caracas, F. Detraux, M. Fuchs, G.-M. Rignanese, L. Sindic,
+ M. Verstraete, G. Zerah, F. Jollet, M. Torrent, A. Roy, M. Mikami, Ph. Ghosez, J.-Y. Raty, D.C. Allan.
+ Computational Materials Science 25, 478-492 (2002). http://dx.doi.org/10.1016/S0927-0256(02)00325-7
+ Comment : the original paper describing the ABINIT project.
+
+ [4] Fast radix 2, 3, 4 and 5 kernels for Fast Fourier Transformations
+ on computers with overlapping multiply-add instructions.
+ S. Goedecker, SIAM J. on Scientific Computing 18, 1605 (1997).
+
+ [5] Towards a potential-based conjugate gradient algorithm for order-N self-consistent
+ total energy calculations.
+ X. Gonze, Phys. Rev. B 54, 4383 (1996).
+ Comment : The potential-based conjugate-gradient algorithm, used when iscf=5, is not published.
+ However, many elements of this algorithm have been explained in the paper above.
+ Proc.   0 individual time (sec): cpu=         11.7  wall=         14.2
+
+ Calculation completed.
+.Delivered   66 WARNINGs and  56 COMMENTs to log file.
