@@ -14,8 +14,8 @@
  acknowledgments of the ABINIT effort.
  For more information, see http://www.abinit.org .
 
-.Starting date : Sun 28 Aug 2016.
-- ( at 16h16 )
+.Starting date : Thu 25 Aug 2016.
+- ( at 20h28 )
   
 
  herald :  WARNING -
@@ -1429,10 +1429,10 @@ P           mkmem           1
  Comment : The potential-based conjugate-gradient algorithm, used when iscf=5, is not published.
  However, many elements of this algorithm have been explained in the paper above.
 -
-- Proc.   0 individual time (sec): cpu=         48.1  wall=         52.2
+- Proc.   0 individual time (sec): cpu=         48.1  wall=         51.6
 
 ================================================================================
 
  Calculation completed.
 .Delivered   57 WARNINGs and  37 COMMENTs to log file.
-+Overall time at end (sec) : cpu=        617.6  wall=        626.4
++Overall time at end (sec) : cpu=        611.6  wall=        618.5

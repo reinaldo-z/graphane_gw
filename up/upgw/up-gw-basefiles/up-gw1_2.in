@@ -33,10 +33,10 @@ iscf2    -2             # Non self-consistent calculation
 getden2  -1             # Read previous density file
 kssform2  3
 tolwfr2  1.0d-18        # Still get it converged
-nband2   500
+nband2   800
 
 # Definition of parameters for the calculation of the kss file
-nbandkss2 250        # Number of bands in KSS file (the maximum possible)
+nbandkss2 800        # Number of bands in KSS file (the maximum possible)
 nbdbuf2   10
 
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)

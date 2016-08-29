@@ -14,8 +14,8 @@
  acknowledgments of the ABINIT effort.
  For more information, see http://www.abinit.org .
 
-.Starting date : Sun 28 Aug 2016.
-- ( at 18h24 )
+.Starting date : Fri 26 Aug 2016.
+- ( at 22h19 )
   
 
  herald :  WARNING -
@@ -2920,7 +2920,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -2984,7 +2984,7 @@ P           mkmem           1
  DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.106189E-02 Ha ,   -2.205806E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
@@ -3069,9 +3069,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -3097,7 +3095,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   280
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -3127,20 +3125,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.167   0.616  -0.624 -24.072  -8.443 -11.468
-   10  -0.916 -12.433  -7.681  -4.955   0.639  -0.564 -12.563  -0.130  -1.045
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.422
- DeltaE^GW_gap    8.313
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.115626E-02 Ha ,   -2.208374E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4220 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4220 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
@@ -3220,11 +3218,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
-            87.74  88.21  88.49  88.58  88.76  88.99  89.37  89.57  89.60  89.70
-            89.87  90.44  90.61  90.71  90.93  91.00  91.40  92.16  92.73  93.11
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -3250,7 +3244,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   300
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -3280,20 +3274,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.157   0.616  -0.624 -24.078  -8.449 -11.473
-   10  -0.916 -12.433  -7.681  -4.963   0.639  -0.564 -12.568  -0.135  -1.051
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.423
- DeltaE^GW_gap    8.314
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.124921E-02 Ha ,   -2.210903E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4227 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4227 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
@@ -3373,13 +3367,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
-            87.74  88.21  88.49  88.58  88.76  88.99  89.37  89.57  89.60  89.70
-            89.87  90.44  90.61  90.71  90.93  91.00  91.40  92.16  92.73  93.11
-            93.39  93.87  94.03  94.20  94.34  94.50  94.57  94.88  95.04  95.24
-            95.58  95.72  95.84  96.13  96.42  96.54  97.22  97.60  97.83  98.06
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -3405,7 +3393,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   320
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -3435,20 +3423,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.150   0.616  -0.624 -24.082  -8.453 -11.477
-   10  -0.916 -12.433  -7.681  -4.968   0.639  -0.564 -12.571  -0.138  -1.054
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.423
- DeltaE^GW_gap    8.314
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.131150E-02 Ha ,   -2.212599E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4232 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4232 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
@@ -3528,15 +3516,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
-            87.74  88.21  88.49  88.58  88.76  88.99  89.37  89.57  89.60  89.70
-            89.87  90.44  90.61  90.71  90.93  91.00  91.40  92.16  92.73  93.11
-            93.39  93.87  94.03  94.20  94.34  94.50  94.57  94.88  95.04  95.24
-            95.58  95.72  95.84  96.13  96.42  96.54  97.22  97.60  97.83  98.06
-            98.29  98.52  98.62  98.88  99.02  99.34  99.87 100.15 100.43 100.78
-           100.94 101.12 101.38 101.53 101.76 101.93 102.04 102.08 102.17 102.21
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -3562,7 +3542,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   340
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -3592,20 +3572,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.144   0.616  -0.624 -24.085  -8.456 -11.480
-   10  -0.916 -12.433  -7.681  -4.973   0.639  -0.564 -12.574  -0.141  -1.057
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.424
- DeltaE^GW_gap    8.315
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.136665E-02 Ha ,   -2.214099E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4235 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4235 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
@@ -3685,17 +3665,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
-            87.74  88.21  88.49  88.58  88.76  88.99  89.37  89.57  89.60  89.70
-            89.87  90.44  90.61  90.71  90.93  91.00  91.40  92.16  92.73  93.11
-            93.39  93.87  94.03  94.20  94.34  94.50  94.57  94.88  95.04  95.24
-            95.58  95.72  95.84  96.13  96.42  96.54  97.22  97.60  97.83  98.06
-            98.29  98.52  98.62  98.88  99.02  99.34  99.87 100.15 100.43 100.78
-           100.94 101.12 101.38 101.53 101.76 101.93 102.04 102.08 102.17 102.21
-           102.33 102.40 102.58 102.65 102.76 102.86 103.06 103.22 103.36 103.46
-           103.55 103.79 103.96 104.13 104.39 104.49 104.70 104.77 104.97 105.34
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -3721,7 +3691,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   360
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -3751,20 +3721,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.141   0.616  -0.624 -24.087  -8.458 -11.482
-   10  -0.916 -12.433  -7.681  -4.976   0.639  -0.564 -12.576  -0.143  -1.059
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.424
- DeltaE^GW_gap    8.315
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.140047E-02 Ha ,   -2.215019E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4237 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4237 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
@@ -3844,19 +3814,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
-            87.74  88.21  88.49  88.58  88.76  88.99  89.37  89.57  89.60  89.70
-            89.87  90.44  90.61  90.71  90.93  91.00  91.40  92.16  92.73  93.11
-            93.39  93.87  94.03  94.20  94.34  94.50  94.57  94.88  95.04  95.24
-            95.58  95.72  95.84  96.13  96.42  96.54  97.22  97.60  97.83  98.06
-            98.29  98.52  98.62  98.88  99.02  99.34  99.87 100.15 100.43 100.78
-           100.94 101.12 101.38 101.53 101.76 101.93 102.04 102.08 102.17 102.21
-           102.33 102.40 102.58 102.65 102.76 102.86 103.06 103.22 103.36 103.46
-           103.55 103.79 103.96 104.13 104.39 104.49 104.70 104.77 104.97 105.34
-           105.46 106.09 106.18 106.63 106.77 107.08 107.28 107.33 107.51 107.63
-           107.69 107.76 107.85 108.00 108.07 108.11 108.23 108.32 108.49 108.55
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -3882,7 +3840,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   380
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -3912,20 +3870,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.138   0.616  -0.625 -24.089  -8.460 -11.484
-   10  -0.916 -12.433  -7.681  -4.978   0.639  -0.564 -12.578  -0.145  -1.060
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.424
- DeltaE^GW_gap    8.315
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.142991E-02 Ha ,   -2.215821E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4238 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4238 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
@@ -4005,21 +3963,7 @@ P           mkmem           1
             71.73  71.84  72.69  72.89  73.05  73.58  74.30  74.45  74.68  75.14
             75.59  75.69  75.93  76.10  76.59  76.90  77.05  77.16  77.62  77.82
             77.95  78.07  78.31  78.63  78.78  78.99  79.23  79.28  79.51  79.68
-            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.83  82.17
-            82.27  82.35  82.76  82.84  82.98  83.11  83.21  83.34  83.38  83.49
-            83.96  84.68  84.96  85.19  85.35  86.65  86.77  86.97  87.37  87.44
-            87.74  88.21  88.49  88.58  88.76  88.99  89.37  89.57  89.60  89.70
-            89.87  90.44  90.61  90.71  90.93  91.00  91.40  92.16  92.73  93.11
-            93.39  93.87  94.03  94.20  94.34  94.50  94.57  94.88  95.04  95.24
-            95.58  95.72  95.84  96.13  96.42  96.54  97.22  97.60  97.83  98.06
-            98.29  98.52  98.62  98.88  99.02  99.34  99.87 100.15 100.43 100.78
-           100.94 101.12 101.38 101.53 101.76 101.93 102.04 102.08 102.17 102.21
-           102.33 102.40 102.58 102.65 102.76 102.86 103.06 103.22 103.36 103.46
-           103.55 103.79 103.96 104.13 104.39 104.49 104.70 104.77 104.97 105.34
-           105.46 106.09 106.18 106.63 106.77 107.08 107.28 107.33 107.51 107.63
-           107.69 107.76 107.85 108.00 108.07 108.11 108.23 108.32 108.49 108.55
-           108.61 108.69 108.75 108.85 108.99 109.14 109.37 109.42 109.49 109.65
-           109.73 109.78 109.97 110.01 110.06 110.42 110.61 110.78 111.03 111.78
+            79.75  79.86  79.98  80.42  80.52  80.76  81.04  81.81  81.84  82.17
 
 
  test on the normalization of the wavefunctions
@@ -4045,7 +3989,7 @@ P           mkmem           1
  number of plane-waves for SigmaX                 2961
  number of plane-waves for SigmaC and W           1961
  number of plane-waves for wavefunctions          2679
- number of bands                                   400
+ number of bands                                   260
  number of independent spin polarizations            1
  number of spinorial components                      1
  number of k-points in IBZ                           1
@@ -4075,20 +4019,20 @@ P           mkmem           1
 
  k =    0.000   0.000   0.000
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.136   0.616  -0.625 -24.090  -8.461 -11.485
-   10  -0.916 -12.433  -7.681  -4.980   0.639  -0.564 -12.579  -0.146  -1.062
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
  E^0_gap          2.109
- E^GW_gap        10.424
- DeltaE^GW_gap    8.315
+ E^GW_gap        10.419
+ DeltaE^GW_gap    8.310
 
 
- New Fermi energy :       -8.145405E-02 Ha ,   -2.216477E+00 eV
+ New Fermi energy :       -8.106163E-02 Ha ,   -2.205799E+00 eV
 
  === QP Band Gaps ===
   >>>> For spin  1
-   Minimum optical gap =  10.4237 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4237 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+   Minimum optical gap =  10.4192 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4192 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 == END DATASET(S) ==============================================================
@@ -5119,10 +5063,10 @@ P           mkmem           1
  Comment : The potential-based conjugate-gradient algorithm, used when iscf=5, is not published.
  However, many elements of this algorithm have been explained in the paper above.
 -
-- Proc.   0 individual time (sec): cpu=        304.6  wall=        321.1
+- Proc.   0 individual time (sec): cpu=        267.2  wall=        278.4
 
 ================================================================================
 
  Calculation completed.
-.Delivered  183 WARNINGs and 140 COMMENTs to log file.
-+Overall time at end (sec) : cpu=       3817.0  wall=       3852.1
+.Delivered  190 WARNINGs and 140 COMMENTs to log file.
++Overall time at end (sec) : cpu=       3317.0  wall=       3339.9

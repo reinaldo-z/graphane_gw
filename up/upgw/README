@@ -20,8 +20,8 @@ mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/a
 # tgw1o_DS1_WFK
 # tgw1o_DS3_SCR
 # tgw1o_DS1_SCR
-# Then: 
 
+# Then: 
 mv up-gw1o_DS2_WFK up-gw1o_DS1_WFK
 mv up-gw1o_DS3_SCR up-gw1o_DS1_SCR
 
@@ -39,6 +39,24 @@ mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/a
 # (optional).
 
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_4.files | tee up-gw1_4.log
+
+################################################################################
+
+# Tutorial section 5: Convergence on the number of bands to calculate Σc
+# (important).
+
+mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_5.files | tee up-gw1_5.log
+
+################################################################################
+
+# Tutorial section 6: Convergence on the number of planewaves in the
+# wavefunctions to calculate the screening (ε-1) (optional).
+
+mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_6.files | tee up-gw1_6.log
+
+
+
+
 
 
 
