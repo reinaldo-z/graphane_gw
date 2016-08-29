@@ -42,9 +42,9 @@ nbdbuf2   10
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)
 optdriver3  3
 getkss3     -1
-nband3      25
-ecutwfn3    7.2
-ecuteps3    12.0
+nband3      100
+ecutwfn3    20
+ecuteps3    25
 ppmfrq3    16.7 eV
 awtr3       0       # Note : the default awtr 1 is better
 

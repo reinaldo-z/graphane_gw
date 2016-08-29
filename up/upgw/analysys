@@ -7,13 +7,37 @@ In this file I make an analysys of each section for the GW convergence.
 SECTION  2: Preparing convergence studies: Kohn-Sham structure (WFK file) and
 screening (SCR file).
 
-Changed the variables 
-ecutwfn3    7.2
-ecuteps3    12.0
-ecut 20.0          # Maximal kinetic energy cut-off, in Hartree
+Changed:
 
-because in step 3 there is no convergence with 8 Ha and the maximum number of
-ecut was 8 in both
+#Definition of the unit cell
+acell  4.649999696 8.054035318 30
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+
+#Definition of the atoms
+natom       6
+typat       1*1 1*1  4*2
+xcart
+ -0.0000004500   0.001295619  25.719423746
+  2.3250097760   4.025098686  25.719040070
+ -0.0000004500   0.004159945  23.407634295
+ -0.0000004500   2.681215349  22.969636067
+  2.3249742340   4.029801762  23.408608492
+  2.3250023170   6.706652267  22.953013267
+
+bdgw        9  10
+
+nband3      100
+ecutwfn3    20
+ecuteps3    25
+
+
 
 ################################################################################
 
@@ -64,6 +88,7 @@ So that ecutwfn=15.0 (npwwfn=2179) can be considered to lead to eigenenergies
 converged within 0.01 eV.
 
 Changed:
+bdgw         4  5 --> 9  10
 ecutwfn  5 --> 15.0
 ecut     5 --> 15.0
 
@@ -140,6 +165,29 @@ Near to: SIGMA fundamental parameters
 So that ecutsigx=16.0 (npwsigx=1961) can be considered converged within 0.01 eV.
 
 Changed:
+#Definition of the unit cell
+acell  4.649999696 8.054035318 30
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+
+#Definition of the atoms
+natom       6
+typat       1*1 1*1  4*2
+xcart
+ -0.0000004500   0.001295619  25.719423746
+  2.3250097760   4.025098686  25.719040070
+ -0.0000004500   0.004159945  23.407634295
+ -0.0000004500   2.681215349  22.969636067
+  2.3249742340   4.029801762  23.408608492
+  2.3250023170   6.706652267  22.953013267
+
+bdgw     4  5 --> 9  10
 ecutwfn  5 --> 15.0
 ecut     5 --> 15.0
 ecutsigx 6 --> 16.0
@@ -233,6 +281,30 @@ Near to: SIGMA fundamental parameters
 So that nband=700 can be considered converged within 0.01 eV.
 
 Changed:
+
+#Definition of the unit cell
+acell  4.649999696 8.054035318 30
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+
+#Definition of the atoms
+natom       6
+typat       1*1 1*1  4*2
+xcart
+ -0.0000004500   0.001295619  25.719423746
+  2.3250097760   4.025098686  25.719040070
+ -0.0000004500   0.004159945  23.407634295
+ -0.0000004500   2.681215349  22.969636067
+  2.3249742340   4.029801762  23.408608492
+  2.3250023170   6.706652267  22.953013267
+
+bdgw     4  5 --> 9  10
 ecutwfn  5 --> 15.0
 ecut     5 --> 15.0
 ecutsigx 6 --> 16.0
@@ -242,6 +314,92 @@ nband  100 --> 700
 
 SECTION 6: Convergence on the number of planewaves in the wavefunctions to
 calculate the screening (ε-1) (optional).
+
+  dielectric constant =   4.5319
+  dielectric constant without local fields =   6.3774
+ number of plane-waves for wavefunctions           695
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.067   0.618  -0.618 -24.167  -8.538 -11.563
+   10  -0.916 -12.433  -7.681  -4.951   0.640  -0.561 -12.561  -0.128  -1.043
+  
+
+  dielectric constant =   4.5437
+  dielectric constant without local fields =   6.4067
+ number of plane-waves for wavefunctions           855
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.131   0.617  -0.622 -24.108  -8.479 -11.503
+   10  -0.916 -12.433  -7.681  -4.997   0.641  -0.561 -12.590  -0.157  -1.073
+  
+
+  dielectric constant =   4.5633
+  dielectric constant without local fields =   6.4550
+ number of plane-waves for wavefunctions          1031
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.188   0.615  -0.625 -24.054  -8.425 -11.449
+   10  -0.916 -12.433  -7.681  -5.039   0.640  -0.563 -12.617  -0.183  -1.099
+  
+
+  dielectric constant =   4.5950
+  dielectric constant without local fields =   6.5014
+ number of plane-waves for wavefunctions          1237
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.227   0.615  -0.626 -24.027  -8.397 -11.422
+   10  -0.916 -12.433  -7.681  -5.070   0.639  -0.566 -12.636  -0.203  -1.119
+  
+
+  dielectric constant =   4.6049
+  dielectric constant without local fields =   6.5168
+ number of plane-waves for wavefunctions          1465
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.253   0.614  -0.630 -23.990  -8.361 -11.385
+   10  -0.916 -12.433  -7.681  -5.092   0.639  -0.566 -12.651  -0.217  -1.133
+  
+
+  dielectric constant =   4.6170
+  dielectric constant without local fields =   6.5366
+ number of plane-waves for wavefunctions          1703
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.273   0.613  -0.631 -23.973  -8.343 -11.368
+   10  -0.916 -12.433  -7.681  -5.107   0.638  -0.567 -12.660  -0.227  -1.142
+  
+
+  dielectric constant =   4.6274
+  dielectric constant without local fields =   6.5528
+ number of plane-waves for wavefunctions          1961
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.287   0.615  -0.627 -23.984  -8.354 -11.379
+   10  -0.916 -12.433  -7.681  -5.118   0.637  -0.569 -12.667  -0.234  -1.149
+  
+
+  dielectric constant =   4.6330
+  dielectric constant without local fields =   6.5611
+ number of plane-waves for wavefunctions          2179
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.296   0.615  -0.625 -23.989  -8.359 -11.384
+   10  -0.916 -12.433  -7.681  -5.125   0.637  -0.569 -12.671  -0.238  -1.153
+  
+
+  dielectric constant =   4.6377
+  dielectric constant without local fields =   6.5689
+ number of plane-waves for wavefunctions          2415
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.303   0.615  -0.625 -23.983  -8.353 -11.378
+   10  -0.916 -12.433  -7.681  -5.130   0.637  -0.569 -12.674  -0.241  -1.156
+  
+
+  dielectric constant =   4.6416
+  dielectric constant without local fields =   6.5754
+ number of plane-waves for wavefunctions          2679
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.307   0.614  -0.628 -23.964  -8.335 -11.359
+   10  -0.916 -12.433  -7.681  -5.132   0.638  -0.568 -12.676  -0.242  -1.158
+
+
+
+
+
+
+
 
 
 
