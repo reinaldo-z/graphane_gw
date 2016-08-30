@@ -1,0 +1,192 @@
+
+
+  dielectric constant =   4.6478
+  dielectric constant without local fields =   6.5830
+
+  dielectric constant =   4.6487
+  dielectric constant without local fields =   6.5841
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+  dielectric constant =   4.6493
+  dielectric constant without local fields =   6.5850
+
+
+ number of plane-waves for wavefunctions          3587
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.314   0.613  -0.631 -23.950  -8.320 -11.345
+   10  -0.916 -12.433  -7.681  -5.138   0.638  -0.568 -12.679  -0.246  -1.162
+
+ number of plane-waves for wavefunctions          3865
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.315   0.613  -0.631 -23.948  -8.319 -11.343
+   10  -0.916 -12.433  -7.681  -5.139   0.638  -0.568 -12.680  -0.247  -1.162
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+ number of plane-waves for wavefunctions          4159
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163

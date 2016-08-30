@@ -54,8 +54,13 @@ mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/a
 
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_6.files | tee up-gw1_6.log
 
+################################################################################
 
+# 7 Convergence on the number of bands to calculate the screening (important).
 
+mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_7.files | tee up-gw1_7.log
+
+################################################################################
 
 
 
