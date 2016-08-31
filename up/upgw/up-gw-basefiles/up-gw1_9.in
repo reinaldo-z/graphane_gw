@@ -40,19 +40,19 @@ nbdbuf2     5
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)
 optdriver3  3        # Screening calculation
 getkss3     -1       # Obtain KSS file from previous dataset
-nband3      25       # Bands to be used in the screening calculation
-ecutwfn3    3.6      # Planewaves to be used to represent the wavefunctions
-ecuteps3    6.0      # Dimension of the screening matrix
-ppmfrq3    16.7 eV  # Imaginary frequency where to calculate the screening
+nband3      400      # Bands to be used in the screening calculation
+ecutwfn3    15       # Planewaves to be used to represent the wavefunctions
+ecuteps3    8.0      # Dimension of the screening matrix
+ppmfrq3    16.7 eV   # Imaginary frequency where to calculate the screening
 
 
 # Dataset4: Calculation of the Self-Energy matrix elements (GW corrections)
 optdriver4  4        # Self-Energy calculation
 getkss4     -2       # Obtain KSS file from dataset 1
 getscr4     -1       # Obtain SCR file from previous dataset
-nband4      100      # Bands to be used in the Self-Energy calculation
-ecutwfn4    5.0      # Planewaves to be used to represent the wavefunctions
-ecutsigx4    6.0      # Dimension of the G sum in Sigma_x
+nband4      700      # Bands to be used in the Self-Energy calculation
+ecutwfn4    15.0      # Planewaves to be used to represent the wavefunctions
+ecutsigx4   16.0      # Dimension of the G sum in Sigma_x
                      # (the dimension in Sigma_c is controlled by npweps)
 nkptgw4      1               # number of k-point where to calculate the GW correction
 kptgw4                       # k-points
@@ -69,7 +69,6 @@ rprim      0.8660254037844385 -0.5 0.0
 ntypat      2
 znucl       1   6
                          
-
 #Definition of the atoms
 natom       6
 typat       1*1 1*1  4*2
@@ -83,7 +82,7 @@ xcart
 
 
 # Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
-ecut 10.0         # Maximal kinetic energy cut-off, in Hartree
+ecut 15.0         # Maximal kinetic energy cut-off, in Hartree
 
 # Definition of the SCF procedure
 nstep   100       # Maximal number of SCF cycles
