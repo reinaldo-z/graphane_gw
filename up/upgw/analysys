@@ -402,85 +402,99 @@ calculate the screening (ε-1) (optional).
 
 ndtset      10
 udtset      5  2
-ecutwfn:?   18.0
+ecutwfn:?   6.0
 ecutwfn+?   1.0
 
 File: 
-up_gw1_6.outE
+up_gw1_6.outA
 Near to: 
 dielectric constant =
 
-  dielectric constant =   4.6478
-  dielectric constant without local fields =   6.5830
- number of plane-waves for wavefunctions          3587
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.314   0.613  -0.631 -23.950  -8.320 -11.345
-   10  -0.916 -12.433  -7.681  -5.138   0.638  -0.568 -12.679  -0.246  -1.162
 
-  dielectric constant =   4.6487
-  dielectric constant without local fields =   6.5841
- number of plane-waves for wavefunctions          3865
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.315   0.613  -0.631 -23.948  -8.319 -11.343
-   10  -0.916 -12.433  -7.681  -5.139   0.638  -0.568 -12.680  -0.247  -1.162
+up-gw1_6.outA:
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut11    5.97262884E+00 Hartree:
+dielectric constant =   4.5319
+dielectric constant without local fields =   6.3774
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.067   0.618  -0.618 -24.167  -8.538 -11.563
+   10  -0.916 -12.433  -7.681  -4.951   0.640  -0.561 -12.561  -0.128  -1.043
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut21    6.99899618E+00 Hartree:
+dielectric constant =   4.5437
+dielectric constant without local fields =   6.4067
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.131   0.617  -0.622 -24.108  -8.479 -11.503
+   10  -0.916 -12.433  -7.681  -4.997   0.641  -0.561 -12.590  -0.157  -1.073
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut31    7.98463913E+00 Hartree:
+dielectric constant =   4.5633
+dielectric constant without local fields =   6.4550
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.188   0.615  -0.625 -24.054  -8.425 -11.449
+   10  -0.916 -12.433  -7.681  -5.039   0.640  -0.563 -12.617  -0.183  -1.099
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut41    8.92148308E+00 Hartree:
+dielectric constant =   4.5950
+dielectric constant without local fields =   6.5014
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.227   0.615  -0.626 -24.027  -8.397 -11.422
+   10  -0.916 -12.433  -7.681  -5.070   0.639  -0.566 -12.636  -0.203  -1.119
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut51    9.99018361E+00 Hartree:
+dielectric constant =   4.6049
+dielectric constant without local fields =   6.5168
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.253   0.614  -0.630 -23.990  -8.361 -11.385
+   10  -0.916 -12.433  -7.681  -5.092   0.639  -0.566 -12.651  -0.217  -1.133
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut61    1.09788065E+01 Hartree:
+dielectric constant =   4.6170
+dielectric constant without local fields =   6.5366
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.273   0.613  -0.631 -23.973  -8.343 -11.368
+   10  -0.916 -12.433  -7.681  -5.107   0.638  -0.567 -12.660  -0.227  -1.142
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut71    1.19979001E+01 Hartree:
+dielectric constant =   4.6274
+dielectric constant without local fields =   6.5528
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.287   0.615  -0.627 -23.984  -8.354 -11.379
+   10  -0.916 -12.433  -7.681  -5.118   0.637  -0.569 -12.667  -0.234  -1.149
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut81    1.29994376E+01 Hartree:
+dielectric constant =   4.6330
+dielectric constant without local fields =   6.5611
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.296   0.615  -0.625 -23.989  -8.359 -11.384
+   10  -0.916 -12.433  -7.681  -5.125   0.637  -0.569 -12.671  -0.238  -1.153
 
-So that ecutwfn=20.0 (npwwfn=4159) can be considered to lead to eigenenergies
+ecut91    1.39863980E+01 Hartree:
+dielectric constant =   4.6377
+dielectric constant without local fields =   6.5689
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.303   0.615  -0.625 -23.983  -8.353 -11.378
+   10  -0.916 -12.433  -7.681  -5.130   0.637  -0.569 -12.674  -0.241  -1.156
+
+ecut101   1.49989777E+01 Hartree:
+dielectric constant =   4.6416
+dielectric constant without local fields =   6.5754
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.307   0.614  -0.628 -23.964  -8.335 -11.359
+   10  -0.916 -12.433  -7.681  -5.132   0.638  -0.568 -12.676  -0.242  -1.158
+
+ecut11  5.97262884E+00 Hartree: (1-(8.538/8.335))*100 = 2.44 %
+ecut21  6.99899618E+00 Hartree: (1-(8.479/8.335))*100 = 1.73 %
+ecut31  7.98463913E+00 Hartree: (1-(8.425/8.335))*100 = 1.08 %
+ecut41  8.92148308E+00 Hartree: (1-(8.397/8.335))*100 = 0.74 %
+ecut51  9.99018361E+00 Hartree: (1-(8.361/8.335))*100 = 0.31 %
+ecut61  1.09788065E+01 Hartree: (1-(8.343/8.335))*100 = 0.10 %
+ecut71  1.19979001E+01 Hartree: (1-(8.354/8.335))*100 = 0.23 %
+ecut81  1.29994376E+01 Hartree: (1-(8.359/8.335))*100 = 0.29 %
+ecut91  1.39863980E+01 Hartree: (1-(8.353/8.335))*100 = 0.22 %
+ecut101 1.49989777E+01 Hartree: (1-(8.335/8.335))*100 = 0.00 %
+
+So that ecutwfn=9.0 (npwwfn=1237) can be considered to lead to eigenenergies
 converged within 0.01 eV.
 
 Changed:
@@ -509,12 +523,12 @@ xcart
 
 bdgw     4  5 --> 9  10
 # Self energy
-ecutwfn  5 --> 15.0
-ecut     8 --> 15.0
-ecutsigx 6 --> 16.0
-nband  100 --> 700
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+ecutsigx 6 --> 6.0
+nband  100 --> 20
 # Screenening  (ε^-1) 
-ecutwfn  4 --> 20
+ecutwfn  4 --> 9.0
 
 ################################################################################
 
