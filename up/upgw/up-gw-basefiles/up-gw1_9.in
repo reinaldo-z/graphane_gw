@@ -40,9 +40,9 @@ nbdbuf2     5
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)
 optdriver3  3        # Screening calculation
 getkss3     -1       # Obtain KSS file from previous dataset
-nband3      200      # Bands to be used in the screening calculation
-ecutwfn3    10       # Planewaves to be used to represent the wavefunctions
-ecuteps3    4.0      # Dimension of the screening matrix
+nband3      20       # Bands to be used in the screening calculation
+ecutwfn3    9.0      # Planewaves to be used to represent the wavefunctions
+ecuteps3    8.0      # Dimension of the screening matrix
 ppmfrq3    16.7 eV   # Imaginary frequency where to calculate the screening
 
 
@@ -50,9 +50,9 @@ ppmfrq3    16.7 eV   # Imaginary frequency where to calculate the screening
 optdriver4  4         # Self-Energy calculation
 getkss4     -2        # Obtain KSS file from dataset 1
 getscr4     -1        # Obtain SCR file from previous dataset
-nband4      350       # Bands to be used in the Self-Energy calculation
-ecutwfn4    8.0      # Planewaves to be used to represent the wavefunctions
-ecutsigx4   8.0      # Dimension of the G sum in Sigma_x
+nband4      150       # Bands to be used in the Self-Energy calculation
+ecutwfn4    9.0       # Planewaves to be used to represent the wavefunctions
+ecutsigx4   6.0       # Dimension of the G sum in Sigma_x
                       # (the dimension in Sigma_c is controlled by npweps)
 nkptgw4      1               # number of k-point where to calculate the GW correction
 kptgw4                       # k-points
@@ -82,7 +82,7 @@ xcart
 
 
 # Definition of the planewave basis set
-ecut 10.0         # Maximal kinetic energy cut-off, in Hartree
+ecut 9.0         # Maximal kinetic energy cut-off, in Hartree
 
 # Definition of the SCF procedure
 nstep   100       # Maximal number of SCF cycles
@@ -94,7 +94,7 @@ diemac  12.0      # Although this is not mandatory, it is worth to
 tolwfr  1.0d-10   
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
-# iscf 5
+#  iscf 5
 
 
 #%%<BEGIN TEST_INFO>

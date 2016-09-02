@@ -691,15 +691,18 @@ xcart
   2.3249742340   4.029801762  23.408608492
   2.3250023170   6.706652267  22.953013267
 
+bdgw     4  5 --> 9  10
 # Self energy
 ecutwfn  5 --> 9.0
-ecut     8 --> 9.0
-ecutsigx 6 --> 6.0
+ecuteps  6 --> 8
 nband  100 --> 20
 # Screenening  (ε^-1) 
+ecutsigx 6 --> 6.0
 ecutwfn  4 --> 9.0
 nband?1  100-->150
-ecuteps  6 --> 8
+
+ecut     8 --> 9.0
+
 ################################################################################
 
 SECTION 9: Calculation of the GW corrections for the band gap in Γ.
