@@ -7,7 +7,7 @@
 
 ndtset      4
 
-ngkpt    8 8 8        # Density of k points needed for a converged calculation
+ngkpt    4  4  2        # Density of k points needed for a converged calculation
 
 nshiftk  4
 shiftk   0.0 0.0 0.0  # This grid contains the Gamma point, which is the point at which
@@ -21,7 +21,7 @@ istwfk  *1            # For the GW computations, do not take advantage of the
 # Dataset1: usual self-consistent ground-state calculation
 # Definition of the k-point grid
 shiftk1  0.5 0.5 0.5  # This grid is the most economical, but does not contain the Gamma point.
-         0.5 0.0 0.0
+         0.5 0.0 00
          0.0 0.5 0.0
          0.0 0.0 0.5
 istwfk1 *0            # For the ground state, let the code use the time-reversal symmetry
@@ -40,24 +40,24 @@ nbdbuf2     5
 # Dataset3: Calculation of the screening (epsilon^-1 matrix)
 optdriver3  3        # Screening calculation
 getkss3     -1       # Obtain KSS file from previous dataset
-nband3      400      # Bands to be used in the screening calculation
-ecutwfn3    15       # Planewaves to be used to represent the wavefunctions
-ecuteps3    8.0      # Dimension of the screening matrix
+nband3      200      # Bands to be used in the screening calculation
+ecutwfn3    10       # Planewaves to be used to represent the wavefunctions
+ecuteps3    4.0      # Dimension of the screening matrix
 ppmfrq3    16.7 eV   # Imaginary frequency where to calculate the screening
 
 
 # Dataset4: Calculation of the Self-Energy matrix elements (GW corrections)
-optdriver4  4        # Self-Energy calculation
-getkss4     -2       # Obtain KSS file from dataset 1
-getscr4     -1       # Obtain SCR file from previous dataset
-nband4      700      # Bands to be used in the Self-Energy calculation
-ecutwfn4    15.0      # Planewaves to be used to represent the wavefunctions
-ecutsigx4   16.0      # Dimension of the G sum in Sigma_x
-                     # (the dimension in Sigma_c is controlled by npweps)
+optdriver4  4         # Self-Energy calculation
+getkss4     -2        # Obtain KSS file from dataset 1
+getscr4     -1        # Obtain SCR file from previous dataset
+nband4      350       # Bands to be used in the Self-Energy calculation
+ecutwfn4    8.0      # Planewaves to be used to represent the wavefunctions
+ecutsigx4   8.0      # Dimension of the G sum in Sigma_x
+                      # (the dimension in Sigma_c is controlled by npweps)
 nkptgw4      1               # number of k-point where to calculate the GW correction
 kptgw4                       # k-points
   0.000    0.000    0.000    # (Gamma)
-bdgw4       9  10            # calculate GW corrections for bands from 4 to 5
+bdgw4       9  10            # calculate GW corrections for bands from 9 to 10
 
 #Definition of the unit cell
 acell  4.649999696 8.054035318 30
@@ -81,8 +81,8 @@ xcart
   2.3250023170   6.706652267  22.953013267
 
 
-# Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
-ecut 15.0         # Maximal kinetic energy cut-off, in Hartree
+# Definition of the planewave basis set
+ecut 10.0         # Maximal kinetic energy cut-off, in Hartree
 
 # Definition of the SCF procedure
 nstep   100       # Maximal number of SCF cycles
@@ -94,7 +94,7 @@ diemac  12.0      # Although this is not mandatory, it is worth to
 tolwfr  1.0d-10   
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
-  iscf 5
+# iscf 5
 
 
 #%%<BEGIN TEST_INFO>

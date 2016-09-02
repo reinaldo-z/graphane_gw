@@ -40,3 +40,7 @@ mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/a
 # 8 Convergence on the dimension of the ε-1 matrix (important).
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_8.files | tee up-gw1_8.log
 ################################################################################
+# 9 Calculation of the GW corrections for the band gap in Γ.
+mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_9.files | tee up-gw1_9.log
+################################################################################
+mpdallexit
