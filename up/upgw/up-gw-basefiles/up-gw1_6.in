@@ -11,7 +11,7 @@ nband?1      25
 awtr?1       0
 
 # Convergence with respect to the number of planewaves in wavefunctions to calculate epsilon^-1
-ecutwfn:?   18.0
+ecutwfn:?   6.0
 ecutwfn+?   1.0
 
 # Calculation of the Self-Energy matrix elements (GW corrections)
@@ -58,7 +58,7 @@ xcart
 ecut 9.0          # Maximal kinetic energy cut-off, in Hartree
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
-  iscf 5
+# iscf 5
 
 # Sampling of the BZ
 ngkpt   1 1 1 
