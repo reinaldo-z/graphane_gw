@@ -11,7 +11,7 @@ ecutsigx+ 1.0
 optdriver  4
 getkss     1
 getscr     1
-ecutwfn    15.0
+ecutwfn    9.0
 nband      100
 ppmfrq    16.7 eV
 nkptgw      1
@@ -43,7 +43,7 @@ xcart
   2.3250023170   6.706652267  22.953013267
 
 # Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
-ecut 15.0          # Maximal kinetic energy cut-off, in Hartree
+ecut 9.0          # Maximal kinetic energy cut-off, in Hartree
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
   iscf 5

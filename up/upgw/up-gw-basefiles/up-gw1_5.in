@@ -3,16 +3,16 @@
 
 
 # Convergence with respect to the number of bands
-ndtset  15
-nband:  500
+ndtset  20
+nband:  20
 nband+  20
 
 # Calculation of the Self-Energy matrix elements (GW corrections)
 optdriver  4
 getkss     1
 getscr     1
-ecutwfn     15.0
-ecutsigx    16.0
+ecutwfn     9.0
+ecutsigx    6.0
 ppmfrq    16.7 eV
 nkptgw      1
 kptgw      0.000    0.000    0.000
@@ -46,7 +46,7 @@ xcart
 
 
 # Definition of the planewave basis set (at convergence 16 Rydberg 8 Hartree)
-ecut 15.0          # Maximal kinetic energy cut-off, in Hartree
+ecut 9.0          # Maximal kinetic energy cut-off, in Hartree
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
   iscf 5
