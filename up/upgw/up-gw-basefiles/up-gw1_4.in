@@ -3,8 +3,8 @@
 
 # Convergence with respect to the number of planewaves in the sum to calculate SigmaX
 # (and in the sum to calculate SigmaC if < nsheps/npweps read in SCR file)
-ndtset  10
-ecutsigx: 7.0
+ndtset  7
+ecutsigx: 3.0
 ecutsigx+ 1.0
 
 # Calculation of the Self-Energy matrix elements (GW corrections)
