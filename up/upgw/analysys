@@ -606,12 +606,12 @@ xcart
 
 bdgw     4  5 --> 9  10
 # Self energy
-ecutwfn  5 --> 15.0
-ecut     8 --> 15.0
-ecutsigx 6 --> 16.0
-nband  100 --> 700
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+ecutsigx 6 --> 6.0
+nband  100 --> 20
 # Screenening  (ε^-1) 
-ecutwfn  4 --> 20
+ecutwfn  4 --> 9.0
 nband?1  100-->150
 
 ################################################################################
