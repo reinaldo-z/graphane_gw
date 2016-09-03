@@ -7,7 +7,7 @@
 
 ndtset      4
 
-ngkpt    4  4  2        # Density of k points needed for a converged calculation
+ngkpt    12  12  2        # Density of k points needed for a converged calculation
 
 nshiftk  4
 shiftk   0.0 0.0 0.0  # This grid contains the Gamma point, which is the point at which

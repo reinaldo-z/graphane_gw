@@ -44,3 +44,18 @@ mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/a
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_9.files | tee up-gw1_9.log
 ################################################################################
 mpdallexit
+
+################################################################################
+################################################################################
+
+# ##To run all steps in the fats:
+# module load intel-compilers/16.2.181
+# module load intel-mpi/5.1.3.181
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_2.files | tee up-gw1_2.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_3.files | tee up-gw1_3.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_4.files | tee up-gw1_4.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_5.files | tee up-gw1_5.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_6.files | tee up-gw1_6.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_7.files | tee up-gw1_7.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_8.files | tee up-gw1_8.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_9.files | tee up-gw1_9.log

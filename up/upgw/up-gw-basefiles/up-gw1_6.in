@@ -58,7 +58,7 @@ xcart
 ecut 9.0          # Maximal kinetic energy cut-off, in Hartree
 
 # This line added when defaults were changed (v5.3) to keep the previous, old behaviour
-# iscf 5
+  iscf 5
 
 # Sampling of the BZ
 ngkpt   1 1 1 
