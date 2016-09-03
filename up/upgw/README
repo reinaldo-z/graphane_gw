@@ -1,67 +1,61 @@
 # README:
-
 # The up structure has 9 valence bands for pspnc pseudopotentials
-
 # Follow al the steps to make a GW calculation in the up structure.
 # Also this README can be executed. 
-
 # Open the mpi ring
 mpdboot -v -r ssh -f NODE -n 1
-
 ################################################################################
-
 # Tutorial section 2: Preparing convergence studies: Kohn-Sham structure (WFK
 # file) and screening (SCR file).
-
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_2.files | tee up-gw1_2.log
-
 # From the tutorial: move
 # tgw1o_DS2_WFK
 # tgw1o_DS1_WFK
 # tgw1o_DS3_SCR
 # tgw1o_DS1_SCR
-
 # Then: 
 mv up-gw1o_DS2_WFK up-gw1o_DS1_WFK
 mv up-gw1o_DS3_SCR up-gw1o_DS1_SCR
-
 ################################################################################
-
 # Tutorial section 3: Convergence on the number of planewaves in the
 # wavefunctions to calculate the Self-Energy .
 # Changed in up-gw1_3.in file the "Maximal kinetic energy cut-off, in Hartree"
-
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_3.files | tee up-gw1_3.log
-
 ################################################################################
-
 # Tutorial section 4: Convergence on the number of planewaves to calculate Σx
 # (optional).
-
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_4.files | tee up-gw1_4.log
-
 ################################################################################
-
 # Tutorial section 5: Convergence on the number of bands to calculate Σc
 # (important).
-
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_5.files | tee up-gw1_5.log
-
 ################################################################################
-
 # Tutorial section 6: Convergence on the number of planewaves in the
 # wavefunctions to calculate the screening (ε-1) (optional).
-
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_6.files | tee up-gw1_6.log
-
 ################################################################################
-
 # 7 Convergence on the number of bands to calculate the screening (important).
-
 mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_7.files | tee up-gw1_7.log
+################################################################################
+# 8 Convergence on the dimension of the ε-1 matrix (important).
+mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_8.files | tee up-gw1_8.log
+################################################################################
+# 9 Calculation of the GW corrections for the band gap in Γ.
+mpiexec -np 12 -env I_MPI_DEVICE rdssm /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_9.files | tee up-gw1_9.log
+################################################################################
+mpdallexit
 
 ################################################################################
+################################################################################
 
-
-
-
+# ##To run all steps in the fats:
+# module load intel-compilers/16.2.181
+# module load intel-mpi/5.1.3.181
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_2.files | tee up-gw1_2.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_3.files | tee up-gw1_3.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_4.files | tee up-gw1_4.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_5.files | tee up-gw1_5.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_6.files | tee up-gw1_6.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_7.files | tee up-gw1_7.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_8.files | tee up-gw1_8.log
+# mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_9.files | tee up-gw1_9.log

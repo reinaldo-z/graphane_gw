@@ -14,8 +14,8 @@
  acknowledgments of the ABINIT effort.
  For more information, see http://www.abinit.org .
 
-.Starting date : Sun 28 Aug 2016.
-- ( at 17h55 )
+.Starting date : Fri 26 Aug 2016.
+- ( at  8h24 )
   
 
  herald :  WARNING -
@@ -140,54 +140,6 @@ P This job should need less than                      18.341 Mbytes of memory.
   WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
 ================================================================================
 
-
- DATASET    8 : space group P1 (#  1); Bravais aP (primitive triclinic)
-================================================================================
- Values of the parameters that define the memory need for DATASET  8.
-   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
-  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
-P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
-  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
-  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
-    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
-================================================================================
-P This job should need less than                      18.341 Mbytes of memory.
-  Rough estimation (10% accuracy) of disk space for files :
-  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
-================================================================================
-
-
- DATASET    9 : space group P1 (#  1); Bravais aP (primitive triclinic)
-================================================================================
- Values of the parameters that define the memory need for DATASET  9.
-   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
-  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
-P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
-  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
-  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
-    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
-================================================================================
-P This job should need less than                      18.341 Mbytes of memory.
-  Rough estimation (10% accuracy) of disk space for files :
-  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
-================================================================================
-
-
- DATASET   10 : space group P1 (#  1); Bravais aP (primitive triclinic)
-================================================================================
- Values of the parameters that define the memory need for DATASET 10.
-   intxc =         0  ionmov =         0    iscf =         5 xclevel =         1
-  lmnmax =         1   lnmax =         1   mband =       100  mffmem =         1
-P  mgfft =       108   mkmem =         1 mpssoang=         2     mpw =      2675
-  mqgrid =      5231   natom =         6    nfft =     58320    nkpt =         1
-  nloalg =         4  nspden =         1 nspinor =         1  nsppol =         1
-    nsym =         1  n1xccc =      2501  ntypat =         2  occopt =         1
-================================================================================
-P This job should need less than                      18.341 Mbytes of memory.
-  Rough estimation (10% accuracy) of disk space for files :
-  WF disk file :      4.084 Mbytes ; DEN or POT disk file :      0.447 Mbytes.
-================================================================================
-
 --------------------------------------------------------------------------------
 ------------- Echo of variables that govern the present computation ------------
 --------------------------------------------------------------------------------
@@ -203,52 +155,43 @@ P This job should need less than                      18.341 Mbytes of memory.
               amu      1.00794000E+00  1.20110000E+01
              bdgw           9      10
              ecut      1.49989777E+01 Hartree
-         ecutsigx1     6.99899618E+00 Hartree
-         ecutsigx2     7.98463913E+00 Hartree
-         ecutsigx3     8.92148308E+00 Hartree
-         ecutsigx4     9.99018361E+00 Hartree
-         ecutsigx5     1.09788065E+01 Hartree
-         ecutsigx6     1.19979001E+01 Hartree
-         ecutsigx7     1.29994376E+01 Hartree
-         ecutsigx8     1.39863980E+01 Hartree
-         ecutsigx9     1.49989777E+01 Hartree
-         ecutsigx10    1.59887591E+01 Hartree
+         ecutsigx1     2.99373071E+00 Hartree
+         ecutsigx2     3.95676773E+00 Hartree
+         ecutsigx3     4.98566840E+00 Hartree
+         ecutsigx4     5.97262884E+00 Hartree
+         ecutsigx5     6.99899618E+00 Hartree
+         ecutsigx6     7.98463913E+00 Hartree
+         ecutsigx7     8.92148308E+00 Hartree
           ecutwfn      1.49989777E+01 Hartree
            getkss           1
            getscr           1
              iscf           5
            istwfk        1
-           jdtset        1    2    3    4    5    6    7    8    9   10
+           jdtset        1    2    3    4    5    6    7
          kptrlatt        1    0    0      0    1    0      0    0    1
           kptrlen      4.64999970E+00
 P           mkmem           1
             natom           6
             nband         100
-           ndtset          10
+           ndtset           7
             ngfft          18      30     108
              nkpt           1
            nkptgw           1
-          npwsigx1        855
-          npwsigx2       1031
-          npwsigx3       1237
-          npwsigx4       1465
-          npwsigx5       1703
-          npwsigx6       1961
-          npwsigx7       2179
-          npwsigx8       2415
-          npwsigx9       2679
-          npwsigx10      2961
+          npwsigx1        241
+          npwsigx2        355
+          npwsigx3        539
+          npwsigx4        695
+          npwsigx5        855
+          npwsigx6       1031
+          npwsigx7       1237
            npwwfn        2679
-          nshsigx1        855
-          nshsigx2       1031
-          nshsigx3       1237
-          nshsigx4       1465
-          nshsigx5       1703
-          nshsigx6       1961
-          nshsigx7       2179
-          nshsigx8       2415
-          nshsigx9       2679
-          nshsigx10      2961
+          nshsigx1        241
+          nshsigx2        355
+          nshsigx3        539
+          nshsigx4        695
+          nshsigx5        855
+          nshsigx6       1031
+          nshsigx7       1237
              nsym           1
            ntypat           2
               occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
@@ -311,12 +254,6 @@ P           mkmem           1
 
  chkinp: Checking input parameters for consistency, jdtset=   7.
 
- chkinp: Checking input parameters for consistency, jdtset=   8.
-
- chkinp: Checking input parameters for consistency, jdtset=   9.
-
- chkinp: Checking input parameters for consistency, jdtset=  10.
-
 ================================================================================
 == DATASET  1 ==================================================================
 -   nproc =   12
@@ -373,6 +310,538 @@ P           mkmem           1
  pspatm: atomic psp has been read  and splines computed
 
    6.81765872E+01                                ecore*ucvol(ha*bohr**3)
+--------------------------------------------------------------------------------
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ setmesh: FFT mesh size selected  =  12x 18x 75
+          total number of points  =    16200
+
+
+ k       eigenvalues [eV]
+  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
+             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
+             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
+            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
+            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
+            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
+            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
+            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
+            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
+            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
+
+
+ test on the normalization of the wavefunctions
+ min sum_G |a(n,k,G)| =  0.998989
+ max sum_G |a(n,k,G)| =  0.999965
+ test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
+- min sum_G a(n,k,G)a(n",k,G) =  0.000000
+- max sum_G a(n,k,G)a(n",k,G) =  0.000416
+
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+
+ === KS Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  241
+ number of plane-waves for SigmaC and W            241
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               241
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -33.377   5.379   0.626  -0.598 -23.371  -7.741 -10.766
+   10  -0.916 -12.433  -6.951  -4.866   0.646  -0.549 -12.035   0.398  -0.518
+
+ E^0_gap          2.109
+ E^GW_gap        10.248
+ DeltaE^GW_gap    8.139
+
+
+ New Fermi energy :       -7.146131E-02 Ha ,   -1.944561E+00 eV
+
+ === QP Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =  10.2480 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.2480 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+
+================================================================================
+== DATASET  2 ==================================================================
+-   nproc =   12
+
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+--------------------------------------------------------------------------------
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ setmesh: FFT mesh size selected  =  12x 20x 80
+          total number of points  =    19200
+
+
+ k       eigenvalues [eV]
+  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
+             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
+             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
+            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
+            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
+            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
+            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
+            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
+            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
+            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
+
+
+ test on the normalization of the wavefunctions
+ min sum_G |a(n,k,G)| =  0.998989
+ max sum_G |a(n,k,G)| =  0.999965
+ test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
+- min sum_G a(n,k,G)a(n",k,G) =  0.000000
+- max sum_G a(n,k,G)a(n",k,G) =  0.000416
+
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+
+ === KS Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  355
+ number of plane-waves for SigmaC and W            355
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               355
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -33.829   5.376   0.623  -0.606 -23.613  -7.984 -11.008
+   10  -0.916 -12.433  -7.237  -4.849   0.644  -0.553 -12.210   0.223  -0.692
+
+ E^0_gap          2.109
+ E^GW_gap        10.316
+ DeltaE^GW_gap    8.207
+
+
+ New Fermi energy :       -7.466610E-02 Ha ,   -2.031768E+00 eV
+
+ === QP Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =  10.3159 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.3159 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+
+================================================================================
+== DATASET  3 ==================================================================
+-   nproc =   12
+
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+--------------------------------------------------------------------------------
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ setmesh: FFT mesh size selected  =  12x 20x 90
+          total number of points  =    21600
+
+
+ k       eigenvalues [eV]
+  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
+             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
+             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
+            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
+            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
+            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
+            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
+            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
+            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
+            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
+
+
+ test on the normalization of the wavefunctions
+ min sum_G |a(n,k,G)| =  0.998989
+ max sum_G |a(n,k,G)| =  0.999965
+ test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
+- min sum_G a(n,k,G)a(n",k,G) =  0.000000
+- max sum_G a(n,k,G)a(n",k,G) =  0.000416
+
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+
+ === KS Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  539
+ number of plane-waves for SigmaC and W            539
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               539
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.190   5.353   0.619  -0.614 -23.810  -8.181 -11.205
+   10  -0.916 -12.433  -7.440  -4.830   0.642  -0.557 -12.329   0.105  -0.811
+
+ E^0_gap          2.109
+ E^GW_gap        10.394
+ DeltaE^GW_gap    8.285
+
+
+ New Fermi energy :       -7.684944E-02 Ha ,   -2.091180E+00 eV
+
+ === QP Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =  10.3942 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.3942 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+
+================================================================================
+== DATASET  4 ==================================================================
+-   nproc =   12
+
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
+--------------------------------------------------------------------------------
+
+ ==== K-mesh for the wavefunctions ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ ==== Q-mesh for screening function ====
+ Number of points in the irreducible wedge :     1
+ Reduced coordinates and weights :
+
+     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
+
+ Together with  1 symmetry operations and time-reversal symmetry 
+ yields     1 points in the full Brillouin Zone.
+
+
+ setmesh: FFT mesh size selected  =  12x 20x 90
+          total number of points  =    21600
+
+
+ k       eigenvalues [eV]
+  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
+             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
+             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
+            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
+            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
+            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
+            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
+            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
+            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
+            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
+
+
+ test on the normalization of the wavefunctions
+ min sum_G |a(n,k,G)| =  0.998989
+ max sum_G |a(n,k,G)| =  0.999965
+ test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
+- min sum_G a(n,k,G)a(n",k,G) =  0.000000
+- max sum_G a(n,k,G)a(n",k,G) =  0.000416
+
+ Number of electrons calculated from density =   17.9911; Expected =   18.0000
+ average of density, n =  0.018490
+ r_s =    2.3460
+ omega_plasma =   13.1167 [eV]
+
+
+ === KS Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+ SIGMA fundamental parameters:
+ PLASMON POLE MODEL  1
+ number of plane-waves for SigmaX                  695
+ number of plane-waves for SigmaC and W            695
+ number of plane-waves for wavefunctions          2679
+ number of bands                                   100
+ number of independent spin polarizations            1
+ number of spinorial components                      1
+ number of k-points in IBZ                           1
+ number of q-points in IBZ                           1
+ number of symmetry operations                       1
+ number of k-points in BZ                            1
+ number of q-points in BZ                            1
+ number of frequencies for dSigma/dE                 9
+ frequency step for dSigma/dE [eV]                0.25
+ number of omega for Sigma on real axis              0
+ max omega for Sigma on real axis  [eV]           0.00
+ zcut for avoiding poles [eV]                     0.10
+
+ EPSILON^-1 parameters (SCR file):
+ dimension of the eps^-1 matrix on file           1961
+ dimension of the eps^-1 matrix used               695
+ number of plane-waves for wavefunctions           897
+ number of bands                                    25
+ number of q-points in IBZ                           1
+ number of frequencies                               2
+ number of real frequencies                          1
+ number of imag frequencies                          1
+
+ matrix elements of self-energy operator (all in [eV])
+
+ Perturbative Calculation
+
+ k =    0.000   0.000   0.000
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.313   5.341   0.618  -0.617 -23.880  -8.250 -11.275
+   10  -0.916 -12.433  -7.524  -4.823   0.642  -0.559 -12.378   0.055  -0.861
+
+ E^0_gap          2.109
+ E^GW_gap        10.414
+ DeltaE^GW_gap    8.305
+
+
+ New Fermi energy :       -7.776094E-02 Ha ,   -2.115983E+00 eV
+
+ === QP Band Gaps ===
+  >>>> For spin  1
+   Minimum optical gap =  10.4141 [eV], located at k-point      :   0.0000  0.0000  0.0000
+   Fundamental gap     =  10.4141 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
+                                        Bottom of conduction at :   0.0000  0.0000  0.0000
+
+================================================================================
+== DATASET  5 ==================================================================
+-   nproc =   12
+
+ mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
+
+ mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
+
+ Exchange-correlation functional for the present dataset will be:
+  LDA: new Teter (4/93) with spin-polarized option - ixc=1
+ Citation for XC functional:
+  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
+ 
+ SIGMA: Calculation of the GW corrections
+
+ Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
+ Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
+.Using double precision arithmetic ; gwpc =  8
+
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
+ R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
+ R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
+ Unit cell volume ucvol=  9.7301232E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
 --------------------------------------------------------------------------------
 
  ==== K-mesh for the wavefunctions ====
@@ -482,7 +951,7 @@ P           mkmem           1
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
-== DATASET  2 ==================================================================
+== DATASET  6 ==================================================================
 -   nproc =   12
 
  mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
@@ -615,7 +1084,7 @@ P           mkmem           1
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
 ================================================================================
-== DATASET  3 ==================================================================
+== DATASET  7 ==================================================================
 -   nproc =   12
 
  mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
@@ -747,937 +1216,6 @@ P           mkmem           1
    Fundamental gap     =  10.4166 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
                                         Bottom of conduction at :   0.0000  0.0000  0.0000
 
-================================================================================
-== DATASET  4 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 24x 96
-          total number of points  =    34560
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 1465
- number of plane-waves for SigmaC and W           1465
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1465
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.462   5.330   0.617  -0.621 -23.957  -8.327 -11.352
-   10  -0.916 -12.433  -7.644  -4.818   0.640  -0.562 -12.452  -0.019  -0.934
-
- E^0_gap          2.109
- E^GW_gap        10.418
- DeltaE^GW_gap    8.309
-
-
- New Fermi energy :       -7.911378E-02 Ha ,   -2.152795E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4176 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4176 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
-================================================================================
-== DATASET  5 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 24x100
-          total number of points  =    36000
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 1703
- number of plane-waves for SigmaC and W           1703
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1703
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.478   5.330   0.617  -0.622 -23.965  -8.335 -11.360
-   10  -0.916 -12.433  -7.656  -4.818   0.640  -0.562 -12.459  -0.026  -0.942
-
- E^0_gap          2.109
- E^GW_gap        10.418
- DeltaE^GW_gap    8.309
-
-
- New Fermi energy :       -7.925123E-02 Ha ,   -2.156536E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4180 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4180 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
-================================================================================
-== DATASET  6 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 24x100
-          total number of points  =    36000
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 1961
- number of plane-waves for SigmaC and W           1961
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1961
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.490   5.330   0.616  -0.622 -23.970  -8.341 -11.365
-   10  -0.916 -12.433  -7.665  -4.818   0.640  -0.562 -12.465  -0.032  -0.947
-
- E^0_gap          2.109
- E^GW_gap        10.418
- DeltaE^GW_gap    8.309
-
-
- New Fermi energy :       -7.935613E-02 Ha ,   -2.159390E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4178 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4178 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
-================================================================================
-== DATASET  7 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 24x108
-          total number of points  =    38880
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 2179
- number of plane-waves for SigmaC and W           1961
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1961
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.496   5.330   0.616  -0.622 -23.974  -8.345 -11.369
-   10  -0.916 -12.433  -7.670  -4.818   0.640  -0.562 -12.469  -0.035  -0.951
-
- E^0_gap          2.109
- E^GW_gap        10.418
- DeltaE^GW_gap    8.309
-
-
- New Fermi energy :       -7.942138E-02 Ha ,   -2.161166E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4181 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4181 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
-================================================================================
-== DATASET  8 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 24x108
-          total number of points  =    38880
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 2415
- number of plane-waves for SigmaC and W           1961
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1961
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.501   5.330   0.616  -0.622 -23.977  -8.348 -11.372
-   10  -0.916 -12.433  -7.675  -4.818   0.640  -0.562 -12.471  -0.038  -0.954
-
- E^0_gap          2.109
- E^GW_gap        10.418
- DeltaE^GW_gap    8.309
-
-
- New Fermi energy :       -7.947403E-02 Ha ,   -2.162598E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4182 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4182 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
-================================================================================
-== DATASET  9 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 25x108
-          total number of points  =    40500
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 2679
- number of plane-waves for SigmaC and W           1961
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1961
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.506   5.330   0.616  -0.622 -23.980  -8.350 -11.375
-   10  -0.916 -12.433  -7.678  -4.818   0.640  -0.562 -12.474  -0.041  -0.956
-
- E^0_gap          2.109
- E^GW_gap        10.419
- DeltaE^GW_gap    8.310
-
-
- New Fermi energy :       -7.951501E-02 Ha ,   -2.163714E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4187 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4187 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
-================================================================================
-== DATASET 10 ==================================================================
--   nproc =   12
-
- mkfilename : getscr/=0, take file _SCR from output of DATASET   1.
-
- mkfilename : getkss/=0, take file _KSS from output of DATASET   1.
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
- 
- SIGMA: Calculation of the GW corrections
-
- Based on a program developped by R.W. Godby, V. Olevano, G. Onida, and L. Reining.
- Incorporated in ABINIT by V. Olevano, G.-M. Rignanese, and M. Torrent.
-.Using double precision arithmetic ; gwpc =  8
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  4.0270179 -2.3249998  0.0000000  G(1)=  0.2483227  0.0000000  0.0000000
- R(2)=  0.0000000  8.0540353  0.0000000  G(2)=  0.0716846  0.1241614  0.0000000
- R(3)=  0.0000000  0.0000000 30.0000000  G(3)=  0.0000000  0.0000000  0.0333333
- Unit cell volume ucvol=  9.7301232E+02 bohr^3
- Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  1.20000000E+02 degrees
---------------------------------------------------------------------------------
-
- ==== K-mesh for the wavefunctions ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- ==== Q-mesh for screening function ====
- Number of points in the irreducible wedge :     1
- Reduced coordinates and weights :
-
-     1)     0.00000000E+00  0.00000000E+00  0.00000000E+00       1.00000
-
- Together with  1 symmetry operations and time-reversal symmetry 
- yields     1 points in the full Brillouin Zone.
-
-
- setmesh: FFT mesh size selected  =  15x 25x108
-          total number of points  =    40500
-
-
- k       eigenvalues [eV]
-  1        -27.01 -19.63 -16.00 -14.77 -12.71  -6.52  -4.09  -3.37  -3.02  -0.92
-             1.89   2.57   3.57   4.15   4.99   6.21   7.01   7.70   8.31   8.73
-             9.69  10.88  11.20  11.88  12.50  13.06  13.31  13.68  13.96  14.08
-            14.81  14.85  15.31  15.91  16.40  17.64  17.70  18.11  19.01  19.46
-            19.77  20.37  21.28  22.13  22.29  22.69  24.05  24.44  25.19  25.32
-            26.02  26.58  27.04  27.27  27.53  27.79  27.97  28.11  28.25  28.89
-            29.44  29.61  29.72  30.44  30.87  31.09  31.21  31.32  31.72  32.62
-            32.81  33.32  33.48  33.80  34.11  34.77  35.00  35.28  35.61  35.73
-            36.00  36.21  36.69  36.87  37.19  37.40  37.53  37.74  37.97  38.08
-            38.30  38.41  38.57  38.74  39.11  39.62  40.24  40.80  40.94  41.11
-
-
- test on the normalization of the wavefunctions
- min sum_G |a(n,k,G)| =  0.998989
- max sum_G |a(n,k,G)| =  0.999965
- test on the orthogonalization of the wavefunctions (NB: this is not invariant for degenerate states)
-- min sum_G a(n,k,G)a(n",k,G) =  0.000000
-- max sum_G a(n,k,G)a(n",k,G) =  0.000416
-
- Number of electrons calculated from density =   17.9911; Expected =   18.0000
- average of density, n =  0.018490
- r_s =    2.3460
- omega_plasma =   13.1167 [eV]
-
-
- === KS Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =   2.1090 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =   2.1090 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
- SIGMA fundamental parameters:
- PLASMON POLE MODEL  1
- number of plane-waves for SigmaX                 2961
- number of plane-waves for SigmaC and W           1961
- number of plane-waves for wavefunctions          2679
- number of bands                                   100
- number of independent spin polarizations            1
- number of spinorial components                      1
- number of k-points in IBZ                           1
- number of q-points in IBZ                           1
- number of symmetry operations                       1
- number of k-points in BZ                            1
- number of q-points in BZ                            1
- number of frequencies for dSigma/dE                 9
- frequency step for dSigma/dE [eV]                0.25
- number of omega for Sigma on real axis              0
- max omega for Sigma on real axis  [eV]           0.00
- zcut for avoiding poles [eV]                     0.10
-
- EPSILON^-1 parameters (SCR file):
- dimension of the eps^-1 matrix on file           1961
- dimension of the eps^-1 matrix used              1961
- number of plane-waves for wavefunctions           897
- number of bands                                    25
- number of q-points in IBZ                           1
- number of frequencies                               2
- number of real frequencies                          1
- number of imag frequencies                          1
-
- matrix elements of self-energy operator (all in [eV])
-
- Perturbative Calculation
-
- k =    0.000   0.000   0.000
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.330   0.616  -0.622 -23.982  -8.353 -11.378
-   10  -0.916 -12.433  -7.681  -4.818   0.640  -0.562 -12.475  -0.042  -0.958
-
- E^0_gap          2.109
- E^GW_gap        10.420
- DeltaE^GW_gap    8.311
-
-
- New Fermi energy :       -7.954717E-02 Ha ,   -2.164589E+00 eV
-
- === QP Band Gaps ===
-  >>>> For spin  1
-   Minimum optical gap =  10.4196 [eV], located at k-point      :   0.0000  0.0000  0.0000
-   Fundamental gap     =  10.4196 [eV], Top of valence bands at :   0.0000  0.0000  0.0000
-                                        Bottom of conduction at :   0.0000  0.0000  0.0000
-
 == END DATASET(S) ==============================================================
 ================================================================================
   
@@ -1686,16 +1224,13 @@ P           mkmem           1
               amu      1.00794000E+00  1.20110000E+01
              bdgw           9      10
              ecut      1.49989777E+01 Hartree
-         ecutsigx1     6.99899618E+00 Hartree
-         ecutsigx2     7.98463913E+00 Hartree
-         ecutsigx3     8.92148308E+00 Hartree
-         ecutsigx4     9.99018361E+00 Hartree
-         ecutsigx5     1.09788065E+01 Hartree
-         ecutsigx6     1.19979001E+01 Hartree
-         ecutsigx7     1.29994376E+01 Hartree
-         ecutsigx8     1.39863980E+01 Hartree
-         ecutsigx9     1.49989777E+01 Hartree
-         ecutsigx10    1.59887591E+01 Hartree
+         ecutsigx1     2.99373071E+00 Hartree
+         ecutsigx2     3.95676773E+00 Hartree
+         ecutsigx3     4.98566840E+00 Hartree
+         ecutsigx4     5.97262884E+00 Hartree
+         ecutsigx5     6.99899618E+00 Hartree
+         ecutsigx6     7.98463913E+00 Hartree
+         ecutsigx7     8.92148308E+00 Hartree
           ecutwfn      1.49989777E+01 Hartree
            etotal1     0.0000000000E+00
            etotal2     0.0000000000E+00
@@ -1704,9 +1239,6 @@ P           mkmem           1
            etotal5     0.0000000000E+00
            etotal6     0.0000000000E+00
            etotal7     0.0000000000E+00
-           etotal8     0.0000000000E+00
-           etotal9     0.0000000000E+00
-           etotal10    0.0000000000E+00
             fcart1     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
@@ -1749,59 +1281,35 @@ P           mkmem           1
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-            fcart8     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-            fcart9     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-            fcart10    0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
            getkss           1
            getscr           1
              iscf           5
            istwfk        1
-           jdtset        1    2    3    4    5    6    7    8    9   10
+           jdtset        1    2    3    4    5    6    7
          kptrlatt        1    0    0      0    1    0      0    0    1
           kptrlen      4.64999970E+00
 P           mkmem           1
             natom           6
             nband         100
-           ndtset          10
+           ndtset           7
             ngfft          18      30     108
              nkpt           1
            nkptgw           1
-          npwsigx1        855
-          npwsigx2       1031
-          npwsigx3       1237
-          npwsigx4       1465
-          npwsigx5       1703
-          npwsigx6       1961
-          npwsigx7       2179
-          npwsigx8       2415
-          npwsigx9       2679
-          npwsigx10      2961
+          npwsigx1        241
+          npwsigx2        355
+          npwsigx3        539
+          npwsigx4        695
+          npwsigx5        855
+          npwsigx6       1031
+          npwsigx7       1237
            npwwfn        2679
-          nshsigx1        855
-          nshsigx2       1031
-          nshsigx3       1237
-          nshsigx4       1465
-          nshsigx5       1703
-          nshsigx6       1961
-          nshsigx7       2179
-          nshsigx8       2415
-          nshsigx9       2679
-          nshsigx10      2961
+          nshsigx1        241
+          nshsigx2        355
+          nshsigx3        539
+          nshsigx4        695
+          nshsigx5        855
+          nshsigx6       1031
+          nshsigx7       1237
              nsym           1
            ntypat           2
               occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
@@ -1840,12 +1348,6 @@ P           mkmem           1
            strten6     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
            strten7     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-           strten8     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-           strten9     0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-           strten10    0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
                        0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
             typat      1  1  2  2  2  2
            xangst     -2.3812974387E-07  6.8561204582E-04  1.3610132864E+01
@@ -1933,10 +1435,10 @@ P           mkmem           1
  Comment : The potential-based conjugate-gradient algorithm, used when iscf=5, is not published.
  However, many elements of this algorithm have been explained in the paper above.
 -
-- Proc.   0 individual time (sec): cpu=         59.2  wall=         65.7
+- Proc.   0 individual time (sec): cpu=         11.7  wall=         14.2
 
 ================================================================================
 
  Calculation completed.
-.Delivered   93 WARNINGs and  74 COMMENTs to log file.
-+Overall time at end (sec) : cpu=        773.9  wall=        788.2
+.Delivered   66 WARNINGs and  56 COMMENTs to log file.
++Overall time at end (sec) : cpu=        163.4  wall=        169.6

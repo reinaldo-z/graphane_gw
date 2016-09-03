@@ -33,12 +33,6 @@ xcart
 
 bdgw        9  10
 
-nband3      100
-ecutwfn3    20
-ecuteps3    25
-
-
-
 ################################################################################
 
 SECTION 3: Convergence on the number of planewaves in the wavefunctions to
@@ -51,118 +45,57 @@ ndtset    6
 ecutwfn:  5.0
 ecutwfn+  2.0
 
+File:
+up-gw1_3.out
 
-Near to: SIGMA fundamental parameters
+Near to: 
+SIGMA fundamental parameters
 
+ecut = 4.98566840E+00 Hartree:
  number of plane-waves for wavefunctions           539
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     9  -3.025 -14.666 -32.467   5.095   0.629  -0.591 -22.654  -7.988 -11.013
    10  -0.916 -11.733  -7.151  -4.601   0.651  -0.536 -11.745  -0.012  -0.927
 
+ecut = 6.99899618E+00 Hartree:
  number of plane-waves for wavefunctions           855
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     9  -3.025 -15.218 -33.619   5.230   0.621  -0.610 -23.400  -8.182 -11.207
    10  -0.916 -12.111  -7.452  -4.712   0.645  -0.551 -12.146  -0.034  -0.950
 
+ecut = 8.92148308E+00 Hartree:
  number of plane-waves for wavefunctions          1237
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     9  -3.025 -15.460 -34.103   5.282   0.618  -0.617 -23.723  -8.263 -11.287
    10  -0.916 -12.302  -7.586  -4.769   0.642  -0.558 -12.336  -0.034  -0.950
 
+ecut = 1.09788065E+01 Hartree:
  number of plane-waves for wavefunctions          1703
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     9  -3.025 -15.562 -34.341   5.310   0.617  -0.620 -23.875  -8.313 -11.337
    10  -0.916 -12.388  -7.641  -4.798   0.641  -0.561 -12.421  -0.033  -0.948
 
+ecut = 1.29994376E+01 Hartree:
  number of plane-waves for wavefunctions          2179
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     9  -3.025 -15.610 -34.447   5.324   0.617  -0.622 -23.943  -8.333 -11.357
    10  -0.916 -12.421  -7.659  -4.811   0.640  -0.562 -12.453  -0.032  -0.948
 
+ecut = 1.49989777E+01 Hartree:
  number of plane-waves for wavefunctions          2679
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     9  -3.025 -15.629 -34.490   5.330   0.616  -0.622 -23.970  -8.341 -11.365
    10  -0.916 -12.433  -7.665  -4.818   0.640  -0.562 -12.465  -0.032  -0.947
 
-So that ecutwfn=15.0 (npwwfn=2179) can be considered to lead to eigenenergies
-converged within 0.01 eV.
+ecut = 4.98566840E+00 Hartree: (1-(7.988/8.341))*100 = 4.23 %
+ecut = 6.99899618E+00 Hartree: (1-(8.182/8.341))*100 = 1.91 %
+ecut = 8.92148308E+00 Hartree: (1-(8.263/8.341))*100 = 0.94 %  Ok!
+ecut = 1.09788065E+01 Hartree: (1-(8.313/8.341))*100 = 0.34 %
+ecut = 1.29994376E+01 Hartree: (1-(8.333/8.341))*100 = 0.10 %
+ecut = 1.49989777E+01 Hartree: (1-(8.341/8.341))*100 = 0.00 %
 
-Changed:
-bdgw         4  5 --> 9  10
-ecutwfn  5 --> 15.0
-ecut     5 --> 15.0
-
-################################################################################
-
-SECTION 4: Convergence on the number of planewaves to calculate Σx (optional).
-
-ndtset  10
-ecutsigx: 7.0
-ecutsigx+ 1.0
-
-Near to: SIGMA fundamental parameters
-
- number of plane-waves for SigmaX                  855
- number of plane-waves for SigmaC and W            855
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.369   5.334   0.618  -0.619 -23.911  -8.281 -11.306
-   10  -0.916 -12.433  -7.571  -4.821   0.641  -0.560 -12.407   0.026  -0.889
-
- number of plane-waves for SigmaX                 1031
- number of plane-waves for SigmaC and W           1031
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.398   5.330   0.618  -0.619 -23.929  -8.299 -11.324
-   10  -0.916 -12.433  -7.601  -4.820   0.641  -0.561 -12.425   0.008  -0.908
-
- number of plane-waves for SigmaX                 1237
- number of plane-waves for SigmaC and W           1237
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.433   5.330   0.617  -0.621 -23.944  -8.315 -11.339
-   10  -0.916 -12.433  -7.625  -4.819   0.640  -0.561 -12.440  -0.007  -0.923
-
- number of plane-waves for SigmaX                 1465
- number of plane-waves for SigmaC and W           1465
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.462   5.330   0.617  -0.621 -23.957  -8.327 -11.352
-   10  -0.916 -12.433  -7.644  -4.818   0.640  -0.562 -12.452  -0.019  -0.934
-
- number of plane-waves for SigmaX                 1703
- number of plane-waves for SigmaC and W           1703
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.478   5.330   0.617  -0.622 -23.965  -8.335 -11.360
-   10  -0.916 -12.433  -7.656  -4.818   0.640  -0.562 -12.459  -0.026  -0.942
-
- number of plane-waves for SigmaX                 1961
- number of plane-waves for SigmaC and W           1961
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.490   5.330   0.616  -0.622 -23.970  -8.341 -11.365
-   10  -0.916 -12.433  -7.665  -4.818   0.640  -0.562 -12.465  -0.032  -0.947
-
- number of plane-waves for SigmaX                 2179
- number of plane-waves for SigmaC and W           1961
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.496   5.330   0.616  -0.622 -23.974  -8.345 -11.369
-   10  -0.916 -12.433  -7.670  -4.818   0.640  -0.562 -12.469  -0.035  -0.951
-
- number of plane-waves for SigmaX                 2415
- number of plane-waves for SigmaC and W           1961
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.501   5.330   0.616  -0.622 -23.977  -8.348 -11.372
-   10  -0.916 -12.433  -7.675  -4.818   0.640  -0.562 -12.471  -0.038  -0.954
-
- number of plane-waves for SigmaX                 2679
- number of plane-waves for SigmaC and W           1961
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.506   5.330   0.616  -0.622 -23.980  -8.350 -11.375
-   10  -0.916 -12.433  -7.678  -4.818   0.640  -0.562 -12.474  -0.041  -0.956
-
- number of plane-waves for SigmaX                 2961
- number of plane-waves for SigmaC and W           1961
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.330   0.616  -0.622 -23.982  -8.353 -11.378
-   10  -0.916 -12.433  -7.681  -4.818   0.640  -0.562 -12.475  -0.042  -0.958
-
-So that ecutsigx=16.0 (npwsigx=1961) can be considered converged within 0.01 eV.
+So that ecutwfn=9.0 (npwwfn=1237) can be considered to lead to eigenenergies
+converged with less than 1%.
 
 Changed:
 #Definition of the unit cell
@@ -188,9 +121,113 @@ xcart
   2.3250023170   6.706652267  22.953013267
 
 bdgw     4  5 --> 9  10
-ecutwfn  5 --> 15.0
-ecut     5 --> 15.0
-ecutsigx 6 --> 16.0
+
+# Self energy
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+
+################################################################################
+
+SECTION 4: Convergence on the number of planewaves to calculate Σx (optional).
+
+ndtset  7
+ecutsigx: 3.0
+ecutsigx+ 1.0
+
+File:
+up-gw1_4.out
+
+Near to: 
+SIGMA fundamental parameters
+
+ecutsigx1 = 2.99373071E+00 Hartree:
+ number of plane-waves for SigmaX                  241
+ number of plane-waves for SigmaC and W            241
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -33.377   5.379   0.626  -0.598 -23.371  -7.741 -10.766
+   10  -0.916 -12.433  -6.951  -4.866   0.646  -0.549 -12.035   0.398  -0.518
+
+ecutsigx2 = 3.95676773E+00 Hartree:
+ number of plane-waves for SigmaX                  355
+ number of plane-waves for SigmaC and W            355
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -33.829   5.376   0.623  -0.606 -23.613  -7.984 -11.008
+   10  -0.916 -12.433  -7.237  -4.849   0.644  -0.553 -12.210   0.223  -0.692
+
+ecutsigx3 = 4.98566840E+00 Hartree:
+ number of plane-waves for SigmaX                  539
+ number of plane-waves for SigmaC and W            539
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.190   5.353   0.619  -0.614 -23.810  -8.181 -11.205
+   10  -0.916 -12.433  -7.440  -4.830   0.642  -0.557 -12.329   0.105  -0.811
+
+ecutsigx4 = 5.97262884E+00 Hartree:
+ number of plane-waves for SigmaX                  695
+ number of plane-waves for SigmaC and W            695
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.313   5.341   0.618  -0.617 -23.880  -8.250 -11.275
+   10  -0.916 -12.433  -7.524  -4.823   0.642  -0.559 -12.378   0.055  -0.861
+
+ecutsigx5 = 6.99899618E+00 Hartree:
+ number of plane-waves for SigmaX                  855
+ number of plane-waves for SigmaC and W            855
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.369   5.334   0.618  -0.619 -23.911  -8.281 -11.306
+   10  -0.916 -12.433  -7.571  -4.821   0.641  -0.560 -12.407   0.026  -0.889
+
+ecutsigx6 = 7.98463913E+00 Hartree:
+ number of plane-waves for SigmaX                 1031
+ number of plane-waves for SigmaC and W           1031
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.398   5.330   0.618  -0.619 -23.929  -8.299 -11.324
+   10  -0.916 -12.433  -7.601  -4.820   0.641  -0.561 -12.425   0.008  -0.908
+
+ecutsigx7 = 8.92148308E+00 Hartree:
+ number of plane-waves for SigmaX                 1237
+ number of plane-waves for SigmaC and W           1237
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.433   5.330   0.617  -0.621 -23.944  -8.315 -11.339
+   10  -0.916 -12.433  -7.625  -4.819   0.640  -0.561 -12.440  -0.007  -0.923
+
+ecutsigx1 = 2.99373071E+00 Hartree: (1-(7.741/8.315))*100 = 6.90 %
+ecutsigx2 = 3.95676773E+00 Hartree: (1-(7.984/8.315))*100 = 3.98 %
+ecutsigx3 = 4.98566840E+00 Hartree: (1-(8.181/8.315))*100 = 1.61 %
+ecutsigx4 = 5.97262884E+00 Hartree: (1-(8.250/8.315))*100 = 0.78 %  Ok!
+ecutsigx5 = 6.99899618E+00 Hartree: (1-(8.281/8.315))*100 = 0.41 %
+ecutsigx6 = 7.98463913E+00 Hartree: (1-(8.299/8.315))*100 = 0.19 %
+ecutsigx7 = 8.92148308E+00 Hartree: (1-(8.315/8.315))*100 = 0.00 %
+
+So that ecutsigx=6.0 (npwsigx=695) can be considered converged within less than
+1%$
+
+Changed:
+#Definition of the unit cell
+acell  4.649999696 8.054035318 30
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+
+#Definition of the atoms
+natom       6
+typat       1*1 1*1  4*2
+xcart
+ -0.0000004500   0.001295619  25.719423746
+  2.3250097760   4.025098686  25.719040070
+ -0.0000004500   0.004159945  23.407634295
+ -0.0000004500   2.681215349  22.969636067
+  2.3249742340   4.029801762  23.408608492
+  2.3250023170   6.706652267  22.953013267
+
+bdgw     4  5 --> 9  10
+# Self energy
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+ecutsigx 6 --> 6.0
 
 ################################################################################
 
@@ -200,85 +237,132 @@ ndtset  20
 nband:  20
 nband+  20
 
-File: up-gw1_5.outB
-Near to: SIGMA fundamental parameters
+File: up-gw1_5.out
+Near to: 
+SIGMA fundamental parameters
 
- number of bands                                   500
+nband1    20: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.126   0.616  -0.625 -24.096  -8.466 -11.491
-   10  -0.916 -12.433  -7.681  -4.988   0.639  -0.565 -12.584  -0.151  -1.066
+    9  -3.025 -15.629 -34.510   5.928   0.622  -0.607 -23.691  -8.061 -11.086
+   10  -0.916 -12.433  -7.681  -4.179   0.647  -0.545 -12.062   0.371  -0.545
 
- number of bands                                   520
+nband2    40: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.125   0.616  -0.625 -24.097  -8.467 -11.492
-   10  -0.916 -12.433  -7.681  -4.989   0.639  -0.565 -12.585  -0.151  -1.067
+    9  -3.025 -15.629 -34.510   5.604   0.619  -0.617 -23.843  -8.213 -11.238
+   10  -0.916 -12.433  -7.681  -4.512   0.643  -0.556 -12.279   0.154  -0.761
 
- number of bands                                   540
+nband3    60: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.123   0.616  -0.625 -24.097  -8.468 -11.493
-   10  -0.916 -12.433  -7.681  -4.990   0.639  -0.565 -12.585  -0.152  -1.068
+    9  -3.025 -15.629 -34.510   5.433   0.617  -0.620 -23.928  -8.299 -11.323
+   10  -0.916 -12.433  -7.681  -4.660   0.641  -0.559 -12.374   0.059  -0.856
 
- number of bands                                   560
+nband4    80: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.123   0.616  -0.625 -24.098  -8.468 -11.493
-   10  -0.916 -12.433  -7.681  -4.991   0.639  -0.565 -12.586  -0.153  -1.068
+    9  -3.025 -15.629 -34.510   5.363   0.617  -0.622 -23.965  -8.335 -11.360
+   10  -0.916 -12.433  -7.681  -4.781   0.640  -0.562 -12.452  -0.019  -0.934
 
- number of bands                                   580
+nband5   100: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.122   0.616  -0.625 -24.098  -8.469 -11.493
-   10  -0.916 -12.433  -7.681  -4.991   0.639  -0.565 -12.586  -0.153  -1.069
+    9  -3.025 -15.629 -34.510   5.330   0.616  -0.622 -23.982  -8.353 -11.378
+   10  -0.916 -12.433  -7.681  -4.818   0.640  -0.562 -12.475  -0.042  -0.958
 
- number of bands                                   600
+nband6   120: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.121   0.616  -0.625 -24.099  -8.469 -11.494
-   10  -0.916 -12.433  -7.681  -4.992   0.639  -0.565 -12.587  -0.154  -1.069
+    9  -3.025 -15.629 -34.510   5.304   0.616  -0.623 -23.997  -8.367 -11.392
+   10  -0.916 -12.433  -7.681  -4.845   0.640  -0.563 -12.492  -0.059  -0.975
 
- number of bands                                   620
+nband7   140: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.120   0.616  -0.625 -24.099  -8.470 -11.494
-   10  -0.916 -12.433  -7.681  -4.993   0.639  -0.565 -12.587  -0.154  -1.070
+    9  -3.025 -15.629 -34.510   5.286   0.616  -0.623 -24.006  -8.377 -11.401
+   10  -0.916 -12.433  -7.681  -4.866   0.640  -0.563 -12.506  -0.073  -0.988
 
- number of bands                                   640
+nband8   160: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.118   0.616  -0.625 -24.100  -8.471 -11.495
-   10  -0.916 -12.433  -7.681  -4.994   0.639  -0.565 -12.588  -0.155  -1.070
+    9  -3.025 -15.629 -34.510   5.264   0.616  -0.623 -24.018  -8.388 -11.413
+   10  -0.916 -12.433  -7.681  -4.886   0.640  -0.563 -12.519  -0.086  -1.002
 
- number of bands                                   660
+nband9   180: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.117   0.616  -0.625 -24.101  -8.471 -11.496
-   10  -0.916 -12.433  -7.681  -4.995   0.639  -0.565 -12.588  -0.155  -1.071
+    9  -3.025 -15.629 -34.510   5.246   0.616  -0.623 -24.028  -8.398 -11.423
+   10  -0.916 -12.433  -7.681  -4.902   0.640  -0.564 -12.529  -0.096  -1.012
 
- number of bands                                   680
+nband10  200: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.116   0.616  -0.625 -24.101  -8.472 -11.497
-   10  -0.916 -12.433  -7.681  -4.996   0.639  -0.565 -12.589  -0.156  -1.071
+    9  -3.025 -15.629 -34.510   5.228   0.616  -0.624 -24.038  -8.409 -11.433
+   10  -0.916 -12.433  -7.681  -4.917   0.639  -0.564 -12.539  -0.106  -1.021
 
- number of bands                                   700
+nband11  220: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.116   0.616  -0.625 -24.102  -8.472 -11.497
-   10  -0.916 -12.433  -7.681  -4.996   0.639  -0.565 -12.589  -0.156  -1.072
+    9  -3.025 -15.629 -34.510   5.214   0.616  -0.624 -24.046  -8.416 -11.441
+   10  -0.916 -12.433  -7.681  -4.928   0.639  -0.564 -12.545  -0.112  -1.028
 
- number of bands                                   720
+nband12  240: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.115   0.616  -0.625 -24.102  -8.473 -11.497
-   10  -0.916 -12.433  -7.681  -4.997   0.639  -0.565 -12.589  -0.156  -1.072
+    9  -3.025 -15.629 -34.510   5.192   0.616  -0.624 -24.058  -8.429 -11.454
+   10  -0.916 -12.433  -7.681  -4.939   0.639  -0.564 -12.553  -0.120  -1.035
 
- number of bands                                   740
+nband13  260: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.115   0.616  -0.625 -24.102  -8.473 -11.497
-   10  -0.916 -12.433  -7.681  -4.997   0.639  -0.565 -12.590  -0.157  -1.072
+    9  -3.025 -15.629 -34.510   5.181   0.616  -0.624 -24.064  -8.435 -11.459
+   10  -0.916 -12.433  -7.681  -4.947   0.639  -0.564 -12.558  -0.125  -1.040
 
- number of bands                                   760
+nband14  280: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.114   0.616  -0.625 -24.103  -8.473 -11.498
-   10  -0.916 -12.433  -7.681  -4.998   0.639  -0.565 -12.590  -0.157  -1.073
+    9  -3.025 -15.629 -34.510   5.167   0.616  -0.624 -24.072  -8.443 -11.468
+   10  -0.916 -12.433  -7.681  -4.955   0.639  -0.564 -12.563  -0.130  -1.045
 
- number of bands                                   780
+nband15  300: 
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.114   0.616  -0.625 -24.103  -8.473 -11.498
-   10  -0.916 -12.433  -7.681  -4.998   0.639  -0.565 -12.591  -0.157  -1.073
+    9  -3.025 -15.629 -34.510   5.157   0.616  -0.624 -24.078  -8.449 -11.473
+   10  -0.916 -12.433  -7.681  -4.963   0.639  -0.564 -12.568  -0.135  -1.051
 
-So that nband=700 can be considered converged within 0.01 eV.
+nband16  320: 
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.150   0.616  -0.624 -24.082  -8.453 -11.477
+   10  -0.916 -12.433  -7.681  -4.968   0.639  -0.564 -12.571  -0.138  -1.054
+
+nband17  340: 
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.144   0.616  -0.624 -24.085  -8.456 -11.480
+   10  -0.916 -12.433  -7.681  -4.973   0.639  -0.564 -12.574  -0.141  -1.057
+
+nband18  360: 
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.141   0.616  -0.624 -24.087  -8.458 -11.482
+   10  -0.916 -12.433  -7.681  -4.976   0.639  -0.564 -12.576  -0.143  -1.059
+
+nband19  380: 
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.138   0.616  -0.625 -24.089  -8.460 -11.484
+   10  -0.916 -12.433  -7.681  -4.978   0.639  -0.564 -12.578  -0.145  -1.060
+
+nband20  400: 
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.136   0.616  -0.625 -24.090  -8.461 -11.485
+   10  -0.916 -12.433  -7.681  -4.980   0.639  -0.564 -12.579  -0.146  -1.062
+
+nband1    20: (1-(8.061/8.461)) = 0.05 %  Ok!
+nband2    40: (1-(8.213/8.461)) = 0.03 %
+nband3    60: (1-(8.299/8.461)) = 0.02 %
+nband4    80: (1-(8.335/8.461)) = 0.01 %
+nband5   100: (1-(8.353/8.461)) = 0.01 %
+nband6   120: (1-(8.367/8.461)) = 0.01 %
+nband7   140: (1-(8.377/8.461)) = 0.01 %
+nband8   160: (1-(8.388/8.461)) = 0.01 %
+nband9   180: (1-(8.398/8.461)) = 0.01 %
+nband10  200: (1-(8.409/8.461)) = 0.01 %
+nband11  220: (1-(8.416/8.461)) = 0.01 %
+nband12  240: (1-(8.429/8.461)) = 0.00 %
+nband13  260: (1-(8.435/8.461)) = 0.00 %
+nband14  280: (1-(8.443/8.461)) = 0.00 %
+nband15  300: (1-(8.449/8.461)) = 0.00 %
+nband16  320: (1-(8.453/8.461)) = 0.00 %
+nband17  340: (1-(8.456/8.461)) = 0.00 %
+nband18  360: (1-(8.458/8.461)) = 0.00 %
+nband19  380: (1-(8.460/8.461)) = 0.00 %
+nband20  400: (1-(8.461/8.461)) = 0.00 %
+
+So that nband=20 can be considered converged within less than 1%.
 
 Changed:
 
@@ -305,10 +389,11 @@ xcart
   2.3250023170   6.706652267  22.953013267
 
 bdgw     4  5 --> 9  10
-ecutwfn  5 --> 15.0
-ecut     5 --> 15.0
-ecutsigx 6 --> 16.0
-nband  100 --> 700
+# Self energy
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+ecutsigx 6 --> 6.0
+nband  100 --> 20
 
 ################################################################################
 
@@ -317,86 +402,100 @@ calculate the screening (ε-1) (optional).
 
 ndtset      10
 udtset      5  2
-ecutwfn:?   18.0
+ecutwfn:?   6.0
 ecutwfn+?   1.0
 
 File: 
-up_gw1_6.outE
+up_gw1_6.outA
 Near to: 
 dielectric constant =
 
-  dielectric constant =   4.6478
-  dielectric constant without local fields =   6.5830
- number of plane-waves for wavefunctions          3587
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.314   0.613  -0.631 -23.950  -8.320 -11.345
-   10  -0.916 -12.433  -7.681  -5.138   0.638  -0.568 -12.679  -0.246  -1.162
 
-  dielectric constant =   4.6487
-  dielectric constant without local fields =   6.5841
- number of plane-waves for wavefunctions          3865
- Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.315   0.613  -0.631 -23.948  -8.319 -11.343
-   10  -0.916 -12.433  -7.681  -5.139   0.638  -0.568 -12.680  -0.247  -1.162
+up-gw1_6.outA:
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut11    5.97262884E+00 Hartree:
+dielectric constant =   4.5319
+dielectric constant without local fields =   6.3774
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.067   0.618  -0.618 -24.167  -8.538 -11.563
+   10  -0.916 -12.433  -7.681  -4.951   0.640  -0.561 -12.561  -0.128  -1.043
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut21    6.99899618E+00 Hartree:
+dielectric constant =   4.5437
+dielectric constant without local fields =   6.4067
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.131   0.617  -0.622 -24.108  -8.479 -11.503
+   10  -0.916 -12.433  -7.681  -4.997   0.641  -0.561 -12.590  -0.157  -1.073
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut31    7.98463913E+00 Hartree:
+dielectric constant =   4.5633
+dielectric constant without local fields =   6.4550
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.188   0.615  -0.625 -24.054  -8.425 -11.449
+   10  -0.916 -12.433  -7.681  -5.039   0.640  -0.563 -12.617  -0.183  -1.099
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut41    8.92148308E+00 Hartree:
+dielectric constant =   4.5950
+dielectric constant without local fields =   6.5014
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.227   0.615  -0.626 -24.027  -8.397 -11.422
+   10  -0.916 -12.433  -7.681  -5.070   0.639  -0.566 -12.636  -0.203  -1.119
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut51    9.99018361E+00 Hartree:
+dielectric constant =   4.6049
+dielectric constant without local fields =   6.5168
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.253   0.614  -0.630 -23.990  -8.361 -11.385
+   10  -0.916 -12.433  -7.681  -5.092   0.639  -0.566 -12.651  -0.217  -1.133
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut61    1.09788065E+01 Hartree:
+dielectric constant =   4.6170
+dielectric constant without local fields =   6.5366
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.273   0.613  -0.631 -23.973  -8.343 -11.368
+   10  -0.916 -12.433  -7.681  -5.107   0.638  -0.567 -12.660  -0.227  -1.142
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut71    1.19979001E+01 Hartree:
+dielectric constant =   4.6274
+dielectric constant without local fields =   6.5528
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.287   0.615  -0.627 -23.984  -8.354 -11.379
+   10  -0.916 -12.433  -7.681  -5.118   0.637  -0.569 -12.667  -0.234  -1.149
 
-  dielectric constant =   4.6493
-  dielectric constant without local fields =   6.5850
- number of plane-waves for wavefunctions          4159
+ecut81    1.29994376E+01 Hartree:
+dielectric constant =   4.6330
+dielectric constant without local fields =   6.5611
  Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
-    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
-   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+    9  -3.025 -15.629 -34.510   5.296   0.615  -0.625 -23.989  -8.359 -11.384
+   10  -0.916 -12.433  -7.681  -5.125   0.637  -0.569 -12.671  -0.238  -1.153
 
-So that ecutwfn=20.0 (npwwfn=4159) can be considered to lead to eigenenergies
-converged within 0.01 eV.
+ecut91    1.39863980E+01 Hartree:
+dielectric constant =   4.6377
+dielectric constant without local fields =   6.5689
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.303   0.615  -0.625 -23.983  -8.353 -11.378
+   10  -0.916 -12.433  -7.681  -5.130   0.637  -0.569 -12.674  -0.241  -1.156
+
+ecut101   1.49989777E+01 Hartree:
+dielectric constant =   4.6416
+dielectric constant without local fields =   6.5754
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.307   0.614  -0.628 -23.964  -8.335 -11.359
+   10  -0.916 -12.433  -7.681  -5.132   0.638  -0.568 -12.676  -0.242  -1.158
+
+ecut11  5.97262884E+00 Hartree: (1-(8.538/8.335))*100 = 2.44 %
+ecut21  6.99899618E+00 Hartree: (1-(8.479/8.335))*100 = 1.73 %
+ecut31  7.98463913E+00 Hartree: (1-(8.425/8.335))*100 = 1.08 %
+ecut41  8.92148308E+00 Hartree: (1-(8.397/8.335))*100 = 0.74 %  Ok!
+ecut51  9.99018361E+00 Hartree: (1-(8.361/8.335))*100 = 0.31 %
+ecut61  1.09788065E+01 Hartree: (1-(8.343/8.335))*100 = 0.10 %
+ecut71  1.19979001E+01 Hartree: (1-(8.354/8.335))*100 = 0.23 %
+ecut81  1.29994376E+01 Hartree: (1-(8.359/8.335))*100 = 0.29 %
+ecut91  1.39863980E+01 Hartree: (1-(8.353/8.335))*100 = 0.22 %
+ecut101 1.49989777E+01 Hartree: (1-(8.335/8.335))*100 = 0.00 %
+
+So that ecutwfn=9.0 (npwwfn=1237) can be considered converged within less than
+1%.
 
 Changed:
 
@@ -423,36 +522,204 @@ xcart
   2.3250023170   6.706652267  22.953013267
 
 bdgw     4  5 --> 9  10
-ecutwfn  5 --> 15.0
-ecut     5 --> 15.0
-ecutsigx 6 --> 16.0
-nband  100 --> 700
-ecutwfn  4 --> 20
+# Self energy
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+ecutsigx 6 --> 6.0
+nband  100 --> 20
+# Screenening  (ε^-1) 
+ecutwfn  4 --> 9.0
 
 ################################################################################
 
 SigECTION 7: Convergence on the number of bands to calculate the screening
 (important).
 
-nband11  25
-nband21  50
-nband31  100
-nband41  150
-nband51  200
+nband11  400
+nband21  450
+nband31  500
+nband41  550
+nband51  600
 
 File:
-up_gw1_7.out
+up_gw1_7.outA
 Near to:
+EPSILON^-1 parameters (SCR file)
 
 
+nband11   25:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.316   0.613  -0.631 -23.947  -8.318 -11.342
+   10  -0.916 -12.433  -7.681  -5.140   0.638  -0.568 -12.680  -0.247  -1.163
+
+nband21   50:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.285   0.628  -0.591 -24.174  -8.544 -11.569
+   10  -0.916 -12.433  -7.681  -5.408   0.651  -0.536 -12.860  -0.427  -1.343
+
+nband31  100:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.176   0.632  -0.582 -24.292  -8.663 -11.687
+   10  -0.916 -12.433  -7.681  -5.581   0.654  -0.529 -12.975  -0.542  -1.458
+
+nband41  150:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.125   0.634  -0.577 -24.350  -8.721 -11.745
+   10  -0.916 -12.433  -7.681  -5.650   0.653  -0.531 -13.020  -0.587  -1.502
+
+nband51  200:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   5.073   0.633  -0.579 -24.372  -8.743 -11.767
+   10  -0.916 -12.433  -7.681  -5.707   0.653  -0.532 -13.057  -0.624  -1.539
 
 
+nband11   25: (1-(8.318/8.743))*100 = 4.86 %
+nband21   50: (1-(8.544/8.743))*100 = 2.28 %
+nband31  100: (1-(8.663/8.743))*100 = 0.92 %
+nband41  150: (1-(8.721/8.743))*100 = 0.25 %  OK!
+nband51  200: (1-(8.743/8.743))*100 = 0.00 %
+
+So we have convergence for 150 bands within less than 1%.
+
+Changed:
+
+#Definition of the unit cell
+acell  4.649999696 8.054035318 30
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+#Definition of the atoms
+natom       6
+typat       1*1 1*1  4*2
+xcart
+ -0.0000004500   0.001295619  25.719423746
+  2.3250097760   4.025098686  25.719040070
+ -0.0000004500   0.004159945  23.407634295
+ -0.0000004500   2.681215349  22.969636067
+  2.3249742340   4.029801762  23.408608492
+  2.3250023170   6.706652267  22.953013267
+
+bdgw     4  5 --> 9  10
+# Self energy
+ecutwfn  5 --> 9.0
+ecut     8 --> 9.0
+ecutsigx 6 --> 6.0
+nband  100 --> 20
+# Screenening  (ε^-1) 
+ecutwfn  4 --> 9.0
+nband?1  100-->150
+
+################################################################################
+
+SECTION 8: Convergence on the dimension of the ε-1 matrix (important).
+
+ecuteps:?     3.0
+ecuteps+?     1.0
+
+File:
+up_gw1_8.outA
+Near to:
+EPSILON^-1 parameters (SCR file)
 
 
+ecuteps12  5.97262884E+00 Hartree:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   4.983   0.633  -0.581 -24.422  -8.792 -11.817
+   10  -0.916 -12.433  -7.681  -5.807   0.653  -0.531 -13.122  -0.689  -1.605
+
+ecuteps22  6.99899618E+00 Hartree:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   4.952   0.633  -0.579 -24.448  -8.818 -11.843
+   10  -0.916 -12.433  -7.681  -5.809   0.653  -0.532 -13.123  -0.690  -1.606
+
+ecuteps32  7.98463913E+00 Hartree:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   4.931   0.633  -0.580 -24.459  -8.830 -11.854
+   10  -0.916 -12.433  -7.681  -5.810   0.653  -0.532 -13.124  -0.691  -1.606
+
+ecuteps42  8.92148308E+00 Hartree:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   4.918   0.633  -0.581 -24.463  -8.834 -11.858
+   10  -0.916 -12.433  -7.681  -5.811   0.653  -0.533 -13.124  -0.691  -1.607
+
+ecuteps52  9.99018361E+00 Hartree:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   4.910   0.632  -0.581 -24.466  -8.836 -11.861
+   10  -0.916 -12.433  -7.681  -5.811   0.652  -0.533 -13.124  -0.691  -1.606
+
+ecuteps62  1.09788065E+01 Hartree:
+ Band     E0 <VxcLDA>   SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
+    9  -3.025 -15.629 -34.510   4.904   0.632  -0.581 -24.468  -8.838 -11.863
+   10  -0.916 -12.433  -7.681  -5.811   0.652  -0.533 -13.124  -0.691  -1.607
+
+ecuteps12  5.97262884E+00 Hartree: (1-(8.792/8.838))*100 = 0.52
+ecuteps22  6.99899618E+00 Hartree: (1-(8.818/8.838))*100 = 0.23
+ecuteps32  7.98463913E+00 Hartree: (1-(8.830/8.838))*100 = 0.09  Ok!
+ecuteps42  8.92148308E+00 Hartree: (1-(8.834/8.838))*100 = 0.05
+ecuteps52  9.99018361E+00 Hartree: (1-(8.836/8.838))*100 = 0.02
+ecuteps62  1.09788065E+01 Hartree: (1-(8.838/8.838))*100 = 0.00
 
 
+So we have convergence for ecuteps = 8Ha with an error of 0.09%
 
 
+Changed:
+
+#Definition of the unit cell
+acell  4.649999696 8.054035318 30
+rprim      0.8660254037844385 -0.5 0.0 
+                 0.0           1.0 0.0 
+                 0.0           0.0 1.0
+
+#Definition of the atom types
+ntypat      2
+znucl       1   6
+                         
+#Definition of the atoms
+natom       6
+typat       1*1 1*1  4*2
+xcart
+ -0.0000004500   0.001295619  25.719423746
+  2.3250097760   4.025098686  25.719040070
+ -0.0000004500   0.004159945  23.407634295
+ -0.0000004500   2.681215349  22.969636067
+  2.3249742340   4.029801762  23.408608492
+  2.3250023170   6.706652267  22.953013267
+
+bdgw     4  5 --> 9  10
+# Self energy
+ecutwfn  5 --> 9.0
+ecuteps  6 --> 8
+nband  100 --> 20
+# Screenening  (ε^-1) 
+ecutsigx 6 --> 6.0
+ecutwfn  4 --> 9.0
+nband?1  100-->150
+
+ecut     8 --> 9.0
+
+################################################################################
+
+SECTION 9: Calculation of the GW corrections for the band gap in Γ.
+
+There was a n error due to:
+
+# This line added when defaults were changed (v5.3) to keep the previous, oldbehaviour 
+
+iscf 5 # ->  SCF cycle, CG based on the minim. of the energy with respect to 
+       # the potential.
+
+The line was commented.
+
+
+module load intel-compilers/16.2.181
+module load intel-mpi/5.1.3.181
+mpiexec.hydra /home/prog/HEXA/abinit-7.0.5/abinit/bin/abinit < up-gw1_9.files | tee up-gw1_9.log
 
 
 
